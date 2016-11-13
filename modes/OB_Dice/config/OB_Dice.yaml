@@ -1,0 +1,680 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Oogie mode 4 
+
+mode:
+  start_events: ob_mode_4_start
+  stop_events: ob_mode_4_stop
+  code: OB_Dice.OB_Dice
+  priority: 800
+
+
+sound_player:
+  OB_Dice_music_start:
+    loop_oogie_3:
+      action: play
+      loops: -1
+      volume: 0.5 
+
+  OB_Dice_music_stop:
+    loop_oogie_3:
+      action: stop
+
+  mode_OB_Dice_stopping:
+    loop_oogie_3:
+      action: stop
+      
+  OB_Dice_dice_roll: dice_roll      
+  OB_Dice_snake_eyes: what_snake_eyes
+  OB_Dice_one_more_roll: one_more_roll
+  OB_Dice_bye_bye: Oogie_Byebye
+  OB_Dice_oogie_hit: ribbit      
+
+  
+  
+widget_player:
+  show_OB_Dice_slide_wide:
+    widget_OBDICE_wide: 
+      slide: leftframe     
+      
+  show_OB_Dice_slide_narrow:   
+    widget_OBDICE_narrow:  
+      slide: leftframe
+            
+  show_OB_Dice_slide_intro:
+    widget_OBDICE_full:   
+      slide: leftframe  
+      widget_settings:    
+        expire: 7s      
+      
+  show_OB_Dice_msg_1:         
+    widget_OB_Dice_msg_1:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Dice_msg_1_n:         
+    widget_OB_Dice_msg_1_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Dice_msg_2:         
+    widget_OB_Dice_msg_2:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Dice_msg_2_n:         
+    widget_OB_Dice_msg_2_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Dice_msg_3:         
+    widget_OB_Dice_msg_3:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Dice_msg_3_n:         
+    widget_OB_Dice_msg_3_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+        
+
+  show_OB_Dice_die_1_right_w:         
+    widget_die_1_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_1_left_w:         
+    widget_die_1_left_w:    
+      slide: leftframe    
+
+  show_OB_Dice_die_2_right_w:         
+    widget_die_2_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_2_left_w:         
+    widget_die_2_left_w:    
+      slide: leftframe    
+
+  show_OB_Dice_die_3_right_w:         
+    widget_die_3_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_3_left_w:         
+    widget_die_3_left_w:    
+      slide: leftframe    
+
+  show_OB_Dice_die_4_right_w:         
+    widget_die_4_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_4_left_w:         
+    widget_die_4_left_w:    
+      slide: leftframe    
+
+  show_OB_Dice_die_5_right_w:         
+    widget_die_5_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_5_left_w:         
+    widget_die_5_left_w:    
+      slide: leftframe    
+
+  show_OB_Dice_die_6_right_w:         
+    widget_die_6_right_w:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_6_left_w:         
+    widget_die_6_left_w:    
+      slide: leftframe    
+      
+
+  show_OB_Dice_die_1_right_n:         
+    widget_die_1_right_n:    
+      slide: leftframe    
+      
+  show_OB_Dice_die_1_left_n:         
+    widget_die_1_left_n:    
+      slide: leftframe    
+
+  show_OB_Dice_die_2_right_n:         
+    widget_die_2_right_n:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_2_left_n:         
+    widget_die_2_left_n:    
+      slide: leftframe    
+
+  show_OB_Dice_die_3_right_n:         
+    widget_die_3_right_n:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_3_left_n:         
+    widget_die_3_left_n:    
+      slide: leftframe    
+
+  show_OB_Dice_die_4_right_n:         
+    widget_die_4_right_n:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_4_left_n:         
+    widget_die_4_left_n:    
+      slide: leftframe    
+
+  show_OB_Dice_die_5_right_n:         
+    widget_die_5_right_n:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_5_left_n:         
+    widget_die_5_left_n:    
+      slide: leftframe    
+
+  show_OB_Dice_die_6_right_n:         
+    widget_die_6_right_n:    
+      slide: leftframe    
+        
+  show_OB_Dice_die_6_left_n:         
+    widget_die_6_left_n:    
+      slide: leftframe    
+      
+
+  remove_OB_Dice_slide_wide:
+    widget_OBDICE_wide: 
+      action: remove
+      slide: leftframe          
+    
+  remove_OB_Dice_slide_narrow:      
+    widget_OBDICE_narrow:    
+      action: remove
+      slide: leftframe          
+      
+  remove_OB_Dice_slide_full:      
+    widget_OBDICE_full:    
+      action: remove
+      slide: leftframe          
+      
+  remove_OB_Dice_messages:
+    widget_OB_Dice_msg_1:    
+      action: remove    
+      slide: leftframe          
+    widget_OB_Dice_msg_1_n:        
+      action: remove    
+      slide: leftframe          
+    widget_OB_Dice_msg_2:    
+      action: remove    
+      slide: leftframe          
+    widget_OB_Dice_msg_2_n:        
+      action: remove    
+      slide: leftframe          
+    widget_OB_Dice_msg_3:    
+      action: remove    
+      slide: leftframe          
+    widget_OB_Dice_msg_3_n:        
+      action: remove    
+      slide: leftframe          
+
+
+                
+  remove_OB_Dice_all_dice:         
+    widget_die_1_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_1_left_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_2_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_2_left_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_3_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_3_left_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_4_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_4_left_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_5_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_5_left_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_6_right_w:    
+      action: remove
+      slide: leftframe          
+    widget_die_6_left_w:    
+      action: remove
+      slide: leftframe          
+      
+    widget_die_1_right_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_1_left_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_2_right_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_2_left_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_3_right_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_3_left_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_4_right_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_4_left_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_5_right_n:    
+      action: remove
+      slide: leftframe    
+    widget_die_5_left_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_6_right_n:    
+      action: remove
+      slide: leftframe          
+    widget_die_6_left_n:    
+      action: remove
+      slide: leftframe          
+
+
+      
+      
+      
+        
+widgets:      
+  widget_OB_Dice_msg_1:
+      - type: text
+        style: tall_title
+        font_size: 20
+        text: POPS CHANGE DICE
+        y: 95
+        z: -110        
+
+  widget_OB_Dice_msg_2:
+      - type: text
+        style: tall_title
+        font_size: 20
+        text: OOGIE RE-ROLLS
+        y: 95
+        z: -110        
+        
+  widget_OB_Dice_msg_3:
+      - type: text
+        style: tall_title
+        font_size: 20
+        text: RAMP TO ACCEPT ROLL
+        y: 95
+        z: -110        
+        
+  widget_OB_Dice_msg_1_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: POPS CHANGE DICE
+        y: 95
+        x: 157
+        z: -110        
+
+  widget_OB_Dice_msg_2_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: OOGIE RE-ROLLS
+        y: 95
+        x: 157
+        z: -110        
+
+  widget_OB_Dice_msg_3_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: RAMP TO ACCEPT ROLL
+        y: 95
+        x: 157
+        z: -110        
+
+
+  widget_OBDICE_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: LUCK O' THE DICE
+        color: ff3333
+        anchor_y: top
+        y: 128
+        x: 157
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: LUCK O' THE DICE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 158
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: (OB_Dice_die_1)
+        y: 70
+        x: 138
+        z: -101      
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: (OB_Dice_die_2)
+        y: 70
+        x: 178
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Dice_timeleft)
+        y: 8
+        x: 115
+        z: -3000
+      - type: image
+        image: OB_Dice_backdrop_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 105
+        z: -100        
+
+  widget_OBDICE_wide:
+      - type: text
+        style: tall_title
+        font_size: 30
+        text: LUCK O' THE DICE
+        color: ff3333
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 30
+        text: LUCK O' THE DICE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Dice_timeleft)
+        y: 8
+        x: 105 
+        z: -3000
+      - type: image
+        image: OB_Dice_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100  
+
+  widget_die_1_right_w:        
+      - type: image
+        image: die_1
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_1_left_w:        
+      - type: image
+        image: die_1
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+
+  widget_die_2_right_w:        
+      - type: image
+        image: die_2
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_2_left_w:        
+      - type: image
+        image: die_2
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+
+  widget_die_3_right_w:        
+      - type: image
+        image: die_3
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_3_left_w:        
+      - type: image
+        image: die_3
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+
+  widget_die_4_right_w:        
+      - type: image
+        image: die_4
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_4_left_w:        
+      - type: image
+        image: die_4
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+
+  widget_die_5_right_w:        
+      - type: image
+        image: die_5
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_5_left_w:        
+      - type: image
+        image: die_5
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+
+  widget_die_6_right_w:        
+      - type: image
+        image: die_6
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 125        
+        z: -120  
+        
+  widget_die_6_left_w:        
+      - type: image
+        image: die_6
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 45        
+        z: -120  
+        
+
+
+  widget_die_1_right_n:        
+      - type: image
+        image: die_1
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_1_left_n:        
+      - type: image
+        image: die_1
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+
+  widget_die_2_right_n:        
+      - type: image
+        image: die_2
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_2_left_n:        
+      - type: image
+        image: die_2
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+
+  widget_die_3_right_n:        
+      - type: image
+        image: die_3
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_3_left_n:        
+      - type: image
+        image: die_3
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+
+  widget_die_4_right_n:        
+      - type: image
+        image: die_4
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_4_left_n:        
+      - type: image
+        image: die_4
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+
+  widget_die_5_right_n:        
+      - type: image
+        image: die_5
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_5_left_n:        
+      - type: image
+        image: die_5
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+
+  widget_die_6_right_n:        
+      - type: image
+        image: die_6
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 160        
+        z: -120  
+        
+  widget_die_6_left_n:        
+      - type: image
+        image: die_6
+        anchor_y: top
+        anchor_x: left
+        y: 90
+        x: 105        
+        z: -120  
+        
+        
+        
+               
+  widget_OBDICE_full:
+      - type: text
+        style: tall_title
+        font_size: 30
+        text: LUCK O' THE DICE 
+        color: ff3333
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 30
+        text: LUCK O' THE DICE 
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: video
+        video: dice_roll
+        z: -100

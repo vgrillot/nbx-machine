@@ -1,0 +1,59 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Shot_Multiplier
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Shot_Multiplier.Shot_Multiplier
+  priority: 1200
+
+
+shot_groups:
+  multiplier_shots:
+    profile: singlestep
+
+    
+random_event_player:
+    super_sally_multiplier:
+    - say_i_made_you
+    - say_i_made_you
+    - say_i_made_you    
+    - say_starve
+    
+sound_player:
+  returned_to_plunger: i_wont_swallow_a_spoonfull    
+  say_i_made_you: i_made_you
+  say_starve: you_want_me_to_starve
+  
+    
+widget_player:
+  multiplier_2x_set: 
+    w_multiplier:
+      widget_settings:    
+        expire: 2s
+        color: 2020ff
+  multiplier_3x_set: 
+    w_multiplier:
+      widget_settings:    
+        expire: 2s
+        color: ff00ff
+
+widgets:
+  w_multiplier:
+     - type: text
+       style: tall_title
+       font_size: 30
+       text: SHOT is (awarded_multiplier) X
+       y: 75
+       x: 105
+       z: -2
+       animations:
+         add_to_slide:
+           - property: opacity
+             value: 1.0
+             duration: 1s
+           - property: opacity
+             value: 0
+             duration: 1s

@@ -1,0 +1,17 @@
+# show_version=4
+- time: 0
+  leds:
+    rgb_lock_rect: ffffff
+    rgb_shock_rect: 777700
+    rgb_barrel_rect: 777700
+- time: '+1'
+  leds:
+    rgb_lock_rect: 777700
+    rgb_shock_rect: ffffff
+    rgb_barrel_rect: 777700
+- time: '+1'
+  leds:
+    rgb_lock_rect: 777700
+    rgb_shock_rect: 777700
+    rgb_barrel_rect: ffffff
+- time: '+1'

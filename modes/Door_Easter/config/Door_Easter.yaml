@@ -1,0 +1,290 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Door_Easter 
+
+mode:
+  start_events: door_mode_3_start
+  stop_events: door_mode_3_stop
+  code: Door_Easter.Door_Easter
+  priority: 950
+
+sound_player:
+  holiday_easter_music_start:
+    loop_Fever3:
+      action: play    
+      loops: -1
+      volume: 0.25
+  
+  holiday_easter_music_stop:
+    loop_Fever3:
+      action: stop
+      
+  mode_door_easter_stopping:
+    loop_Fever3:
+      action: stop
+      
+
+  easter_value_revealed: throwing_star
+  easter_value_collected: throwing_star
+  holiday_easter_music_stop: uhhhgh
+  
+  
+widget_player:
+  show_easter_msg_1: 
+    easter_3_chances:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_easter_msg_2: 
+    easter_find_hidden_prizes:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_easter_msg_3: 
+    easter_collect_prizes:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+
+  show_easter_msg_1_n: 
+    easter_3_chances_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_easter_msg_2_n: 
+    easter_find_hidden_prizes_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_easter_msg_3_n: 
+    easter_collect_prizes_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+      
+  show_easter_slide_wide:
+    widget_easter_wide: 
+      slide: leftframe     
+      
+  show_easter_slide_narrow:   
+    widget_easter_narrow:  
+      slide: leftframe     
+
+  show_easter_slide_full:
+    widget_easter_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+
+  remove_easter_slide_wide:
+    widget_easter_wide:     
+      action: remove
+      slide: leftframe      
+      
+  remove_easter_slide_narrow:
+    widget_easter_narrow:  
+      action: remove     
+      slide: leftframe            
+
+  remove_easter_slide_full:
+    widget_easter_full:  
+      action: remove     
+      slide: leftframe            
+      
+  remove_easter_messages:      
+    easter_3_chances:
+      action: remove
+      slide: leftframe           
+    easter_find_hidden_prizes:
+      action: remove
+      slide: leftframe     
+    easter_collect_prizes:
+      action: remove
+      slide: leftframe     
+    easter_3_chances_n:
+      action: remove
+      slide: leftframe     
+    easter_find_hidden_prizes_n:
+      action: remove
+      slide: leftframe     
+    easter_collect_prizes_n:
+      action: remove
+      slide: leftframe     
+
+
+      
+
+widgets:
+  easter_3_chances:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: 3 chances to find
+        number_grouping: true
+        y: 90
+        z: -110
+  easter_find_hidden_prizes:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: The Hidden Prizes
+        y: 90
+        z: -110
+  easter_collect_prizes:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Shoot Prizes to Collect
+        y: 90
+        z: -110  
+
+  easter_3_chances_n:
+      - type: text
+        text: 3 chances to find
+        style: tall_title
+        font_size: 14
+        x: 52
+        y: 105
+        z: -110
+  easter_find_hidden_prizes_n:
+      - type: text
+        style: tall_title
+        text: The Hidden Prizes
+        font_size: 14
+        x: 52
+        y: 105
+        z: -110
+  easter_collect_prizes_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT PRIZES
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: TO COLLECT
+        x: 52        
+        y: 90
+        z: -110        
+
+
+  widget_easter_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: EASTER
+        color: ff88ff
+        anchor_y: top
+        y: top
+        x: 52
+        z: -101
+      - type: text
+        text: (door_easter_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: ff88ff
+        x: 52        
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_easter_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 000000
+        x: 53
+        y: 70
+        z: -101        
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_easter_timeleft)
+        y: 8
+        x: 95
+        z: -3000
+      - type: image
+        image: easter_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100        
+              
+  widget_easter_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: EASTER
+        color: ff88ff
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: text
+        text: (door_easter_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: ff88ff
+        x: 105
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_easter_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 000000
+        x: 106
+        y: 70
+        z: -101        
+      - type: image
+        image: easter_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_easter_timeleft)
+        y: 8
+        x: 105
+        z: -3000
+        
+
+  widget_easter_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: EASTER INTRO
+        color: ff88ff
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -101
+      - type: text
+        text: 5 second vid
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -101        
+      - type: image
+        image: easter_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        

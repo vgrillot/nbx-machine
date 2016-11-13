@@ -1,0 +1,122 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_What
+
+mode:
+  start_events: char_what_start
+  stop_events: char_what_stop
+  code: Char_What.Char_What
+  priority: 1500
+
+
+sound_player:
+  char_what_music_start:
+    loop_whats_this:
+      action: play
+      loops: -1
+      volume: 0.5 
+
+  char_what_music_stop:
+    loop_whats_this:
+      action: stop
+      
+  mode_char_what_stopping:
+    loop_whats_this:
+      action: stop
+  
+    
+  say_whats_this_1: whats_this
+  say_whats_this_2: whats_this2
+  say_whats_this_3: whats_this3
+  char_what_value_increased: 'yes'
+  char_what_value_increased_ramp: christmas_town
+  
+
+
+widget_player:
+  char_what_music_start: 
+    slide_what:
+      slide: charframe          
+
+  show_what_msg_1: 
+    what_all_switches:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_what_msg_2: 
+    what_increase:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe       
+  show_what_msg_3: 
+    what_points:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe       
+
+  char_what_show_slide: 
+    slide_what:
+      slide: charframe     
+
+  char_what_hide_slide:
+    slide_what:
+      action: remove          
+      slide: charframe     
+      
+  remove_what_messages:
+    what_all_switches:
+      action: remove          
+      slide: charframe     
+    what_increase:
+      action: remove          
+      slide: charframe     
+    what_points:
+      action: remove          
+      slide: charframe     
+
+      
+
+widgets:
+  what_all_switches:
+      - type: text
+        style: tall_title
+        text: All Switches (char_what_value)
+        color: blue
+        number_grouping: true        
+        font_size: 18
+        y: 44
+        z: -210  
+        x: 105
+  what_increase:
+      - type: text
+        style: tall_title
+        text: SPELL JACK TO INCREASE
+        color: orange        
+        font_size: 18
+        y: 44
+        z: -210  
+        x: 105
+  what_points:
+      - type: text
+        style: tall_title
+        text: (char_what_score) Collected
+        color: f0f0ff
+        number_grouping: true
+        font_size: 18
+        y: 44
+        z: -210  
+        x: 105
+
+  slide_what:
+      - type: text
+        style: tall_title
+        font_size: 28
+        text: WHAT'S THIS?
+        anchor_y: top
+        y: top
+        z: -210
+        color: ff8800
+      - type: image
+        image: snowflake_jack
+        z: -200

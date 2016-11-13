@@ -1,0 +1,1134 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+shows:
+
+  sc_christmas_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): red
+  - time: +2
+  
+  
+  sc_christmas_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): red
+  - time: +1
+  
+  
+  sc_christmas_done:
+  - time: 0
+    leds:
+      (leds): red
+
+
+  sc_valentines_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): ff5040
+  - time: +2
+  
+  
+  sc_valentines_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): ff5040
+  - time: +1
+  
+  
+  sc_valentines_done:
+  - time: 0
+    leds:
+      (leds): ff5040
+
+
+  sc_stpats_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): lime
+  - time: +2
+  
+  
+  sc_stpats_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): lime
+  - time: +1
+  
+  
+  sc_stpats_done:
+  - time: 0
+    leds:
+      (leds): lime
+
+
+  sc_easter_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): c000ff
+  - time: +2
+  
+  
+  sc_easter_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): c000ff
+  - time: +1
+  
+  
+  sc_easter_done:
+  - time: 0
+    leds:
+      (leds): c000ff
+
+
+  sc_independence_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+  
+  
+  sc_independence_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): blue
+  - time: +1
+  
+  
+  sc_independence_done:
+  - time: 0
+    leds:
+      (leds): blue
+
+
+  sc_halloween_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): f08000
+  - time: +2
+  
+  
+  sc_halloween_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): f08000
+  - time: +1
+  
+  
+  sc_halloween_done:
+  - time: 0
+    leds:
+      (leds): f08000
+
+
+  sc_thanksgiving_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): dfff00
+  - time: +2
+  
+  
+  sc_thanksgiving_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): dfff00
+  - time: +1
+  
+  
+  sc_thanksgiving_done:
+  - time: 0
+    leds:
+      (leds): dfff00
+
+  sc_door_ready:
+  - time: 0
+    leds:
+      (leds): '000000'
+  - time: +2
+    leds:
+      (leds): e0ffe0
+  - time: +2
+  
+  
+  sc_door_playing:
+  - time: 0
+    leds:
+      (leds): dddddd
+  - time: +1
+    leds:
+      (leds): e0ffe0
+  - time: +1
+  
+  
+  sc_door_done:
+  - time: 0
+    leds:
+      (leds): e0ffe0
+
+
+  sc_off:
+  - time: 0
+    leds:
+      (leds): '000000'
+
+  sc_char_off:
+  - time: 0
+    leds:
+      (leds): '000000'
+
+  l_off:
+  - time: 0
+    leds:
+      (leds): '000000'
+
+  sc_yellow:
+  - time: 0
+    leds:
+      (leds): dfff00
+      
+  sc_orange:
+  - time: 0
+    leds:
+      (leds): ff9900
+  
+  
+  yellow_lights:
+  - time: 0
+    leds:
+      (leds): yellow
+  - duration: -1
+
+  orange_lights:
+  - time: 0
+    leds:
+      (leds): orange
+  - duration: -1
+  
+  
+  w_jack_unlit:
+  - time: 0
+    leds:
+      (leds): darkred
+  - time: '+4'
+    leds:
+      (leds): '000000'
+  - time: '+4'
+  
+  w_jack_lit:
+  - time: 0
+    leds:
+      (leds): red
+
+  red_lights:
+  - time: 0
+    leds:
+      (leds): red
+
+  white_flash:
+  - time: 0
+    leds:
+      (leds): white
+  - time: '+1'
+    leds:
+      (leds): '000000'
+  - time: '+1'
+  
+  bb_blue:
+  - time: 0
+    leds:
+      (leds): 0000c0
+  - time: '+1'
+    leds:
+      (leds): blue
+  - time: '+1'
+  bb_green:
+  - time: 0
+    leds:
+      (leds): 00c000
+  - time: '+1'
+    leds:
+      (leds): lime
+  - time: '+1'
+  bb_yellow:
+  - time: 0
+    leds:
+      (leds): c0c000
+  - time: '+1'
+    leds:
+      (leds): f0ff00
+  - time: '+1'
+  
+  bb_orange:
+  - time: 0
+    leds:
+      (leds): c05000
+  - time: '+1'
+    leds:
+      (leds): ff9000
+  - time: '+1'
+    
+  bb_red:
+  - time: 0
+    leds:
+      (leds): c00000
+  - time: '+1'
+    leds:
+      (leds): red
+  - time: '+1'
+  
+  
+  sc_combo_out:
+  - time: 0
+    leds:
+      (leds): 888800
+  - time: +1
+    leds:
+      (leds): ffff00
+  - time: +1
+    leds:
+      (leds): white
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_naughty_out:
+  - time: 0
+    leds:
+      (leds): ff8800
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+    leds:
+      (leds): red
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_nice_out:
+  - time: 0
+    leds:
+      (leds): 80ff80
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+    leds:
+      (leds): lime
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_doc_out:
+  - time: 0
+    leds:
+      (leds): 8080ff
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+    leds:
+      (leds): blue
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  flash:
+  - time: 0
+    leds:
+      (leds): white
+  - time: '+1'
+    leds:
+      (leds): '000000'
+  - time: '+1'
+
+
+
+  sc_white:
+  - time: 0
+    leds:
+      (leds): red
+  - time: +2
+    leds:
+      (leds): ff8800
+  - time: +2
+    leds:
+      (leds): yellow
+  - time: +2
+    leds:
+      (leds): 88ff00
+  - time: +2
+    leds:
+      (leds): lime
+  - time: +2
+    leds:
+      (leds): 00ff55
+  - time: +2
+    leds:
+      (leds): 00ff88
+  - time: +2
+    leds:
+      (leds): 008888
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+    leds:
+      (leds): 5500ff
+  - time: +2
+    leds:
+      (leds): magenta
+  - time: +2
+    leds:
+      (leds): ff0055
+  - time: +2
+  
+  
+  
+  sc_rainbow:
+  - time: 0
+    leds:
+      (leds): red
+  - time: '+5'
+    leds:
+      (leds): ff8800
+  - time: '+5'
+    leds:
+      (leds): yellow
+  - time: '+5'
+    leds:
+      (leds): 88ff00
+  - time: '+5'
+    leds:
+      (leds): lime
+  - time: '+5'
+    leds:
+      (leds): 00ff55
+  - time: '+5'
+    leds:
+      (leds): 00ff88
+  - time: '+5'
+    leds:
+      (leds): 008888
+  - time: '+5'
+    leds:
+      (leds): blue
+  - time: '+5'
+    leds:
+      (leds): 5500ff
+  - time: '+5'
+    leds:
+      (leds): magenta
+  - time: '+5'
+    leds:
+      (leds): ff0055
+  - time: '+5'
+  
+  
+  purple_flash:
+  - time: 0
+    leds:
+      (leds): f000f0
+  - time: '+1'
+    leds:
+      (leds): e000e0
+  - time: '+1'
+    leds:
+      (leds): d000d0
+  - time: '+1'
+    leds:
+      (leds): c000c0
+  - time: '+1'
+    leds:
+      (leds): b000b0
+  - time: '+1'
+    leds:
+      (leds): a000a0
+  - time: '+1'
+    leds:
+      (leds): purple
+  - time: '+1'
+    leds:
+      (leds): 600060
+  - time: '+1'
+  
+
+#used in ball save  
+  red_flash:
+  - time: 0
+    leds:
+      (leds): red
+  - time: '+1'
+    leds:
+      (leds): '000000'
+  - time: '+1'
+
+#used in mball save    
+  blue_flash:
+  - time: 0
+    leds:
+      (leds): blue
+  - time: '+1'
+    leds:
+      (leds): '000000'
+  - time: '+1'
+
+
+  
+  
+  sc_spinner_pink_flash:
+  - time: 0
+    leds:
+      (leds): 993020
+  - time: +2
+    leds:
+      (leds): ff5040
+  - time: +2
+    leds:
+      (leds): 993020
+  - time: +2
+    leds:
+      (leds): '000000'
+  - time: +2
+  
+  
+  sc_spinner_white_flash:
+  - time: 0
+    leds:
+      (leds): 999999
+  - time: +2
+    leds:
+      (leds): white
+  - time: +2
+    leds:
+      (leds): 999999
+  - time: +2
+    leds:
+      (leds): '000000'
+  - time: +2
+  
+  
+  sc_pink_flash:
+  - time: 0
+    leds:
+      (leds): 662010
+  - time: +2
+    leds:
+      (leds): 993020
+  - time: +2
+    leds:
+      (leds): ff5040
+  - time: +2
+    leds:
+      (leds): 993020
+  - time: +2
+  
+  
+  sc_yellow_flash:
+  - time: 0
+    leds:
+      (leds): 333300
+  - time: +2
+    leds:
+      (leds): 999900
+  - time: +2
+    leds:
+      (leds): yellow
+  - time: +2
+    leds:
+      (leds): 999900
+  - time: +2
+  
+  
+  sc_orange_flash:
+  - time: 0
+    leds:
+      (leds): 331100
+  - time: +2
+    leds:
+      (leds): 993300
+  - time: +2
+    leds:
+      (leds): ff9900
+  - time: +2
+    leds:
+      (leds): 993300
+  - time: +2
+  
+  
+  sc_white_flash:
+  - time: 0
+    leds:
+      (leds): 666666
+  - time: +2
+    leds:
+      (leds): aaaaaa
+  - time: +2
+    leds:
+      (leds): honeydew
+  - time: +2
+    leds:
+      (leds): aaaaaa
+  - time: +2
+  
+  
+  sc_easter_flash:
+  - time: 0
+    leds:
+      (leds): 664466
+  - time: +1
+    leds:
+      (leds): aa88aa
+  - time: +1
+    leds:
+      (leds): ffaaff
+  - time: +1
+    leds:
+      (leds): aa88aa
+  - time: +1
+    leds:
+      (leds): 664466
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_blue_flash:
+  - time: 0
+    leds:
+      (leds): '000066'
+  - time: +2
+    leds:
+      (leds): 000099
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+    leds:
+      (leds): 000099
+  - time: +2
+  
+  
+  sc_green_flash:
+  - time: 0
+    leds:
+      (leds): 008800
+  - time: +1
+    leds:
+      (leds): 00aa00
+  - time: +1
+    leds:
+      (leds): lime
+  - time: +1
+    leds:
+      (leds): 00aa00
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_red_flash:
+  - time: 0
+    leds:
+      (leds): 660000
+  - time: +1
+    leds:
+      (leds): 990000
+  - time: +1
+    leds:
+      (leds): red
+  - time: +1
+    leds:
+      (leds): 990000
+  - time: +1
+    leds:
+      (leds): '000000'
+  - time: +1
+  
+  
+  sc_purple_flash:
+  - time: 0
+    leds:
+      (leds): 660066
+  - time: +2
+    leds:
+      (leds): 990099
+  - time: +2
+    leds:
+      (leds): magenta
+  - time: +2
+    leds:
+      (leds): 990099
+  - time: +2
+  
+  
+  sc_blue_solid:
+  - time: 0
+    leds:
+      (leds): blue
+
+
+  sc_green_solid:
+  - time: 0
+    leds:
+      (leds): lime
+
+
+  sc_purple_solid:
+  - time: 0
+    leds:
+      (leds): magenta
+
+      
+  sc_white_solid:
+  - time: 0
+    leds:
+      (leds): fff0ff
+
+
+  sc_char_jack:
+  - time: 0
+    leds:
+      (leds): 333333
+  - time: +2
+    leds:
+      (leds): 999999
+  - time: +2
+    leds:
+      (leds): white
+  - time: +2
+    leds:
+      (leds): 999999
+  - time: +2
+  
+  
+  sc_char_what:
+  - time: 0
+    leds:
+      (leds): 333333
+  - time: +2
+    leds:
+      (leds): 999999
+  - time: +2
+    leds:
+      (leds): white
+  - time: +2
+    leds:
+      (leds): 999999
+
+  - time: +2
+  sc_char_where:
+  - time: 0
+    leds:
+      (leds): 330033
+  - time: +2
+    leds:
+      (leds): 990099
+  - time: +2
+    leds:
+      (leds): magenta
+  - time: +2
+    leds:
+      (leds): 990099
+
+  - time: +2
+  sc_char_science:
+  - time: 0
+    leds:
+      (leds): '003300'
+  - time: +2
+    leds:
+      (leds): 009900
+  - time: +2
+    leds:
+      (leds): lime
+  - time: +2
+    leds:
+      (leds): 009900
+  - time: +2
+  
+  
+  sc_char_sally:
+  - time: 0
+    leds:
+      (leds): 330000
+  - time: +2
+    leds:
+      (leds): 990000
+  - time: +2
+    leds:
+      (leds): red
+  - time: +2
+    leds:
+      (leds): 990000
+  - time: +2
+  
+  
+  sc_char_mayor:
+  - time: 0
+    leds:
+      (leds): '000033'
+  - time: +2
+    leds:
+      (leds): 000099
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+    leds:
+      (leds): 000099
+  - time: +2
+  
+  
+  sc_char_doctor:
+  - time: 0
+    leds:
+      (leds): '003333'
+  - time: +2
+    leds:
+      (leds): 009999
+  - time: +2
+    leds:
+      (leds): cyan
+  - time: +2
+    leds:
+      (leds): 009999
+  - time: +2
+  
+  
+  sc_char_zero:
+  - time: 0
+    leds:
+      (leds): 331100
+  - time: +2
+    leds:
+      (leds): 995500
+  - time: +2
+    leds:
+      (leds): ff8800
+  - time: +2
+    leds:
+      (leds): 995500
+  - time: +2
+  
+  
+  sc_char_lsb:
+  - time: 0
+    leds:
+      (leds): 303300
+  - time: +2
+    leds:
+      (leds): 909900
+  - time: +2
+    leds:
+      (leds): f0ff00
+  - time: +2
+    leds:
+      (leds): 909900
+  - time: +2
+  
+  
+  sc_char_wizard:
+  - time: 0
+    leds:
+      (leds): red
+  - time: +2
+    leds:
+      (leds): lime
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+  
+  
+  sc_char_wizard_solid:
+  - time: 0
+    leds:
+      (leds): white
+
+
+  sc_char_jack_solid:
+  - time: 0
+    leds:
+      (leds): white
+
+
+  sc_char_what_solid:
+  - time: 0
+    leds:
+      (leds): white
+
+
+  sc_char_where_solid:
+  - time: 0
+    leds:
+      (leds): magenta
+
+
+  sc_char_science_solid:
+  - time: 0
+    leds:
+      (leds): lime
+
+
+  sc_char_sally_solid:
+  - time: 0
+    leds:
+      (leds): red
+
+
+  sc_char_mayor_solid:
+  - time: 0
+    leds:
+      (leds): blue
+
+
+  sc_char_doctor_solid:
+  - time: 0
+    leds:
+      (leds): cyan
+
+
+  sc_doc_blue_flash:
+  - time: 0
+    leds:
+      (leds): '000044'
+  - time: +1
+    leds:
+      (leds): 000099
+  - time: +1
+    leds:
+      (leds): blue
+  - time: +1
+    leds:
+      (leds): 000099
+  - time: +1
+  
+  
+  sc_char_zero_solid:
+  - time: 0
+    leds:
+      (leds): ff8800
+      
+      
+  sc_char_zero_solid_what_solid:
+  - time: 0
+    leds:
+      (leds): white
+  - time: '+200'
+    leds:
+      (leds): ff8800
+  - time: '+200'
+  
+  
+  sc_char_zero_solid_what_flash:
+  - time: 0
+    leds:
+      (leds): ff8800
+  - time: +2
+    leds:
+      (leds): white
+  - time: +2
+  
+  
+  sc_char_what_solid_zero_flash:
+  - time: 0
+    leds:
+      (leds): white
+  - time: +2
+    leds:
+      (leds): ff8800
+  - time: +2
+  
+  
+  sc_char_lsb_solid:
+  - time: 0
+    leds:
+      (leds): f0ff00
+
+
+  sc_pop_1:
+  - time: 0
+    leds:
+      (leds): 000000-f200
+  - time: +4
+    leds:
+      (leds): 333333-f200
+  - time: +4
+  
+  
+  sc_pop_2:
+  - time: 0
+    leds:
+      (leds): 000000-f200
+  - time: +4
+    leds:
+      (leds): 2a0000-f200
+  - time: +4
+  
+  
+  sc_pop_3:
+  - time: 0
+    leds:
+      (leds): 000000-f200
+  - time: +4
+    leds:
+      (leds): 002a00-f200
+  - time: +4
+  
+  #used for st pats
+  sc_pop_yellow:
+  - time: 0
+    leds:
+      (leds): 000000-f200
+  - time: +2
+    leds:
+      (leds): 2a3a00-f200
+  - time: +4
+
+  #used for sally
+  sc_pop_purple:
+  - time: 0
+    leds:
+      (leds): 000000-f200
+  - time: +2
+    leds:
+      (leds): 003a2a-f200
+  - time: +4
+  
+  
+  
+  sc_redwhiteblue:
+  - time: 0
+    leds:
+      (leds): red
+  - time: +2
+    leds:
+      (leds): f0f0f0
+  - time: +2
+    leds:
+      (leds): blue
+  - time: +2
+    leds:
+      (leds): f0f0f0
+  - time: +2
+  
+  
+  sc_greenyellow_flash:
+  - time: 0
+    leds:
+      (leds): lime
+  - time: +1
+    leds:
+      (leds): 33ff00
+  - time: +1
+    leds:
+      (leds): 77ff00
+  - time: +1
+    leds:
+      (leds): bbff00
+  - time: +1
+    leds:
+      (leds): yellow
+  - time: +1
+  
+  
+  sc_lsb_unlit:
+  - time: 0
+    leds:
+      (leds): cyan
+  - time: '+1'
+    leds:
+      (leds): 00aaff
+  - time: '+1'
+    leds:
+      (leds): 0088ff
+  - time: '+1'
+    leds:
+      (leds): 0044ff
+  - time: '+1'
+    leds:
+      (leds): blue
+  - time: '+5'
+    leds:
+      (leds): '000000'
+  - time: '+5'
+  
+  
+  sc_lsb_lit:
+  - time: 0
+    leds:
+      (leds): yellow
+  - time: '+2'
+    leds:
+      (leds): aaaa00
+  - time: '+2'
+    leds:
+      (leds): 888800
+  - time: '+2'
+    leds:
+      (leds): 444400
+
+  - time: '+2'
+
+  
+  sc_pink:
+  - time: 0
+    leds:
+      (leds): 662010
+  - time: +2
+  

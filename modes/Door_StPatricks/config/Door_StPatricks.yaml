@@ -1,0 +1,312 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Door_StPatricks 
+
+mode:
+  start_events: door_mode_2_start
+  stop_events: door_mode_2_stop
+  code: Door_StPatricks.Door_StPatricks
+  priority: 950
+
+  
+sound_player:
+  holiday_stpatricks_music_start:
+    loop_Snapper2:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  holiday_stpatricks_music_stop:
+    loop_Snapper2:
+      action: stop
+      
+  mode_door_stpatricks_stopping:
+    loop_Snapper2:
+      action: stop
+
+  stpatricks_ramp_scored_left: jackpot
+  stpatricks_ramp_scored_right: jackpot
+  rainbow_bonus: 'yes'
+  stpatricks_ramp_value_increased: 'yes'
+    
+
+widget_player:
+  show_stpatricks_msg_1: 
+    stpatricks_ramp_value:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_stpatricks_msg_2: 
+    stpatricks_increase_jackpot:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_stpatricks_msg_3: 
+    stpatricks_shoot_ramp:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_stpatricks_msg_1_n: 
+    stpatricks_ramp_value_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_stpatricks_msg_2_n: 
+    stpatricks_increase_jackpot_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_stpatricks_msg_3_n: 
+    stpatricks_shoot_ramp_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+      
+  show_stpatricks_slide_wide:
+    widget_stpatricks_wide: 
+      slide: leftframe     
+      
+  show_stpatricks_slide_narrow:   
+    widget_stpatricks_narrow:  
+      slide: leftframe     
+
+  show_stpatricks_slide_full:
+    widget_stpatricks_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+
+  remove_stpatricks_slide_wide:
+    widget_stpatricks_wide:     
+      action: remove
+      slide: leftframe     
+      
+  remove_stpatricks_slide_narrow:
+    widget_stpatricks_narrow:  
+      action: remove     
+      slide: leftframe     
+
+  remove_stpatricks_slide_full:
+    widget_stpatricks_full:  
+      action: remove     
+      slide: leftframe     
+      
+  remove_stpatricks_messages:      
+    stpatricks_ramp_value:
+      action: remove    
+      slide: leftframe           
+    stpatricks_increase_jackpot:
+      action: remove    
+      slide: leftframe           
+    stpatricks_shoot_ramp:
+      action: remove    
+      slide: leftframe           
+    stpatricks_ramp_value_n:
+      action: remove    
+      slide: leftframe           
+    stpatricks_increase_jackpot_n:
+      action: remove    
+      slide: leftframe           
+    stpatricks_shoot_ramp_n:
+      action: remove
+      slide: leftframe           
+      
+
+      
+
+widgets:
+  stpatricks_ramp_value:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Jackpot at (door_stpatricks_ramp_value)
+        number_grouping: true
+        y: 90
+        z: -110
+  stpatricks_increase_jackpot:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Pops increase Jackpot
+        y: 90
+        z: -110
+  stpatricks_shoot_ramp:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Shoot Left Ramp to collect
+        y: 90
+        z: -110
+
+  stpatricks_ramp_value_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: JACKPOT AT 
+        x: 52
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: (door_stpatricks_ramp_value)
+        number_grouping: true                
+        x: 52
+        y: 90
+        z: -110
+  
+  stpatricks_increase_jackpot_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: POP BUMPERS
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: INCREASE JACKPOT
+        x: 52        
+        y: 90
+        z: -110
+        
+  stpatricks_shoot_ramp_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT LEFT RAMP
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: TO COLLECT
+        x: 52        
+        y: 90
+        z: -110
+
+
+        
+  widget_stpatricks_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: ST PATRICKS
+        color: 80ff80
+        anchor_y: top
+        y: top
+        x: 52
+        z: -101
+      - type: text
+        text: (door_stpatricks_ramp_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: ffff80
+        x: 52        
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_stpatricks_ramp_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 000000
+        x: 53
+        y: 70
+        z: -101        
+      - type: image
+        image: stpatricks_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100 
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_stpatricks_timeleft)
+        y: 8
+        x: 95
+        z: -3000
+
+        
+
+  widget_stpatricks_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: ST PATRICKS
+        color: ffff80
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: text
+        text: (door_stpatricks_ramp_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: ffff80
+        x: 105
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_stpatricks_ramp_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 000000
+        x: 106
+        y: 70
+        z: -101        
+      - type: image
+        image: stpatricks_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_stpatricks_timeleft)
+        y: 8
+        x: 105
+        z: -3000        
+        
+
+  widget_stpatricks_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: st patricks INTRO
+        color: ffff80
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -101
+      - type: text
+        text: 5 second vid
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -101       
+      - type: image
+        image: stpatricks_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        
+

@@ -1,0 +1,97 @@
+#config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+assets:
+  videos:
+    default:
+      #height: 400
+      #width: 300
+      load: preload
+
+videos:
+  oogiebats:
+    file: oogiebats.mpg
+  clapping:
+    file: clapping.mpg
+  lsbfingers:
+    file: lsbfingers.mpg
+  mayorfall:
+    file: mayorfall.mpg
+  outfit:
+    file: outfit.mpg
+  halloweendoor:
+    file: halloweendoor.mpg
+    
+  fireworks_1:
+    file: fireworks_1.mp4    
+  fireworks_2:
+    file: fireworks_2.mp4    
+  fireworks_3:
+    file: fireworks_3.mp4    
+  fireworks_4:
+    file: fireworks_4.mp4    
+  fireworks_5:
+    file: fireworks_5.mp4    
+  fireworks_6:
+    file: fireworks_6.mp4    
+    
+  lights:
+    file: lights.mp4
+  jackoogie:
+    file: jackoogie.mp4
+  jacksurprise:
+    file: jacksurprise.mp4
+    
+  zero:
+    file: zero.mp4
+    
+  extraballmovie:
+    file: extraballmovie.mp4
+  welcome:
+    file: welcome.mp4
+    
+  snowspiral:
+    file: snowspiral.mp4
+
+  gift_duck1:
+    file: gift_duck1.mp4
+  gift_duck2:
+    file: gift_duck2.mp4
+  gift_ghosts:
+    file: gift_ghosts.mp4
+  gift_witches:
+    file: gift_witches.mp4
+  gift_smashcar:
+    file: gift_smashcar.mp4
+    
+    
+  scientific_method:
+    file: scientific_method.mp4
+    
+  exp_bag:
+    file: exp_bag.mp4
+  exp_bear:
+    file: exp_bear.mp4
+  exp_cane:
+    file: exp_cane.mp4
+  exp_holly:
+    file: exp_holly.mp4
+  exp_ornament:
+    file: exp_ornament.mp4
+  exp_web:
+    file: exp_web.mp4
+    
+  dice_roll:
+    file: dice_roll.mp4
+    
+  jack_roar:
+    file: jack_roar.mp4
+    
+  oogie_dance:
+    file: oogie_dance.mp4
+    
+    
+  
+    
+
+    

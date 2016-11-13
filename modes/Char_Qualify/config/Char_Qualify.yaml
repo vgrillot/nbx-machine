@@ -1,0 +1,749 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Qualify
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ended
+  code: Char_Qualify.Char_Qualify
+  priority: 1600
+  stop_priority: 5
+
+
+
+event_player:
+    lock_rect_lsbp_unlit_hit: char_lock_hit
+    shock_rect_lsbp_unlit_hit: char_shock_hit
+    barrel_rect_lsbp_unlit_hit: char_barrel_hit
+  
+    
+widget_player:
+
+#todo - move to lsb
+  char_lsb_hide_slide:
+    slide_lsb:
+      action: remove
+      
+  char_show_timer: 
+    widget_char_timer:
+      slide: charframe        
+
+  char_hide_timer: 
+    widget_char_timer:
+      action: remove
+      
+  char_remove_all:
+    widget_b_doc:
+      action: remove
+    widget_b_zero:
+      action: remove
+    widget_b_jack:
+      action: remove
+    widget_b_mayor:
+      action: remove
+    widget_b_sally:
+      action: remove
+    widget_c_doc:
+      action: remove
+    widget_c_zero:
+      action: remove
+    widget_c_jack:
+      action: remove
+    widget_c_mayor:
+      action: remove
+    widget_c_sally:
+      action: remove
+    widget_q_doc:
+      action: remove
+    widget_q_zero:
+      action: remove
+    widget_q_jack:
+      action: remove
+    widget_q_mayor:
+      action: remove
+    widget_q_sally:
+      action: remove
+    widget_r_jack2:
+      action: remove
+    widget_r_doc:
+      action: remove
+    widget_r_zero:
+      action: remove
+    widget_r_jack:
+      action: remove
+    widget_r_mayor:
+      action: remove
+    widget_r_sally:
+      action: remove
+    widget_q_lsb:  
+      action: remove    
+    widget_b_lsb:  
+      action: remove    
+    widget_c_lsb:  
+      action: remove    
+    widget_r_lsb:  
+      action: remove    
+    widget_q_lock:  
+      action: remove    
+    widget_q_shock: 
+      action: remove
+    widget_q_barrel:    
+      action: remove    
+    widget_b_lock:    
+      action: remove
+    widget_b_shock:
+      action: remove
+    widget_b_barrel:
+      action: remove
+    widget_c_lock:    
+      action: remove
+    widget_c_shock:
+      action: remove
+    widget_c_barrel:
+      action: remove
+    widget_r_lock:    
+      action: remove
+    widget_r_shock:
+      action: remove
+    widget_r_barrel:
+      action: remove
+      
+     
+     
+  char_doctor_b_add: 
+    widget_b_doc:
+      slide: charframe  
+  char_zero_b_add: 
+    widget_b_zero:
+      slide: charframe    
+  char_jack_b_add: 
+    widget_b_jack:
+      slide: charframe    
+  char_mayor_b_add: 
+    widget_b_mayor:
+      slide: charframe    
+  char_sally_b_add: 
+    widget_b_sally:
+      slide: charframe
+  char_lsb_b_add: 
+    widget_b_lsb:
+      slide: charframe
+      
+  char_doctor_b_remove: 
+    widget_b_doc:
+      action: remove
+  char_zero_b_remove: 
+    widget_b_zero:
+      action: remove
+  char_jack_b_remove: 
+    widget_b_jack:
+      action: remove
+  char_mayor_b_remove: 
+    widget_b_mayor:
+      action: remove
+  char_sally_b_remove: 
+    widget_b_sally:
+      action: remove
+  char_lsb_b_remove: 
+    widget_b_lsb:
+      action: remove
+
+  char_doctor_c_add: 
+    widget_c_doc:
+      slide: charframe  
+  char_zero_c_add: 
+    widget_c_zero:
+      slide: charframe    
+  char_jack_c_add: 
+    widget_c_jack:
+      slide: charframe    
+  char_mayor_c_add: 
+    widget_c_mayor:
+      slide: charframe    
+  char_sally_c_add: 
+    widget_c_sally:
+      slide: charframe    
+  char_lsb_c_add: 
+    widget_c_lsb:
+      slide: charframe    
+
+  char_doctor_c_remove: 
+    widget_c_doc:
+      action: remove
+  char_zero_c_remove: 
+    widget_c_zero:
+      action: remove
+  char_jack_c_remove: 
+    widget_c_jack:
+      action: remove
+  char_mayor_c_remove: 
+    widget_c_mayor:
+      action: remove
+  char_sally_c_remove: 
+    widget_c_sally:
+      action: remove
+  char_lsb_c_remove: 
+    widget_c_lsb:
+      action: remove
+      
+  char_doctor_r_add: 
+    widget_r_doc:
+      slide: charframe    
+  char_zero_r_add:
+    widget_r_zero:
+      slide: charframe    
+  char_jack_r_add:
+    widget_r_jack:
+      slide: charframe    
+  char_jack2_r_add:
+    widget_r_jack2:
+      slide: charframe    
+  char_mayor_r_add:
+    widget_r_mayor:
+      slide: charframe    
+  char_sally_r_add:
+    widget_r_sally:
+      slide: charframe    
+  char_lsb_r_add:
+    widget_r_lsb:
+      slide: charframe    
+      
+  char_doctor_r_remove:
+    widget_r_doc:
+      action: remove
+  char_zero_r_remove:
+    widget_r_zero:
+      action: remove
+  char_jack_r_remove:
+    widget_r_jack:
+      action: remove
+  char_jack2_r_remove:
+    widget_r_jack2:
+      action: remove
+  char_mayor_r_remove:
+    widget_r_mayor:
+      action: remove
+  char_sally_r_remove:
+    widget_r_sally:
+      action: remove
+  char_lsb_r_remove:
+    widget_r_lsb:
+      action: remove
+
+  char_doctor_q_add:
+    widget_q_doc:
+      slide: charframe    
+  char_zero_q_add:
+    widget_q_zero:
+      slide: charframe    
+  char_jack_q_add:
+    widget_q_jack:
+      slide: charframe    
+  char_mayor_q_add:
+    widget_q_mayor:
+      slide: charframe    
+  char_sally_q_add:
+    widget_q_sally:
+      slide: charframe    
+  char_lsb_q_add:
+    widget_q_lsb:
+      slide: charframe    
+
+  char_doctor_q_remove:
+    widget_q_doc:
+      action: remove
+  char_zero_q_remove:
+    widget_q_zero:
+      action: remove
+  char_jack_q_remove:
+    widget_q_jack:
+      action: remove
+  char_mayor_q_remove:
+    widget_q_mayor:
+      action: remove
+  char_sally_q_remove:
+    widget_q_sally:
+      action: remove
+  char_lsb_q_remove:
+    widget_q_lsb:
+      action: remove
+    
+  char_lock_b_add:
+    widget_b_lock:    
+      slide: charframe      
+  char_shock_b_add:
+    widget_b_shock:    
+      slide: charframe      
+  char_barrel_b_add:
+    widget_b_barrel:    
+      slide: charframe      
+    
+  char_lock_q_add:
+    widget_q_lock:  
+      slide: charframe      
+  char_shock_q_add:
+    widget_q_shock:    
+      slide: charframe      
+  char_barrel_q_add:
+    widget_q_barrel:    
+      slide: charframe      
+       
+  char_lock_b_remove:
+    widget_b_lock:
+      action: remove
+  char_shock_b_remove:
+    widget_b_shock:
+      action: remove
+  char_barrel_b_remove:
+    widget_b_barrel:
+      action: remove
+  
+  char_lock_q_remove:
+    widget_q_lock:
+      action: remove
+  char_shock_q_remove:
+    widget_q_shock:
+      action: remove
+  char_barrel_q_remove:
+    widget_q_barrel:
+      action: remove
+      
+  char_lock_hit: 
+    widget_h_lock:
+      slide: charframe    
+  char_shock_hit: 
+    widget_h_shock:
+      slide: charframe    
+  char_barrel_hit: 
+    widget_h_barrel:
+      slide: charframe    
+
+  char_is_completed: 
+    widget_char_complete:
+      action: add
+  char_is_ended: 
+    widget_char_ended:
+      action: add
+      
+
+widgets:  
+  widget_char_timer:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (char_shared_timeleft)
+        color: cyan
+        y: 44
+        z: -501
+        x: 190
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (char_shared_timeleft)
+        y: 43
+        z: -500  
+        x: 191
+
+  widget_b_mayor:
+     - type: image
+       image: mayor
+       opacity: 0.75
+       x: 17
+       y: 43
+       z: -201
+  widget_b_zero:
+     - type: image
+       image: zero
+       opacity: 0.75       
+       x: 48
+       y: 43
+       z: -201
+  widget_b_jack:
+     - type: image
+       image: jack
+       opacity: 0.75       
+       x: 80
+       y: 43
+       z: -201
+  widget_b_sally:
+     - type: image
+       image: sally
+       opacity: 0.75       
+       x: 112
+       y: 43
+       z: -201
+  widget_b_doc:
+     - type: image
+       image: doc
+       opacity: 0.75       
+       x: 144
+       y: 43
+       z: -201
+  widget_b_lsb:
+     - type: image
+       image: bathtub48
+       opacity: 0.75       
+       x: 184
+       y: 43
+       z: -201
+
+  widget_c_mayor:
+     - type: image
+       image: yellow_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: mayor
+       x: 17
+       y: 43
+       z: -202
+  widget_c_zero:
+     - type: image
+       image: yellow_halo
+       x: 48
+       y: 43
+       z: -201
+     - type: image
+       image: zero
+       x: 48
+       y: 43
+       z: -202
+  widget_c_jack:
+     - type: image
+       image: yellow_halo
+       x: 80
+       y: 43
+       z: -201
+     - type: image
+       image: jack
+       x: 80
+       y: 43
+       z: -202
+  widget_c_sally:
+     - type: image
+       image: yellow_halo
+       x: 112
+       y: 43
+       z: -201  
+     - type: image
+       image: sally
+       x: 112
+       y: 43
+       z: -202
+  widget_c_doc:
+     - type: image
+       image: yellow_halo
+       x: 144
+       y: 43
+       z: -201  
+     - type: image
+       image: doc
+       x: 144
+       y: 43
+       z: -202
+  widget_c_lsb:
+     - type: image
+       image: yellow_halo_tub
+       x: 184
+       y: 43
+       z: -201  
+     - type: image
+       image: bathtub48
+       x: 184
+       y: 43
+       z: -202
+
+  widget_q_mayor:
+     - type: image
+       image: green_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: mayor
+       x: 17
+       y: 43
+       z: -202
+  widget_q_zero:
+     - type: image
+       image: green_halo
+       x: 48
+       y: 43
+       z: -201
+     - type: image
+       image: zero
+       x: 48
+       y: 43
+       z: -202
+  widget_q_jack:
+     - type: image
+       image: green_halo
+       x: 80
+       y: 43
+       z: -201
+     - type: image
+       image: jack
+       x: 80
+       y: 43
+       z: -202
+  widget_q_sally:
+     - type: image
+       image: green_halo
+       x: 112
+       y: 43
+       z: -201
+     - type: image
+       image: sally
+       x: 112
+       y: 43
+       z: -202
+  widget_q_doc:
+     - type: image
+       image: green_halo
+       x: 144
+       y: 43
+       z: -201
+     - type: image
+       image: doc
+       x: 144
+       y: 43
+       z: -202
+  widget_q_lsb:
+     - type: image
+       image: green_halo_tub
+       x: 184
+       y: 43
+       z: -201  
+     - type: image
+       image: bathtub48
+       x: 184
+       y: 43
+       z: -202
+       
+#running - off to the left side
+  widget_r_mayor:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: mayor
+       x: 17
+       y: 43
+       z: -202
+  widget_r_zero:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: zero
+       x: 17
+       y: 43
+       z: -202
+  widget_r_jack:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: jack
+       x: 17
+       y: 43
+       z: -202
+  widget_r_jack2:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: jack2
+       x: 17
+       y: 43
+       z: -202
+  widget_r_sally:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: sally
+       x: 17
+       y: 43
+       z: -202
+  widget_r_doc:
+     - type: image
+       image: blue_halo
+       x: 17
+       y: 43
+       z: -201
+     - type: image
+       image: doc
+       x: 17
+       y: 43
+       z: -202
+  widget_r_lsb:
+     - type: image
+       image: blue_halo_tub
+       x: 27
+       y: 43
+       z: -201
+     - type: image
+       image: bathtub48
+       x: 27
+       y: 43
+       z: -202
+     - type: image
+       image: bathtub_lock48
+       x: 27
+       y: 58
+       z: -203
+     - type: image
+       image: bathtub_shock48
+       x: 27
+       y: 58
+       z: -203
+     - type: image
+       image: bathtub_barrel48
+       x: 27
+       y: 58
+       z: -203
+
+      
+  widget_q_lock:
+     - type: image
+       image: bathtub_lock48
+       x: 184
+       y: 58
+       z: -203
+  widget_q_shock:
+     - type: image
+       image: bathtub_shock48
+       x: 184
+       y: 58
+       z: -203
+  widget_q_barrel:
+     - type: image
+       image: bathtub_barrel48
+       x: 184
+       y: 58
+       z: -203
+
+  widget_b_lock:
+     - type: image
+       image: bathtub_lock48
+       opacity: 0.75       
+       x: 184
+       y: 58
+       z: -203
+  widget_b_shock:
+     - type: image
+       image: bathtub_shock48
+       opacity: 0.75       
+       x: 184
+       y: 58
+       z: -203
+  widget_b_barrel:
+     - type: image
+       image: bathtub_barrel48
+       opacity: 0.75       
+       x: 184
+       y: 58
+       z: -203
+       
+       
+  widget_h_lock:
+     - type: image
+       image: lock2
+       x: -32
+       y: 80
+       z: -2000
+       animations:
+         add_to_slide:
+           - property: x
+             value: -2
+             duration: 250ms
+             timing: after_previous
+           - property: opacity
+             value: 1
+             duration: 1500ms
+             timing: after_previous
+           - property: x
+             value: -32
+             duration: 250ms
+             timing: after_previous
+       expire: 2s  
+  widget_h_shock:
+     - type: image
+       image: shock2
+       y: 90
+       x: 210
+       z: -2000
+       animations:
+         add_to_slide:
+           - property: x
+             value: 168
+             duration: 250ms
+             timing: after_previous
+           - property: opacity
+             value: 1
+             duration: 1500ms
+             timing: after_previous
+           - property: x
+             value: 210
+             duration: 250ms
+             timing: after_previous
+       expire: 2s         
+  widget_h_barrel:
+     - type: image
+       image: barrel2
+       y: 128
+       x: 105
+       z: -2000
+       animations:
+         add_to_slide:
+           - property: y
+             value: 98
+             duration: 250ms
+             timing: after_previous
+           - property: opacity
+             value: 1
+             duration: 1500ms
+             timing: after_previous
+           - property: y
+             value: 128
+             duration: 250ms
+             timing: after_previous
+       expire: 2s 
+
+
+
+
+  widget_char_complete:
+     - type: text
+       style: tall_title
+       font_size: 24
+       y: 40
+       text: (char_played) Mode Complete
+       z: -2001
+       expire: 2s          
+
+    
+  widget_char_ended:
+     - type: text
+       style: tall_title
+       font_size: 24
+       y: 40        
+       text: (char_played) Mode Ended
+       z: -2001
+       expire: 2s                 
+    
+    

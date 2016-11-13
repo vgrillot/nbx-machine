@@ -1,0 +1,143 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#EOB_Bonus
+
+mode:
+  start_events: ball_ending, collect_bonus
+  code: EOB_Bonus.EOB_Bonus
+  priority: 800
+  use_wait_queue: true
+
+
+random_event_player:
+  bonus_start:
+  - bonus_start_1
+  - bonus_start_2
+  - bonus_start_3
+  - bonus_start_4
+
+
+
+
+sound_player:
+  bonus_start_ingame: our_first_award_goes_to
+  bonus_start_1: curiosity_killed_the_cat
+  bonus_start_2: there_goes_christmas
+  bonus_start_3: i_knew_this_christmas
+  bonus_start_4: its_a_phase_my_dear
+  bonus_survival: pacman_0029  
+  bonus_stitches: pacman_0029
+  bonus_toys: pacman_0029
+  bonus_multiplier: pacman_0029
+  bonus_total: pacman_0029
+
+
+
+widget_player:
+  bonus_start_ingame:
+    EOB_slide_61:
+      slide: leftframe        
+  bonus_start: 
+    EOB_slide_61:
+      slide: leftframe        
+  bonus_survival: 
+    EOB_slide_62:
+      slide: leftframe        
+  bonus_stitches: 
+    EOB_slide_63:
+      slide: leftframe        
+  bonus_toys: 
+    EOB_slide_64:
+      slide: leftframe        
+  bonus_multiplier: 
+    EOB_slide_66:
+      slide: leftframe        
+  bonus_total: 
+    EOB_slide_68:
+      slide: leftframe        
+
+  clear_bonus_screen: 
+    EOB_slide_61:
+      action: remove
+    EOB_slide_62:
+      action: remove
+    EOB_slide_63:
+      action: remove
+    EOB_slide_64:
+      action: remove    
+    EOB_slide_66:
+      action: remove    
+    EOB_slide_68:
+      action: remove    
+  
+
+  
+widgets:
+  EOB_slide_61:
+  - type: text
+    style: tall_title
+    font_size: 26
+    text: BONUS
+    y: 115
+    x: 105
+    z: -1301
+  - type: image
+    image: jack_stage_podium
+    anchor_y: top
+    anchor_x: left
+    y: top
+    x: 0        
+    z: -1300        
+
+
+  EOB_slide_62:
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: '(base_bonus)'
+    y: 95    
+    x: 75
+    z: -1301
+
+
+  EOB_slide_63:
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: 'STITCHES: (sally_spins) x 100'
+    y: 80    
+    x: 75
+    z: -1301
+    
+    
+  EOB_slide_64:
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: 'TOYS: (toys_collected) x 250'
+    y: 65    
+    x: 75
+    z: -1301
+
+
+  EOB_slide_66:
+  - type: text
+    style: tall_title
+    font_size: 18
+    text:  X (bonus_multiplier)
+    y: 50  
+    x: 75
+    z: -1301
+
+
+  EOB_slide_68:
+  - type: text
+    style: tall_title
+    font_size: 18
+    text: 'TOTAL: (total_bonus_points)'
+    number_grouping: true    
+    y: 35    
+    x: 75
+    z: -1301
+    

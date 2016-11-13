@@ -1,0 +1,72 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#SANTA Targets (rollovers)
+#When you light all 5 SANATA lights you get a base score + bm*toys*200 
+#Awards a toy pop upgrade, Lights mystery shot once per ball
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Santa_Targets.Santa_Targets
+  priority: 900
+
+
+random_event_player:
+  say_santa_letter_unlit: 
+  - say_ho1
+  - say_ho2
+  - say_ho3
+
+  
+sound_player:
+  rollover_lanes_santa_lights_lit_complete: santa_claus
+  say_ho1: ho1
+  say_ho2: ho2
+  say_ho3: ho3    
+  say_santa_letter_already_lit: atom_born  
+  
+
+shot_groups:
+  rollover_lanes:
+    profile: santa_lights
+    rotate_left_events: sw_lower_left_flipper
+    rotate_right_events: sw_lower_right_flipper
+    reset_events:
+      rollover_lanes_santa_lights_lit_complete: 1s
+    enable_events: ball_started
+    disable_events: ball_ending
+
+
+   
+widget_player:
+  santas_collected_update: 
+    w_santa_collected:
+      widget_settings:    
+        expire: 2s
+      slide: leftframe        
+    
+widgets:
+  w_santa_collected:
+  - type: text
+    style: nightmare_l
+    text: 'SANTA : (player|santas_collected)'
+    font_size: 28
+    color: ffff00
+    y: 68
+    z: -2001
+  - type: text
+    text: (santa_points)
+    style: tall_title
+    font_size: 22
+    y: 40
+    x: 130
+    z: -2001
+    number_grouping: true
+  - type: image
+    image: santa_scroll
+    anchor_y: top
+    anchor_x: left
+    y: top
+    x: 0        
+    z: -2000        

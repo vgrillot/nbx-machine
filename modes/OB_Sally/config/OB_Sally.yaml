@@ -1,0 +1,242 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Oogie mode 3
+
+mode:
+  start_events: ob_mode_3_start
+  stop_events: ob_mode_3_stop
+  code: OB_Sally.OB_Sally
+  priority: 800
+
+  
+sound_player:
+  OB_Sally_music_start:
+    loop_This_is_halloween_finale:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  OB_Sally_music_stop:
+    loop_This_is_halloween_finale:
+      action: stop
+
+  mode_OB_Sally_stopping:
+    loop_This_is_halloween_finale:
+      action: stop
+
+
+
+widget_player:
+  show_OB_Sally_slide_wide:
+    widget_OBSALLY_wide: 
+      slide: leftframe     
+      
+  show_OB_Sally_slide_narrow:   
+    widget_OBSALLY_narrow:  
+      slide: leftframe
+            
+  show_OB_Sally_slide_intro:
+    widget_OBSALLY_full:   
+      slide: leftframe  
+      widget_settings:    
+        expire: 5s      
+      
+  show_OB_Sally_msg_1:         
+    widget_OB_Sally_msg_1:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Sally_msg_1_n:         
+    widget_OB_Sally_msg_1_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Sally_msg_2:         
+    widget_OB_Sally_msg_2:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Sally_msg_2_n:         
+    widget_OB_Sally_msg_2_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+      
+  remove_OB_Sally_slide_wide:
+    widget_OBSALLY_wide: 
+      action: remove
+      slide: leftframe        
+    
+  remove_OB_Sally_slide_narrow:      
+    widget_OBSALLY_narrow:    
+      action: remove
+      slide: leftframe        
+
+  remove_OB_Sally_slide_intro:
+    widget_OBSALLY_full:   
+      slide: leftframe  
+      action: remove
+
+  remove_OB_Sally_messages:
+    widget_OB_Sally_msg_1:    
+      action: remove    
+      slide: leftframe        
+    widget_OB_Sally_msg_1_n:        
+      action: remove    
+      slide: leftframe        
+    widget_OB_Sally_msg_2:    
+      action: remove    
+      slide: leftframe        
+    widget_OB_Sally_msg_2_n:        
+      action: remove    
+      slide: leftframe        
+        
+        
+        
+        
+widgets:      
+  widget_OB_Sally_msg_1:
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: Distract OOGIE!
+        y: 90
+        z: -110        
+
+  widget_OB_Sally_msg_2:
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: SOUP and SPINNER
+        y: 90
+        z: -110        
+        
+  widget_OB_Sally_msg_1_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Distract OOGIE
+        y: 90
+        x: 157
+        z: -110        
+
+  widget_OB_Sally_msg_2_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SOUP and SPINNER
+        y: 95
+        x: 157
+        z: -110        
+
+
+  widget_OBSALLY_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SALLY vs OOGIE
+        color: ff33ff
+        anchor_y: top
+        y: 128
+        x: 157
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SALLY vs OOGIE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 158
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Sally_timeleft)
+        y: 8
+        x: 115        
+        z: -3000
+      - type: image
+        image: OB_Sally_backdrop_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 105
+        z: -100        
+
+  widget_OBSALLY_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SALLY vs OOGIE
+        color: ff33ff
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SALLY vs OOGIE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Sally_timeleft)
+        y: 8
+        x: 105        
+        z: -3000
+      - type: image
+        image: OB_Sally_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+               
+  widget_OBSALLY_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: OB VS SALLY INTRO
+        color: purple
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: OB VS SALLY INTRO
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: 5 second vid
+        color: white
+        anchor_y: top
+        y: 100
+        x: 105        
+        z: -101
+      - type: image
+        image: OB_Sally_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100   
+
+

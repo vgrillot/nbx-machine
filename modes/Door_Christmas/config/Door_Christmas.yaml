@@ -1,0 +1,575 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Holiday Door - Christmas
+#Naughty or Nice? 
+#2-ball mutliball mode 
+
+mode:
+  start_events: door_mode_0_start
+  stop_events: door_mode_0_stop
+  code: Door_Christmas.Door_Christmas
+  priority: 950
+
+  
+sound_player:
+  holiday_christmas_music_start: 
+    loop_TomLoop1:
+      action: play    
+      loops: -1
+      volume: 0.5     
+
+  holiday_christmas_music_stop:
+    loop_TomLoop1:  
+      action: stop  
+      
+  mode_door_christmas_stopping:
+    loop_TomLoop1:
+      action: stop
+      
+      
+  show_christmas_naughty_score_collected: naughty
+  show_christmas_naughty_jackpot_collected: jackpot
+  show_christmas_nice_score_collected: nice1
+  show_christmas_nice_jackpot_collected: jackpot
+  show_christmas_naughty_score_collected_n: naughty
+  show_christmas_naughty_jackpot_collected_n: jackpot
+  show_christmas_nice_score_collected_n: nice1
+  show_christmas_nice_jackpot_collected_n: jackpot
+  
+  santa_now_who_could_that_be: now_who_could_that_be
+
+  
+
+widget_player:
+  show_christmas_msg_1:
+    christmas_naughty_or_nice:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_msg_2:
+    christmas_nice:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_msg_3:
+    christmas_naughty:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_christmas_msg_1_n:
+    christmas_naughty_or_nice_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_msg_2_n:
+    christmas_nice_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_msg_3_n:
+    christmas_naughty_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_christmas_naughty_jackpot_collected:
+    christmas_naughty_jackpot_collected:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_nice_jackpot_collected:
+    christmas_nice_jackpot_collected:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_naughty_score_collected:
+    christmas_naughty_score_collected:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_nice_score_collected:
+    christmas_nice_score_collected:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_christmas_naughty_jackpot_collected_n:
+    christmas_naughty_jackpot_collected_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_nice_jackpot_collected_n:
+    christmas_nice_jackpot_collected_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_naughty_score_collected_n:
+    christmas_naughty_score_collected_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_christmas_nice_score_collected_n:
+    christmas_nice_score_collected_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+      
+  show_christmas_slide_wide:
+    widget_christmas_wide: 
+      slide: leftframe     
+      
+  show_christmas_slide_narrow:   
+    widget_christmas_narrow:  
+      slide: leftframe     
+
+  show_christmas_slide_full:
+    widget_christmas_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+      
+  remove_christmas_slide_wide:
+    widget_christmas_wide:     
+      action: remove
+      slide: leftframe            
+  
+  remove_christmas_slide_narrow:
+    widget_christmas_narrow:  
+      action: remove     
+      slide: leftframe            
+
+  remove_christmas_slide_full:
+    widget_christmas_full: 
+      action: remove     
+      slide: leftframe            
+      
+  remove_christmas_messages:      
+    christmas_naughty_or_nice:
+      action: remove        
+      slide: leftframe           
+    christmas_nice:
+      action: remove       
+      slide: leftframe     
+    christmas_naughty:
+      action: remove        
+      slide: leftframe           
+    christmas_naughty_or_nice_n:
+      action: remove       
+      slide: leftframe           
+    christmas_nice_n:
+      action: remove        
+      slide: leftframe     
+    christmas_naughty_n:
+      action: remove  
+      slide: leftframe     
+    christmas_naughty_jackpot_collected:
+      action: remove        
+      slide: leftframe     
+    christmas_nice_jackpot_collected:
+      action: remove       
+      slide: leftframe     
+    christmas_naughty_score_collected:
+      action: remove
+      slide: leftframe     
+    christmas_nice_score_collected:
+      action: remove       
+      slide: leftframe           
+    christmas_naughty_jackpot_collected_n:
+      action: remove       
+      slide: leftframe           
+    christmas_nice_jackpot_collected_n:
+      action: remove       
+      slide: leftframe           
+    christmas_naughty_score_collected_n:
+      action: remove       
+      slide: leftframe           
+    christmas_nice_score_collected_n:
+      action: remove        
+      slide: leftframe           
+      
+      
+      
+widgets:
+  christmas_naughty_or_nice:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Naughty
+        color: ff2020
+        y: 90
+        x: 50
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: OR
+        y: 90
+        x: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Nice
+        color: 20ff20
+        y: 90
+        x: 160
+        z: -110
+        
+  christmas_nice:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Nice
+        color: 20ff20
+        y: 90
+        z: -110
+        
+  christmas_naughty:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Naughty
+        color: ff2020
+        y: 90
+        z: -110
+        
+  christmas_naughty_or_nice_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Naughty
+        color: ff2020
+        y: 105
+        x: 52
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: OR
+        y: 90
+        x: 52
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Nice
+        color: 20ff20
+        y: 75
+        x: 52
+        z: -110
+        
+  christmas_nice_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Nice
+        color: 20ff20
+        x: 52
+        y: 90
+        z: -110
+        
+  christmas_naughty_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Naughty
+        color: ff2020
+        x: 52
+        y: 90
+        z: -110
+        
+
+  widget_christmas_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: CHRISTMAS
+        color: ffffff
+        anchor_y: top
+        y: top
+        x: 52
+        z: -101
+      - type: image
+        image: christmas_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100 
+
+        
+
+  widget_christmas_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: CHRISTMAS
+        color: ffffff
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: image
+        image: christmas_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+        
+
+  widget_christmas_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: CHRISTMAS INTRO
+        color: ffffff
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -101
+      - type: text
+        text: 5 second vid
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -101        
+      - type: image
+        image: christmas_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        
+
+
+  christmas_naughty_jackpot_collected:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: NAUGHTY JACKPOT
+        color: ff2020
+        y: 90
+        x: 105
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ff2020
+        text: (door_christmas_naughty_jackpot)
+        number_grouping: true                
+        x: 105
+        y: 71
+        z: -102        
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_christmas_naughty_jackpot)
+        number_grouping: true                
+        x: 106
+        y: 70
+        z: -101        
+  
+  christmas_nice_jackpot_collected:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: NICE JACKPOT
+        color: 20ff20
+        y: 90
+        x: 105
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 20ff20
+        text: (door_christmas_nice_jackpot)
+        number_grouping: true                
+        x: 105
+        y: 71
+        z: -102                
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_christmas_nice_jackpot)
+        number_grouping: true                
+        x: 106
+        y: 70
+        z: -101                
+  
+  christmas_naughty_score_collected:
+      - type: text
+        font_size: 18      
+        style: tall_title
+        text: NAUGHTY
+        color: ff2020
+        y: 90
+        x: 105
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ff2020
+        text: (door_christmas_naughty_score)
+        number_grouping: true                
+        x: 105
+        y: 71
+        z: -102                
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_christmas_naughty_score)
+        number_grouping: true                
+        x: 106
+        y: 70
+        z: -101        
+  
+  christmas_nice_score_collected:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: NICE
+        color: 20ff20
+        y: 90
+        x: 105
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 20ff20
+        text: (door_christmas_nice_score)
+        number_grouping: true                
+        x: 105
+        y: 71
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_christmas_nice_score)
+        number_grouping: true                
+        x: 106
+        y: 70
+        z: -101
+  
+  christmas_naughty_jackpot_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: NAUGHTY JACKPOT
+        color: ff2020
+        y: 90
+        x: 52
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: ff2020
+        text: (door_christmas_naughty_jackpot)
+        number_grouping: true                
+        x: 52
+        y: 71
+        z: -102        
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_christmas_naughty_jackpot)
+        number_grouping: true                
+        x: 53
+        y: 70
+        z: -101        
+  
+  christmas_nice_jackpot_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: NICE JACKPOT
+        color: 20ff20
+        y: 90
+        x: 52
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 20ff20
+        text: (door_christmas_nice_jackpot)
+        number_grouping: true                
+        x: 52
+        y: 71
+        z: -102        
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_christmas_nice_jackpot)
+        number_grouping: true                
+        x: 53
+        y: 70
+        z: -101        
+  
+  christmas_naughty_score_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: NAUGHTY
+        color: ff2020
+        y: 90
+        x: 52
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: ff2020
+        text: (door_christmas_naughty_score)
+        number_grouping: true                
+        x: 52
+        y: 71
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_christmas_naughty_score)
+        number_grouping: true                
+        x: 53
+        y: 70
+        z: -101
+  
+  christmas_nice_score_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: NICE
+        color: 20ff20
+        y: 90
+        x: 52
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 20ff20
+        text: (door_christmas_nice_score)
+        number_grouping: true                
+        x: 52
+        y: 71
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_christmas_nice_score)
+        number_grouping: true                
+        x: 53
+        y: 70
+        z: -101
+  
+
+

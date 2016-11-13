@@ -1,0 +1,9 @@
+# config_version=4
+
+# Popup_Post
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Popup_Post.Popup_Post
+  priority: 800

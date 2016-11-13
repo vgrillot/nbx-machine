@@ -1,0 +1,607 @@
+#config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+fast:
+  ports: com4, com5
+  config_number_format: int    #hex
+    
+hardware:
+  driverboards: fast
+  #platform: fast
+  platform: smart_virtual
+
+  
+switches:
+#8
+  plungerlane_sw:
+    number: 0
+    tags: ball_live_added, plunger
+  troughjam_opt:
+    number: 1
+    type: 'NO'
+  trough6_opt:
+    number: 2
+    type: NC
+  trough5_opt:
+    number: 3
+    type: NC
+  trough4_opt:
+    number: 4
+    type: NC
+  trough3_opt:
+    number: 5
+    type: NC
+  trough2_opt:
+    number: 6
+    type: NC
+  trough1_opt:
+    number: 7
+    type: NC
+#8 flipper switches, etc.
+  startbutton_sw:
+    number: 10
+    tags: start
+  flipperlwl_sw:
+    number: 15
+    tags: lower_left_flipper, left_flipper
+  flipperlwr_sw:
+    number: 8
+    tags: lower_right_flipper, right_flipper
+  flipperupr_sw:
+    number: 13
+    tags: upper_right_flipper
+  tilt_sw:
+    number: 9
+    tags: tilt_warning
+  coin_sw:
+    number: 11
+  slam_sw:
+    number: 12
+  buyin_sw:
+    number: 14
+    tags: buyin
+
+
+
+#8
+#    Free5:
+#        number: 16
+  shock_sw:
+    number: 17
+    tags: playfield_active, shock, bugbashtarget4
+    debounce_open: 5
+    debounce_close: 5
+  lrampstandl_sw:
+    number: 18
+    tags: playfield_active, bugbashtarget1
+    debounce_open: 5
+    debounce_close: 5
+  lrampstandr_sw:
+    number: 19
+    tags: playfield_active, bugbashtarget2
+    debounce_open: 5
+    debounce_close: 5
+  mayor_sw:
+    number: 20
+    tags: playfield_active, mayor
+  lock_sw:
+    number: 21
+    tags: playfield_active, lock, bugbashtarget3
+    debounce_open: 5
+    debounce_close: 5
+  spinner_sw:
+    number: 22
+    tags: playfield_active, sally
+  barrel_sw:
+    number: 23
+    tags: playfield_active, barrel, bugbashtarget5
+    debounce_open: 5
+    debounce_close: 5   
+
+
+#8
+  zerokickback_sw:
+    number: 24
+    tags: zero
+  outlanel_sw:
+    number: 25
+    tags: playfield_active
+  returnlanel_sw:
+    number: 26
+    tags: playfield_active
+  slingl_sw:
+    number: 27
+    tags: playfield_active, sling, slingl
+    #debounce_open: 5
+    #debounce_close: 5
+  returnlaner_sw:
+    number: 28
+    tags: playfield_active
+    #debounce_open: 5
+    #debounce_close: 5
+  slingr_sw:
+    number: 29
+    tags: playfield_active, sling, slingr
+    #debounce_open: 5
+    #debounce_close: 5
+  outlaner_sw:
+    number: 30
+    tags: playfield_active
+  pacloop_sw:
+    number: 31
+    tags: playfield_active
+
+
+
+#3208
+#8
+  mystery_sw:
+    number: 39
+    tags: playfield_active, mystery, bugbashtarget9
+    debounce_open: 5
+    debounce_close: 5
+  gravestone_sw:
+    number: 38
+    tags: grave
+    type: NC
+  subwaysneak_sw:
+    number: 37
+    tags: subwaysneak
+  doctor_sw:
+    number: 36
+    tags: playfield_active, doctor, bugbashtarget12
+    debounce_open: 5
+    debounce_close: 5
+  rrampstandl_sw:
+    number: 35
+    tags: playfield_active, bugbashtarget10
+    debounce_open: 5
+    debounce_close: 5
+  rrampstandr_sw:
+    number: 34
+    tags: playfield_active, bugbashtarget11
+    debounce_open: 5
+    debounce_close: 5
+  soupentrance_opt:
+    number: 33
+    tags: playfield_active, soupentrance
+    type: NC
+  soupvuk_opt:
+    number: 32
+    type: NC
+    debounce_open: 20
+    debounce_close: 20
+    
+#8 - not connected
+  exit_sw:
+    number: 41
+    tags: exit
+  enter_sw:
+    number: 43
+    tags: enter
+  down_sw:
+    number: 40
+    tags: down
+  up_sw:
+    number: 42
+    tags: up  
+
+
+#    notused188:
+#        number: 44
+#    notused189:
+#        number: 45
+
+#8
+  tublock3_opt:
+    number: 55
+    type: NC
+    tags: enter_tub
+  tublock1_opt:
+    number: 54
+    type: NC
+  tublock2_opt:
+    number: 53
+    type: NC
+    
+#    oogiefree1:
+#        number: 52
+#    oogiefree2:
+#        number: 51
+#    oogiefree3:
+#        number: 50
+#    oogiefree4:
+#        number: 49
+
+  rightorbitupper_opt:
+    number: 50
+    type: NC
+    tags: playfield_active, rorbitupper
+    debounce_open: 5        
+    debounce_close: 5            
+  lrampgate_sw:
+    number: 49
+    type: NC    
+    tags: playfield_active, lrampgate
+    debounce_open: 2        
+    debounce_close: 2        
+  rrampgate_sw:
+    number: 48
+    type: NC    
+    tags: playfield_active, rrampgate
+    debounce_open: 2    
+    debounce_close: 2            
+#8
+#    oogieFree5:
+#        number: 56
+  hintertreegate_sw:
+    number: 57
+    tags: hrampgate
+  sneakinloop_opt:
+    number: 58
+    type: NC
+    tags: sneakin, playfield_active
+    #debounce_open: 5
+    #debounce_close: 5
+  oogiedivertertrap_opt:
+    number: 59
+    type: NC
+    tags: oogiedivertertrap
+    #debounce_open: 5
+    #debounce_close: 5
+  rightorbit_opt:
+    number: 60
+    type: NC
+    tags: playfield_active, rorbit
+    #debounce_open: 5
+    #debounce_close: 5
+  oogieccw_opt:
+    number: 61
+    type: NC
+    tags: oogieccw, playfield_active
+    #debounce_open: 5
+    #debounce_close: 5
+  jacksaucer_sw:
+    number: 62
+    tags: saucer
+  subwaytree_sw:
+    number: 63
+    tags: subwaytree
+
+
+#1616
+#8
+  rampreturnl_sw:
+    number: 64
+    tags: playfield_active
+  rampreturnr_sw:
+    number: 65
+    tags: playfield_active
+  leftorbitupper_opt:
+    number: 66
+    type: NC
+    tags: playfield_active
+#    #debounce_open: 5
+#    #debounce_close: 5
+  bumperright_sw:
+    number: 67
+    tags: playfield_active, bumper, bumperright
+  bumperleft_sw:
+    number: 68
+    tags: playfield_active, bumper, bumperleft
+  bumpertop_sw:
+    number: 69
+    tags: playfield_active, bumper, bumpertop
+  leftorbitlower_sw:
+    number: 70
+    tags: playfield_active, leftorbitlower
+    #debounce_open: 5
+    #debounce_close: 5
+  innerloop_opt:
+    number: 71
+    type: NC
+    tags: playfield_active, leftloop
+    #debounce_open: 5
+    #debounce_close: 5   
+
+#8
+  oogietarget1_sw:
+    number: 79
+    tags: playfield_active, oogietarget1, bugbashtarget6
+    #debounce_open: 5
+    #debounce_close: 5
+  oogietarget2_sw:
+    number: 78
+    tags: playfield_active, oogietarget2, bugbashtarget7, oogie_hit
+    #debounce_open: 5
+    #debounce_close: 5
+  oogietarget3_sw:
+    number: 77
+    tags: playfield_active, oogietarget3, bugbashtarget8
+    #debounce_open: 5
+    #debounce_close: 5
+  subwayoogie_sw:
+    number: 76
+    tags: subwayoogie
+  targetbankup_sw:
+    number: 75
+    tags: targetbankup
+  targetbankdown_sw:
+    number: 74
+    tags: targetbankdown
+  oogiecw_opt:
+    number: 73
+    type: NC
+    tags: oogiecw
+    #debounce_open: 5
+    #debounce_close: 5
+  oogiebanktrap_opt:
+    number: 72
+    type: NC
+    tags: oogiebanktrap
+    #debounce_open: 5
+    #debounce_close: 5   
+
+
+servos:
+  servo_mayor:
+    servo_min: 0.0
+    servo_max: 1.0
+    reset_position: 0.0
+    reset_events: reset_servo_mayor
+    number: 12  #12 or 17  hex 0c or 11 
+
+    
+coils:
+# 70 Volts - 3208
+  slingr:
+    number: 7
+    pulse_ms: 3
+    recycle_ms: 50
+  slingl:
+    number: 6
+    pulse_ms: 3
+    recycle_ms: 50    
+  flipperuprhold:
+    number: 5
+    allow_enable: true
+  flipperuprmain:
+    number: 4
+    pulse_ms: 12
+  flipperlwlhold:
+    number: 3
+    allow_enable: true
+  flipperlwlmain:
+    number: 2
+    pulse_ms: 16
+  flipperlwrhold:
+    number: 1
+    allow_enable: true
+  flipperlwrmain:
+    number: 0
+    pulse_ms: 16  
+
+# 70 Volts - 3208
+#    Knocker:
+#        number: 12
+#        pulse_ms: 8
+# damaged
+
+  jackkickout:
+    number: 9
+    pulse_ms: 5
+  dropup:
+    number: 10
+    pulse_ms: 14
+  dropdown:
+    number: 11
+    pulse_ms: 20
+  soupdiverter:
+    number: 8
+    pulse_ms: 16
+    pulse_power: 6
+    hold_power: 3
+    allow_enable: true
+  soupvuk:
+    number: 13
+    pulse_ms: 7
+  trougheject:
+    number: 14
+    pulse_ms: 12
+  autolaunch:
+    number: 15
+    pulse_ms: 18  
+
+
+# 70 Volts 1616 - A
+  mayorkickout:
+    number: 16
+    pulse_ms: 10  
+
+#    notused1:
+#        number: 17
+  bumperleft:
+    number: 18
+    pulse_ms: 7
+  bumperright:
+    number: 19
+    pulse_ms: 7
+  bumpertop:
+    number: 20
+    pulse_ms: 7
+  zerokickback:
+    number: 22
+    pulse_ms: 9
+  bathtubdrain:
+    number: 23
+    pulse_ms: 18  
+
+
+# 70 Volts - 1616 - B   
+#    notused1: 
+#        number: 24
+#Damaged
+  dissappearingpost:
+    number: 25
+    pulse_ms: 20
+    pulse_power: 8
+    hold_power: 3
+    allow_enable: true
+  oogiemagnet:
+    number: 26
+    pulse_ms: 16
+    pulse_power: 6
+    hold_power: 2
+    allow_enable: true
+
+# 24 Volts 
+  bathtubdiverter:
+    number: 27
+    pulse_ms: 30
+    pulse_power: 8
+    hold_power: 6
+    allow_enable: true
+  oogieloopdiverter:
+    number: 28
+    pulse_ms: 30
+    pulse_power: 8
+    hold_power: 5
+    allow_enable: true
+
+#12 Volts
+  targetbankmotor:
+    number: 29
+    allow_enable: true
+
+#24 Volts
+  mayordiverter:
+    number: 30
+    pulse_ms: 30
+    pulse_power: 8
+    hold_power: 4
+    allow_enable: true
+  zerodiverter:
+    number: 31
+    pulse_ms: 30
+    pulse_power: 8
+    hold_power: 5
+    allow_enable: true
+
+
+
+
+flippers:
+  flipperlwl:
+    main_coil: FlipperLwLMain
+    hold_coil: FlipperLwLHold
+    activation_switch: flipperlwl_sw
+    label: Left Flipper
+  flipperlwr:
+    main_coil: FlipperLwRMain
+    hold_coil: FlipperLwRHold
+    activation_switch: flipperlwr_sw
+    label: Right Lower Flipper
+  flipperupr:
+    main_coil: FlipperUpRMain
+    hold_coil: FlipperUpRHold
+    activation_switch: flipperupr_sw
+    label: Right Upper Flipper
+
+
+
+autofire_coils:
+  noholdflipper:
+    coil: FlipperUpRMain
+    switch: flipperupr_sw
+     
+  slingl:
+    coil: SlingL
+    switch: slingl_sw
+#    debounced: true
+  slingr:
+    coil: SlingR
+    switch: slingr_sw
+
+#    debounced: true
+  bumpertop:
+    coil: BumperTop
+    switch: bumpertop_sw
+#    debounced: true
+  bumperright:
+    coil: BumperRight
+    switch: bumperright_sw
+#    debounced: true
+  bumperleft:
+    coil: BumperLeft
+    switch: bumperleft_sw
+#    debounced: true
+
+
+
+drop_targets:
+  gravestone:
+    switch: gravestone_sw
+#        led: rgb_grave_arrow
+    knockdown_coil: DropDown
+    reset_coil: DropUp
+    reset_events:
+      jacksaucer_sw_active: 15s
+      ball_starting: 500ms
+#            gravestone_sw_active: 10s
+
+ball_devices:
+#    jackhole:
+#        ball_switches: jacksaucer_sw
+#        eject_coil: jackkickout
+
+  zero_kicker:
+    ball_switches: zerokickback_sw
+    entrance_count_delay: 1s
+    eject_coil: zerokickback
+
+#    bathtub:
+#        label: bathtub lock
+#        tags: trough, home
+#        entrance_switch: tublock3_opt
+#        ball_capacity: 3
+#        ball_switches: tublock1_opt, tublock2_opt, tublock3_opt
+#        entrance_count_delay: 0.5s
+#        eject_coil: bathtubdrain
+#        confirm_eject_type: count
+
+  trough:
+    tags: trough, home, drain
+    label: Main Trough
+    ball_switches: trough1_opt, trough2_opt, trough3_opt, trough4_opt, trough5_opt, trough6_opt, troughjam_opt
+    entrance_count_delay: 0.5s
+    eject_coil: trougheject
+    confirm_eject_type: target
+    eject_targets: bd_plunger
+    jam_switch: troughjam_opt
+    debug: true
+ 
+  bd_plunger:
+    tags: ball_add_live
+    label: Plunger Lane
+    ball_switches: plungerlane_sw
+    entrance_count_delay: 1s
+    eject_coil: autolaunch
+    mechanical_eject: true
+    exit_count_delay: 500ms
+    debug: true
+
+  soupvuk:
+    label: Soup VUK
+    ball_switches: soupvuk_opt
+    entrance_count_delay: 0.3s
+    eject_coil: soupvuk
+    exit_count_delay: 250ms
+
+  mayorscoop:
+    label: Mayor Scoop
+    ball_switches: mayor_sw
+    entrance_count_delay: 500ms
+    eject_coil: mayorkickout
+    confirm_eject_type: target
+    exit_count_delay: 0.25s
+

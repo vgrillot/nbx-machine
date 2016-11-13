@@ -1,0 +1,215 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Arrow_LEDS
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Arrow_LEDS.Arrow_LEDS
+  priority: 20000
+
+  
+shows:
+  flash0:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+
+
+  flash1:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+              
+
+  flash2:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color2)
+    - time: +5
+    
+    
+  flash3:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color2)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color3)
+    - time: +5
+
+
+  flash4:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color2)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color3)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color4)
+    - time: +5
+
+
+  flash5:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color2)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color3)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color4)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color5)
+    - time: +5
+
+
+
+  flash6:
+    - time: 0
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:
+        (leds):
+          color: (color1)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color2)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color3)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color4)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color5)
+    - time: +5
+      leds:
+        (leds):
+          color: off  
+    - time: +1
+      leds:    
+        (leds):
+          color: (color6)
+    - time: +5
+    
+          
+        
+          

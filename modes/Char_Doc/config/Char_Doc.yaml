@@ -1,0 +1,120 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Doc
+
+mode:
+  start_events: char_doctor_start
+  stop_events: char_doctor_stop
+  code: Char_Doc.Char_Doc
+  priority: 1500
+
+
+sound_player:
+  char_doctor_music_start:
+    loop_lakari1:
+      action: play    
+      loops: -1
+      volume: 0.75 
+  
+  char_doctor_music_stop:
+    loop_lakari1:
+      action: stop
+
+  mode_char_doctor_stopping:
+    loop_lakari1:
+      action: stop
+
+      
+  say_improvement: you_will_be_a_decided_improvement
+  say_doc_line: excellent
+  say_doc_line2: youre_mine
+  say_doc_line3: oh_my_head
+  
+  
+
+widget_player:
+  show_doctor_msg_1: 
+    doctor_collect:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_doctor_msg_2: 
+    doctor_for_buddy:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_doctor_msg_3: 
+    doctor_next_shot:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+
+  char_doctor_music_start: 
+    slide_doc:
+      slide: charframe        
+      
+  char_doctor_show_slide:
+    slide_doc:
+      slide: charframe    
+
+  char_doctor_hide_slide: 
+    slide_doc:
+      action: remove    
+      slide: charframe    
+
+  remove_doctor_messages:
+    doctor_collect:
+      action: remove      
+      slide: charframe                        
+    doctor_for_buddy:
+      action: remove      
+      slide: charframe                        
+    doctor_next_shot:
+      action: remove      
+      slide: charframe                        
+
+      
+
+widgets:
+  doctor_collect:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Collect the parts
+        color: blue        
+        y: 44
+        z: -210  
+        x: 105
+  doctor_for_buddy:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: for your new creation
+        color: blue        
+        y: 44
+        z: -210  
+        x: 105
+  doctor_next_shot:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: NEXT SHOT (char_doctor_next_jackpot_score)
+        color: yellow
+        number_grouping: true
+        y: 44
+        z: -210  
+        x: 105
+
+  slide_doc:
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: A DECIDED IMPROVEMENT
+        anchor_y: top
+        color: a0a0ff
+        y: top
+        z: -210
+      - type: image
+        image: doctor_buddy
+        z: -200

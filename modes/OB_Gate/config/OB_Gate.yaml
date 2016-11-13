@@ -1,0 +1,280 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+mode:
+  start_events: ball_starting
+  stop_events: game_ending
+  code: OB_Gate.OB_Gate
+  priority: 2800
+
+sound_player:
+  bug_splat_1: splat1
+  bug_splat_2: splat2
+  bug_splat_3: splat3
+  bug_splat_4: splat4
+  bug_splat_5: splat5
+  bug_splat_6: splat6
+  bug_splat_nooo: atom_attach
+  gate_goes_down: gwbonus
+
+  ob_mode_1_start: cause_im_mr_oogie_boogie
+  ob_mode_2_start: santa_claus_o_im_really
+  ob_mode_3_start: whats_that_you_said_about_luck
+  ob_mode_4_start: gambling man
+  ob_mode_5_start: well_come_on_bone_man
+  ob_mode_6_start: you_havent_got_a_prayer
+  ob_mode_7_start: This_Will_Be_Fun_To_Watch
+
+  
+widget_player:
+  bug_hit_0: 
+    widget_80:
+      widget_settings:        
+        expire: 750ms
+        z: -3500
+  bug_hit_1:
+    widget_81:
+      widget_settings:        
+        expire: 750ms
+        z: -3500
+  bug_hit_2: 
+    widget_82:
+      widget_settings:        
+        expire: 750ms
+        z:  -3500
+        
+        
+  
+widgets:
+    widget_80:  
+      - type: text
+        x: 45
+        y: 85
+        style: tall_title
+        font_size: 32
+        text: SPLAT!
+        color: red
+        animations:
+            add_to_slide:
+            - property: opacity
+              value: 1.0
+              duration: 250ms
+              timing: after_previous
+            - property: y
+              value: 0
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0.0
+              duration: 500ms
+              timing: with_previous
+
+    widget_81:  
+      - type: text
+        x: 105
+        y: 85        
+        style: tall_title
+        font_size: 32
+        text: SPLAT!
+        color: red
+        animations:
+            add_to_slide:
+            - property: opacity
+              value: 1.0
+              duration: 250ms
+              timing: after_previous
+            - property: y
+              value: 0
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0.0
+              duration: 500ms
+              timing: with_previous
+
+    widget_82:  
+      - type: text    
+        x: 165
+        y: 85        
+        style: tall_title
+        font_size: 32
+        text: SPLAT!
+        color: red
+        animations:
+            add_to_slide:
+            - property: opacity
+              value: 1.0
+              duration: 250ms
+              timing: after_previous
+            - property: y
+              value: 0
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0.0
+              duration: 500ms
+              timing: with_previous
+        
+    
+    
+show_player:
+  ob_mode_stop_leds:
+    ob_mode_1_next:
+      action: stop
+    ob_mode_1_ready:
+      action: stop
+    ob_mode_1_started:
+      action: stop
+    ob_mode_2_next:
+      action: stop
+    ob_mode_2_ready:
+      action: stop
+    ob_mode_2_started:
+      action: stop
+    ob_mode_3_next:
+      action: stop
+    ob_mode_3_ready:
+      action: stop
+    ob_mode_3_started:
+      action: stop
+    ob_mode_4_next:
+      action: stop
+    ob_mode_4_ready:
+      action: stop
+    ob_mode_4_started:
+      action: stop
+    ob_mode_5_next:
+      action: stop
+    ob_mode_5_ready:
+      action: stop
+    ob_mode_5_started:
+      action: stop
+    ob_mode_6_next:
+      action: stop
+    ob_mode_6_ready:
+      action: stop
+    ob_mode_6_started:
+      action: stop
+      
+  ob_mode_1_next:
+    ob_mode_1_next:
+      speed: 16
+      loops: -1
+  ob_mode_1_ready:
+    ob_mode_1_next:
+      action: stop
+    ob_mode_1_ready:
+      speed: 16
+      loops: -1
+  ob_mode_1_start:
+    ob_mode_1_ready:
+      action: stop
+    ob_mode_1_started:
+      speed: 16
+      loops: -1 
+
+  ob_mode_2_next:
+    ob_mode_1_ready:
+      action: stop
+    ob_mode_1_started:
+      action: stop
+    ob_mode_2_next:
+      speed: 16
+      loops: -1
+  ob_mode_2_ready:
+    ob_mode_2_next:
+      action: stop
+    ob_mode_2_ready:
+      speed: 16
+      loops: -1
+  ob_mode_2_start:
+    ob_mode_2_ready:
+      action: stop
+    ob_mode_2_started:
+      speed: 16
+      loops: -1 
+
+  ob_mode_3_next:
+    ob_mode_2_ready:
+      action: stop
+    ob_mode_2_started:
+      action: stop
+    ob_mode_3_next:
+      speed: 16
+      loops: -1
+  ob_mode_3_ready:
+    ob_mode_3_next:
+      action: stop
+    ob_mode_3_ready:
+      speed: 16
+      loops: -1
+  ob_mode_3_start:
+    ob_mode_3_ready:
+      action: stop
+    ob_mode_3_started:
+      speed: 16
+      loops: -1 
+
+  ob_mode_4_next:
+    ob_mode_3_ready:
+      action: stop
+    ob_mode_3_started:
+      action: stop
+    ob_mode_4_next:
+      speed: 16
+      loops: -1
+  ob_mode_4_ready:
+    ob_mode_4_next:
+      action: stop
+    ob_mode_4_ready:
+      speed: 16
+      loops: -1
+  ob_mode_4_start:
+    ob_mode_4_ready:
+      action: stop
+    ob_mode_4_started:
+      speed: 16
+      loops: -1 
+
+  ob_mode_5_next:
+    ob_mode_4_ready:
+      action: stop
+    ob_mode_4_started:
+      action: stop
+    ob_mode_5_next:
+      speed: 16
+      loops: -1
+  ob_mode_5_ready:
+    ob_mode_5_next:
+      action: stop
+    ob_mode_5_ready:
+      speed: 16
+      loops: -1
+  ob_mode_5_start:
+    ob_mode_5_ready:
+      action: stop
+    ob_mode_5_started:
+      speed: 16
+      loops: -1 
+
+  ob_mode_6_next:
+    ob_mode_5_ready:
+      action: stop
+    ob_mode_5_started:
+      action: stop
+    ob_mode_6_next:
+      speed: 16
+      loops: -1
+  ob_mode_6_ready:
+    ob_mode_6_next:
+      action: stop
+    ob_mode_6_ready:
+      speed: 16
+      loops: -1
+  ob_mode_6_start:
+    ob_mode_6_ready:
+      action: stop
+    ob_mode_6_started:
+      speed: 16
+      loops: -1 
+

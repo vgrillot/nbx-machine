@@ -1,0 +1,44 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#OB_Wizard 
+
+mode:
+  start_events: ob_mode_7_start
+  stop_events: ob_mode_7_stop
+  code: OB_Wizard.OB_Wizard
+  priority: 950
+
+
+slide_player:
+  ob_wizard_music_start: slide_91
+  wizard_ob_countdown: slide_92
+  
+  
+sound_player:
+  OB_Wizard_music_start:
+    loop_This_is_halloween_finale:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  OB_Wizard_music_stop:
+    loop_This_is_halloween_finale:
+      action: stop
+
+  mode_OB_Wizard_stopping:
+    loop_This_is_halloween_finale:
+      action: stop
+
+
+slides:
+  slide_91:
+  - type: text
+    text: MEGA OOGIE
+  slide_92:
+  - type: text
+    text: MEGA OOGIE
+  - type: text
+    anchor_y: bottom
+    text: Time Left (value)
+    y: bottom

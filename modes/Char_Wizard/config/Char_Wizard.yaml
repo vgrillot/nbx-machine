@@ -1,0 +1,52 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Wizard
+
+mode:
+  start_events: char_wizard_start
+  stop_events: char_wizard_stop
+  code: Char_Wizard.Char_Wizard
+  priority: 2500
+
+
+slide_player:
+  char_wizard_music_start: slide_36
+  
+  
+sound_player:
+  char_wizard_music_start:
+    loop_lastchance:
+      loops: -1
+      volume: 0.5 
+
+  char_wizard_music_stop:
+    loop_lastchance:
+      action: stop
+    
+  mode_char_wizard_stopping:
+    loop_lastchance:
+      action: stop
+
+
+    
+slides:
+  slide_36:
+  - type: text
+    style: tall_title
+    font_size: 26
+    text: Deliver The Presents
+    anchor_y: top
+    y: top
+  - type: text
+    style: tall_title
+    font_size: 26
+    text: Not coded yet
+    anchor_y: top
+    y: top-25
+  - type: text
+    style: tall_title
+    font_size: 26
+    text: Doorbell to end
+    anchor_y: top
+    y: top-50

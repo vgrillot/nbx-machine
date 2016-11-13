@@ -1,0 +1,215 @@
+# config_version=4
+#Oogie Boogie Bug Bash 
+
+mode:
+  start_events: ob_mode_1_start
+  stop_events: ob_mode_1_stop
+  code: OB_Bug_Bash.OB_Bug_Bash
+  priority: 800
+
+
+sound_player:
+  bug_bash_music_start:
+    loop_Oogie:
+      action: play
+      loops: -1    
+      volume: 0.5 
+      
+  bug_bash_music_stop:
+    loop_Oogie:  
+      action: stop  
+
+  mode_OB_bug_bash_stopping:
+    loop_Oogie:
+      action: stop
+    
+
+shot_groups:
+  bugbash_targets:
+    profile: bb
+    reset_events:
+      bugbash_targets_bb_red_complete: 1s
+    disable_events: bug_bash_music_stop
+#        disable_events: ob_mode_1_stop       
+
+
+
+widget_player:
+  show_bug_bash_slide_wide:
+    widget_bugbash_wide: 
+      slide: leftframe     
+      
+  show_bug_bash_slide_narrow:   
+    widget_bugbash_narrow:  
+      slide: leftframe
+      
+  show_bug_bash_slide_intro:
+    widget_bugbash_full:   
+      slide: leftframe  
+      widget_settings:    
+        expire: 5s      
+      
+  show_bug_bash_bash_wide:         
+    widget_bugbash_bash:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_bug_bash_bash_narrow:         
+    widget_bugbash_bash_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+  remove_bug_bash_slide_wide:
+    widget_bugbash_wide: 
+      action: remove
+      slide: leftframe        
+    
+  remove_bug_bash_slide_narrow:      
+    widget_bugbash_narrow:    
+      action: remove
+      slide: leftframe        
+
+  remove_bug_bash_slide_intro:
+    widget_bugbash_full:   
+      slide: leftframe  
+      action: remove        
+        
+  remove_bug_bash_messages:
+    widget_bugbash_bash:    
+      action: remove    
+      slide: leftframe        
+    widget_bugbash_bash_n:        
+      action: remove    
+      slide: leftframe        
+
+
+
+        
+widgets:      
+  widget_bugbash_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: BOOGIE BUG BASH
+        color: purple
+        anchor_y: top
+        y: 128
+        x: 157
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: BOOGIE BUG BASH
+        color: black
+        anchor_y: top
+        y: 127
+        x: 158
+        z: -101
+      - type: image
+        image: bugbash_backdrop_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 105
+        z: -100       
+
+  widget_bugbash_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: BOOGIE BUG BASH
+        color: purple
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: BOOGIE BUG BASH
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: image
+        image: bugbash_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+       
+
+  widget_bugbash_bash:
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: BASH THOSE BUGS!
+        y: 90
+        z: -101       
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: (bug_score)
+        number_grouping: true
+        z: -101       
+        y: 70
+
+  widget_bugbash_bash_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: BASH THOSE BUGS!
+        y: 95
+        x: 157
+        z: -101       
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: (bug_score)
+        number_grouping: true
+        y: 70
+        x: 157
+        z: -101
+
+        
+  widget_bugbash_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: BUG BASH INTRO
+        color: purple
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: BUG BASH INTRO
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: 5 second vid
+        color: white
+        anchor_y: top
+        y: 100
+        x: 105        
+        z: -102
+      - type: image
+        image: bugbash_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+            
+

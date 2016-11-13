@@ -1,0 +1,190 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Where
+
+mode:
+  start_events: char_where_start
+  stop_events: char_where_stop
+  code: Char_Where.Char_Where
+  priority: 1500
+
+
+shot_groups:
+  jack_standups:
+    profile: wheres_jack
+    reset_events:
+      jack_standups_wheres_jack_lit_complete: 2s
+#        enable_events: char_where_start
+    disable_events: ball_ending
+
+  
+sound_player:
+  char_where_music_start:
+    loop_somethings_up:
+      loops: -1
+      volume: 0.5 
+
+  char_where_music_stop:
+    loop_somethings_up:
+      action: stop
+
+  mode_char_where_stopping:
+    loop_somethings_up:
+      action: stop
+
+  char_where_jack_complete2: jack
+  char_where_jack_complete: he_he_he_he
+  char_where_mayor_hit1: jack_you_home
+  char_where_mayor_hit2: atom_born
+  char_where_mayor_hit3: jack_answer_me
+  char_where_ramp_hit: hes_not_home
+  char_where_jackpot_hit: he_hasnt_been_home
+  char_where_sjackpot_hit: where_have_you_been
+  
+  char_where_music_start: weve_got_to_find_jack
+  char_where_music_stop: did_anyone_think
+
+
+
+widget_player:
+  char_where_music_start: 
+    slide_where:
+      slide: charframe          
+
+  show_where_msg_1: 
+    where_ramp:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_where_msg_2: 
+    where_super:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe       
+  show_where_msg_3: 
+    where_increase:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe       
+  show_where_msg_4: 
+    where_score:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe       
+
+  char_where_show_slide: 
+    slide_where:
+      slide: charframe       
+
+  char_where_hide_slide: 
+    slide_where:
+      action: remove            
+      slide: charframe       
+
+  remove_where_messages:
+    where_ramp:
+      action: remove        
+      slide: charframe             
+    where_super:
+      action: remove        
+      slide: charframe             
+    where_increase:
+      action: remove        
+      slide: charframe             
+    where_score:      
+      action: remove        
+      slide: charframe             
+
+      
+
+
+widgets:
+  where_ramp:
+      - type: text
+        style: tall_title
+        text: Shoot Mayor 
+        color: yellow
+        number_grouping: true        
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: to light Jackpot 
+        color: yellow
+        number_grouping: true        
+        font_size: 16
+        y: 35
+        z: -210  
+        x: 105
+  where_super:
+      - type: text
+        style: tall_title
+        text: Shoot ROOFTOP RAMP
+        color: blue        
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: to collect jackpot
+        color: blue        
+        font_size: 16
+        y: 35
+        z: -210
+        x: 105
+        
+  where_increase:
+      - type: text
+        style: tall_title
+        text: SPELL JACK
+        color: orange        
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: TO LIGHT SUPER
+        color: orange        
+        font_size: 16
+        y: 35
+        z: -210  
+        x: 105
+  where_score:
+      - type: text
+        style: tall_title
+        text: (char_where_score)
+        number_grouping: true
+        color: a0ffa0        
+        font_size: 16
+        y: 44
+        z: -210  
+        x: 105
+
+  slide_where:
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: WHERE'S JACK?
+        anchor_y: top
+        color: a0ffff
+        y: top
+        z: -210
+      - type: image
+        image: jack_forest
+        z: -200
+
+
+    
+show_player:
+  jack_standups_wheres_jack_lit_complete:
+    jack_fanfare:
+      speed: 8
+      loops: 3
+      priority: 1
+
+

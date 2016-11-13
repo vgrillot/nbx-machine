@@ -1,0 +1,568 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+led_settings:
+  default_led_fade_ms: 100
+
+leds:
+  rgb_soup_circle:
+    label: Soup Circle
+    number: 0
+    x: 375
+    y: 635 
+
+  rgb_santa_n:
+    label: SA(N)TA
+    number: 1
+    x: 450
+    y: 785 
+
+  rgb_santa_b:
+    label: SANT(A)
+    number: 2
+    x: 520
+    y: 785 
+
+  rgb_santa_t:
+    label: SAN(T)A
+    number: 3
+    x: 485
+    y: 785 
+
+  rgb_doctor_rect:
+    label: Doctor
+    number: 4
+    x: 425
+    y: 700 
+
+  rgb_soup_arrow:
+    label: Soup Arrow
+    number: 5
+    x: 420
+    y: 630 
+
+  rgb_rramp_circle:
+    label: Right Ramp Circle
+    number: 6
+    x: 410
+    y: 530 
+
+  rgb_rorbit_circle:
+    label: Right Orbit Circle
+    number: 7
+    x: 515
+    y: 490 
+
+  rgb_rorbit_arrow:
+    label: Right Orbit Arrow
+    number: 8
+    x: 530
+    y: 450 
+
+  rgb_rramp_rdiamond:
+    label: Right Ramp Right Diamond
+    number: 9
+    x: 465
+    y: 515 
+
+  rgb_rramp_arrow:
+    label: Right Ramp Arrow
+    number: 10
+    x: 430
+    y: 490 
+
+  rgb_rramp_ldiamond:
+    label: Right Ramp Left Diamond
+    number: 11
+    x: 395
+    y: 470 
+
+  rgb_grave_circle:
+    label: Jack Circle
+    number: 12
+    x: 390
+    y: 420 
+
+  rgb_grave_arrow:
+    label: Jack Arrow
+    number: 13
+    x: 405
+    y: 380 
+
+  rgb_mystery_rect:
+    label: Mystery
+    number: 14
+    x: 375
+    y: 370 
+
+  rgb_oogie_ccw_circle:
+    label: Oogie Loop CCW Circle
+    number: 15
+    x: 355
+    y: 340 
+
+  rgb_oogie_ccw_arrow:
+    label: Oogie Loop CCW Arrow
+    number: 16
+    x: 355
+    y: 295 
+
+  rgb_jack_saucer:
+    label: Jack Saucer
+    number: 17
+    x: 480
+    y: 290 
+
+  grb_gi_1:
+    label: GI
+    number: 18
+    x: 282
+    y: 1024
+
+  grb_gi_2:
+    label: GI
+    number: 19
+    x: 282
+    y: 1024
+
+  grb_gi_3:
+    label: GI
+    number: 20
+    x: 282
+    y: 1024
+
+  grb_gi_4:
+    label: GI
+    number: 21
+    x: 282
+    y: 1024
+
+  grb_gi_5:
+    label: GI
+    number: 22
+    x: 282
+    y: 1024
+
+  grb_gi_6:
+    label: GI
+    number: 23
+    x: 282
+    y: 1024
+
+  grb_gi_7:
+    label: GI
+    number: 24
+    x: 282
+    y: 1024
+
+  grb_gi_8:
+    label: GI
+    number: 25
+    x: 282
+    y: 1024
+
+  grb_gi_9:
+    label: GI
+    number: 26
+    x: 282
+    y: 1024
+
+  grb_gi_10:
+    label: GI
+    number: 27
+    x: 282
+    y: 1024
+
+  grb_gi_11:
+    label: GI
+    number: 28
+    x: 282
+    y: 1024
+
+  grb_gi_12:
+    label: GI
+    number: 29
+    x: 282
+    y: 1024
+
+  grb_gi_13:
+    label: GI
+    number: 30
+    x: 282
+    y: 1024
+
+  grb_gi_14:
+    label: GI
+    number: 31
+    x: 282
+    y: 1024
+
+  grb_gi_15:
+    label: GI
+    number: 32
+    x: 282
+    y: 1024
+
+  grb_gi_16:
+    label: GI
+    number: 33
+    x: 282
+    y: 1024
+
+  grb_gi_17:
+    label: GI
+    number: 34
+    x: 282
+    y: 1024
+
+  grb_gi_18:
+    label: GI
+    number: 35
+    x: 282
+    y: 1024
+
+  grb_gi_19:
+    label: GI
+    number: 36
+    x: 282
+    y: 1024
+
+  grb_gi_20:
+    label: GI
+    number: 37
+    x: 282
+    y: 1024
+
+  grb_gi_21:
+    label: GI
+    number: 38
+    x: 282
+    y: 1024
+
+  grb_gi_22:
+    label: GI
+    number: 39
+    x: 282
+    y: 1024
+
+  grb_gi_23:
+    label: GI
+    number: 86
+    x: 282
+    y: 1024
+
+  grb_gi_24:
+    label: GI
+    number: 40
+    x: 282
+    y: 1024
+
+  grb_gi_25:
+    label: GI
+    number: 41
+    x: 282
+    y: 1024
+
+  grb_gi_26:
+    label: GI
+    number: 42
+    x: 282
+    y: 1024
+
+
+
+  rgb_oogie_moon:
+    label: Oogie Circle
+    number: 64
+    x: 320
+    y: 620 
+
+  rgb_oogie_moon2:
+    label: Oogie Circle 2
+    number: 65
+    x: 320
+    y: 620 
+
+  rgb_oogie_moon3:
+    label: Oogie Circle 3
+    number: 66
+    x: 320
+    y: 620 
+
+  rgb_oogie_mode_1:
+    label: Oogie Mode 1
+    number: 67
+    x: 310
+    y: 575 
+
+  rgb_oogie_mode_2:
+    label: Oogie Mode 2
+    number: 68
+    x: 305
+    y: 547 
+
+  rgb_oogie_mode_3:
+    label: Oogie Mode 3
+    number: 69
+    x: 300
+    y: 519 
+
+  rgb_oogie_mode_4:
+    label: Oogie Mode 4
+    number: 70
+    x: 295
+    y: 491 
+
+  rgb_oogie_mode_5:
+    label: Oogie Mode 5
+    number: 71
+    x: 290
+    y: 463 
+
+  rgb_oogie_mode_6:
+    label: Oogie Mode 6
+    number: 72
+    x: 285
+    y: 435 
+
+  rgb_bug_1:
+    label: Motor Target 1
+    number: 75
+    x: 250
+    y: 405 
+
+  rgb_bug_2:
+    label: Motor Target 2
+    number: 74
+    x: 285
+    y: 400 
+
+  rgb_bug_3:
+    label: Motor Target 3
+    number: 73
+    x: 320
+    y: 390 
+
+  rgb_barrel_rect:
+    label: Barrel
+    number: 76
+    x: 225
+    y: 455 
+
+  rgb_lock_rect:
+    label: Lock
+    number: 77
+    x: 229
+    y: 490 
+
+  rgb_shock_rect:
+    label: Shock
+    number: 78
+    x: 233
+    y: 520 
+
+  rgb_leftloop_circle:
+    label: Inner Loop Circle
+    number: 79
+    x: 210
+    y: 395 
+
+  rgb_leftloop_arrow:
+    label: Inner Loop Arrow
+    number: 80
+    x: 175
+    y: 370 
+
+  rgb_oogie_cw_circle:
+    label: Oogie Loop CW Circle
+    number: 81
+    x: 195
+    y: 355 
+
+  rgb_oogie_cw_arrow:
+    label: Oogie Loop CW Arrow
+    number: 82
+    x: 190
+    y: 290 
+
+  rgb_pops_flasher:
+    label: Pops Flasher
+    number: 83
+    x: 145
+    y: 150 
+
+  rgb_pops_flasher2:
+    label: Pops Flasher 2
+    number: 84
+    x: 145
+    y: 150 
+
+  rgb_pops_flasher3:
+    label: Pops Flasher 3
+    number: 85
+    x: 145
+    y: 150 
+
+
+  rgb_doctor_circle:
+    label: Doctor char
+    number: 128
+    x: 380
+    y: 700 
+
+  rgb_bathtub_rect:
+    label: Bathtub Multiball
+    number: 129
+    x: 265
+    y: 710 
+
+  rgb_christmastime_rect:
+    label: Christmastime Wizard Mode
+    number: 130
+    x: 282
+    y: 785 
+
+  rgb_holiday_christmas:
+    label: Christmas
+    number: 131
+    x: 282
+    y: 850 
+
+  rgb_holiday_thanksgiving:
+    label: Thanksgiving
+    number: 132
+    x: 235
+    y: 865 
+
+  rgb_holiday_halloween:
+    label: Halloween
+    number: 133
+    x: 230
+    y: 915 
+
+  rgb_holiday_independence:
+    label: Independence Day
+    number: 134
+    x: 255
+    y: 950 
+
+  rgb_keepshooting:
+    label: Keep Shooting
+    number: 135
+        #x 0-590, y 0-1168
+    x: 282
+    y: 1024
+
+  rgb_holiday_easter:
+    label: Easter
+    number: 136
+    x: 305
+    y: 950 
+
+  rgb_holiday_stpat:
+    label: St Patricks
+    number: 137
+    x: 330
+    y: 915 
+
+  rgb_holiday_door:
+    label: Holiday Door
+    number: 138
+    x: 282
+    y: 905 
+
+  rgb_holiday_valentine:
+    label: Valentines
+    number: 139
+    x: 325
+    y: 865 
+
+  rgb_jack_circle:
+    label: Jack Char
+    number: 140
+    x: 345
+    y: 805 
+
+  rgb_charwiz_rect:
+    label: Character Wizard Mode
+    number: 141
+    x: 330
+    y: 740 
+
+  rgb_sally_circle:
+    label: Sally Char
+    number: 142
+    x: 215
+    y: 805 
+
+  rgb_mayor_c_circle:
+    label: Mayor Char
+    number: 143
+    x: 210
+    y: 740 
+
+  rgb_santa_a:
+    label: S(A)NTA
+    number: 144
+    x: 115
+    y: 785 
+
+  rgb_zero_circle:
+    label: Zero
+    number: 145
+    x: 25
+    y: 830 
+
+  rgb_santa_s:
+    label: (S)ANTA
+    number: 146
+    x: 75
+    y: 785 
+
+  rgb_mayor_circle:
+    label: Mayor Circle
+    number: 147
+    x: 145
+    y: 725 
+
+  rgb_mayor_arrow:
+    label: Mayor Arrow
+    number: 148
+    x: 115
+    y: 700 
+
+  rgb_lramp_circle:
+    label: Left Ramp Circle
+    number: 149
+    x: 200
+    y: 635 
+
+  rgb_lramp_arrow:
+    label: Left Ramp Arrow
+    number: 150
+    x: 180
+    y: 600 
+
+  rgb_lramp_rdiamond:
+    label: Left Ramp Right Diamond
+    number: 151
+    x: 215
+    y: 590 
+
+  rgb_lramp_ldiamond:
+    label: Left Ramp Left Diamond
+    number: 152
+    x: 150
+    y: 615 
+
+  rgb_lorbit_circle:
+    label: Left Orbit Circle
+    number: 153
+    x: 105
+    y: 575 
+
+  rgb_lorbit_arrow:
+    label: Left Orbit Arrow
+    number: 154
+    x: 65
+    y: 540

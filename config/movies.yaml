@@ -1,0 +1,44 @@
+#config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+assets:
+  videos:
+    default:
+      height: 128
+      width: 210
+      load: stream
+
+videos:
+  oogiebats:
+    file: oogiebats.mpg
+  extraballmovie:
+    file: extraballmovie.mpg
+  paperweb:
+    file: paperweb.mpg
+  welcome:
+    file: welcome.mp4
+  teddy:
+    file: teddy.mpg
+  clapping:
+    file: clapping.mpg
+  jackoogie:
+    file: jackoogie.mpg
+  jacksurprise:
+    file: jacksurprise.mpg
+  lights:
+    file: lights.mpg
+  lsbfingers:
+    file: lsbfingers.mpg
+  mayorfall:
+    file: mayorfall.mpg
+  outfit:
+    file: outfit.mpg
+  scary:
+    file: scary.mpg
+  halloweendoor:
+    file: halloweendoor.mpg
+  zero:
+    file: zero.mpg
+  redjack:
+    file: redjack.mp4
+    

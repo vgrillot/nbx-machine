@@ -1,0 +1,90 @@
+Hardware:
+done*- rewire 12V supply (only to nano?, motor?)
+done*- rewire 5V supply (Nano, LEDs, 3 (4?) opto boards)
+done - ramp opto brackets to replace gates
+done - NEW opto at top for CCW orbit
+done - solder support to wire ramp (connect to lower LSB target post)
+- remove optos TX/RC from top, drill bigger access holes
+- rewire optos TX/RC with connectors
+done -- GND power strip ( + spade connectors)
+- power supply strips - spade connectors
+- metal apron (Jeff)
+- plastic ramps?
+- paint cab black
+done - - increase upper flipper arc angle?
+done - - increase hold power for oogie diverter (weaker spring?)
+done - mayor figure - connect servo
+done - left ramp return switch - adjustment
+
+Code:
+- Led shows - get them all working
+	- doors
+done 	- jack complete (keeps running)
+	- GI
+done - char and score displays - remove on game over
+- trough/plunger eject sfx
+- mystery mode
+- game mode levels/difficulty settings
+done - servo code
+done - increase hold power for oogie diverter
+- HS
+- Credit
+done - Extra ball mode?
+done - Ball save
+- Service mode
+- Oogie modes
+- wizard modes
+done - LSB kidnap mb
+
+- video clips
+- song loops
+
+
+
+Art:
+- playfield
+- cab
+- backbox
+- apron
+
+
+
+
+Screen layers:
+
+(these are wrong - went with -z widgets for most - need to revamp this chart)
+
+- 0-100 backdrop (cycle through various images/videos)
+
+- 500-599 door/oogie modes (split screen left/right if both running)
+
+- 700-799 character strip (transparent, 128X32, above score/info) - qualified, running, completed character heads, running text
+
+- 1000-1099 score/info overlay (transparent, tinted rectangle, 128X28, bottom)
+
+- 2000+ short(~5s) intro slides  - backdrop image/video, title, instructions.  Shown on top of everything.  Timers in other modes paused.
+
+- 2000+ extra ball, add-a-ball, ball save, tilt, bonus.  Backdrop image/video, title, etc.  Shown on top of everything.
+
+
+
+
+
+STILL TO CODE:
+
+char_wizard
+door_wizard
+OB_Jack
+OB_Santa
+OB_Unravel
+OB_wizard
+Mystery
+Video_mode
+ultimate_wizard
+char_science
+
+
+Light shows!
+GI
+
+

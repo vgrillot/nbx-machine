@@ -1,0 +1,165 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Zero
+
+mode:
+  start_events: char_zero_start
+  stop_events: char_zero_stop
+  code: Char_Zero.Char_Zero
+  priority: 1500
+
+
+sound_player:
+  char_zero_music_start:
+    loop_Fever2:
+      action: play    
+      loops: 1
+      volume: 0.5 
+
+  char_zero_music_loop_2:
+    loop_Fever2:
+      action: play    
+      loops: 1
+      volume: 0.5 
+
+  char_zero_music_loop_3:
+    loop_Fever3:
+      action: play    
+      loops: 1
+      volume: 0.5 
+
+  char_zero_music_loop_4:
+    loop_Fever4:
+      action: play    
+      loops: 1
+      volume: 0.5 
+
+  char_zero_music_stop:
+    loop_Fever2:
+      action: stop
+    loop_Fever3:
+      action: stop
+    loop_Fever4:
+      action: stop
+
+  mode_char_zero_stopping:
+    loop_Fever2:
+      action: stop
+    loop_Fever2:
+      action: stop
+    loop_Fever3:
+      action: stop
+    loop_Fever4:
+      action: stop
+   
+  say_here_you_go: here_you_go_boy
+  bark_1: bark_bark
+  bark_2: bark_bark2
+  bark_3: bark_bark3
+  bark_4: bark_bark
+
+
+random_event_player:
+  zero_bark:
+  - bark_1
+  - bark_2
+  - bark_3
+  - bark_4
+
+
+  
+widget_player:
+  char_zero_music_start: 
+    slide_zero:
+      slide: charframe          
+
+  show_zero_msg_1: 
+    zero_repeat:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_zero_msg_2: 
+    zero_for:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_zero_msg_3: 
+    zero_value:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+
+  char_zero_show_slide: 
+    slide_zero:
+      slide: charframe     
+
+  char_zero_hide_slide: 
+    slide_zero:
+      action: remove          
+      slide: charframe     
+
+  remove_zero_messages:
+    zero_repeat:
+      action: remove      
+      slide: charframe           
+    zero_for:
+      action: remove      
+      slide: charframe           
+    zero_value:
+      action: remove      
+      slide: charframe           
+      
+
+
+widgets:
+  zero_repeat:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Repeat the same shot
+        color: 6060ff        
+        y: 44
+        z: -210  
+        x: 105
+  zero_for:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: to increase jackpot
+        color: 6060ff        
+        y: 44
+        z: -210
+        x: 105
+  zero_value:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Next (char_zero_next)
+        number_grouping: true
+        color: 6060ff        
+        y: 44
+        z: -210 
+        x: 105
+  
+  slide_zero:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: ZERO FETCH
+        color: bb8811
+        anchor_y: top
+        y: top
+        z: -210
+      - type: video
+        video: zero
+        auto_play: true
+        end_behavior: loop        
+        z: -200        
+
+
+
+
+
+
+

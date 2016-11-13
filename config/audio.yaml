@@ -1,0 +1,805 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+sound_system:
+  buffer: 4096
+  frequency: 44100
+  channels: 2
+  master_volume: 0.9
+  tracks:
+    voice:
+      volume: 0.8
+      simultaneous_sounds: 1
+      preload: yes
+    sfx:
+      volume: 0.8
+      simultaneous_sounds: 8
+      preload: yes
+    music:
+      volume: 0.8
+      simultaneous_sounds: 1
+
+assets:
+    sounds:
+        default:
+            load: preload
+        voice:
+            load: preload
+            track: voice
+        sfx:
+            load: preload
+            track: sfx
+        music:
+            load: preload
+            track: music
+
+
+
+            
+sounds:
+
+    loop_whats_this_long:
+        target: music            
+    loop_This_is_halloween_long:
+        target: music            
+    loop_afx1:
+        target: music            
+    loop_afx2:
+        target: music           
+
+    loop_halloween_part6:
+        target: music            
+        events_when_looping: loop_halloween_part6_looping
+        events_when_played: loop_halloween_part6_played
+        events_when_stopped: loop_halloween_part6_stopped
+
+    loop_halloween_part5:
+        target: music            
+        events_when_looping: loop_halloween_part5_looping
+        events_when_played: loop_halloween_part5_played
+        events_when_stopped: loop_halloween_part5_stopped
+
+    loop_halloween_part4:
+        target: music            
+        events_when_looping: loop_halloween_part4_looping
+        events_when_played: loop_halloween_part4_played
+        events_when_stopped: loop_halloween_part4_stopped
+
+    loop_halloween_part3:
+        target: music            
+        events_when_looping: loop_halloween_part3_looping
+        events_when_played: loop_halloween_part3_played
+        events_when_stopped: loop_halloween_part3_stopped
+
+    loop_halloween_part2:
+        target: music            
+        events_when_looping: loop_halloween_part2_looping
+        events_when_played: loop_halloween_part2_played
+        events_when_stopped: loop_halloween_part2_stopped
+
+    loop_halloween_part1:
+        target: music            
+        events_when_looping: loop_halloween_part1_looping
+        events_when_played: loop_halloween_part1_played
+        events_when_stopped: loop_halloween_part1_stopped
+        
+    loop_Fever2:
+        target: music            
+        events_when_looping: loop_Fever2_looping
+        events_when_played: loop_Fever2_played
+        events_when_stopped: loop_Fever2_stopped
+    loop_Fever3:
+        target: music            
+        events_when_looping: loop_Fever3_looping
+        events_when_played: loop_Fever3_played
+        events_when_stopped: loop_Fever3_stopped
+    loop_Fever4:
+        target: music            
+        events_when_looping: loop_Fever4_looping
+        events_when_played: loop_Fever4_played
+        events_when_stopped: loop_Fever4_stopped
+    loop_Sabres1:
+        target: music            
+    loop_Snapper2:
+        target: music            
+    loop_STRIVING1:
+        target: music  
+        events_when_looping: loop_STRIVING1_looping
+        events_when_played: loop_STRIVING1_played
+        events_when_stopped: loop_STRIVING1_stopped
+
+    loop_STRIVING2:
+        target: music            
+    loop_TomLoop1:
+        target: music        
+    loop_making_toys:
+        target: music        
+    loop_oogie_2:
+        target: music    
+    loop_oogie_3:
+        target: music    
+    loop_Cymbalic:
+        target: music    
+    loop_lakari1:
+        target: music    
+    loop_Scratchy:
+        target: music    
+    loop_Sweety:
+        target: music    
+    loop_Whistler:
+        target: music    
+    loop_sad_sally:
+        target: music
+    loop_halloween:
+        target: music
+    loop_kidnap:
+        target: music
+    loop_lastchance:
+        target: music
+    loop_march:
+        target: music
+    loop_Oogie:
+        target: music
+    loop_somethings_up:
+        target: music
+    loop_This_is_halloween_finale:
+        target: music
+    loop_whats_this:
+        target: music    
+#        ducking:
+#            target: music
+#            delay: 0
+#            attack: 0.4sec
+#            attenuation: -9db
+#            release_point: 1sec
+#            release: 1.25sec   
+
+    achieve:
+        track: sfx
+    Aghhhhh:
+        track: sfx
+    allright:
+        track: sfx
+    amazing:
+        track: sfx
+    and_since_i_am_dead:
+        track: sfx
+    an_oversized_sock:
+        track: sfx
+    atom_attach:
+        track: sfx
+    atom_born:
+        track: sfx
+    a_one_and_a_two_and_a_three:
+        track: sfx
+    a_reward:
+        track: sfx
+    ball launch motorcycle:
+        track: sfx
+    bark_bark:
+        track: sfx 
+#        ducking:
+#            target: voice
+#            delay: 0
+#            attack: 0.4sec
+#            attenuation: -9db
+#            release_point: 1sec
+#            release: 1.25sec   
+
+    bark_bark2:
+        track: sfx
+    bark_bark3:
+        track: sfx
+    bark_bark4:
+        track: sfx
+    barrel:
+        track: sfx
+    bell:
+        track: sfx
+    big metal:
+        track: sfx
+    big swoosh:
+        track: sfx
+    bm_eat_gem:
+        track: sfx
+    bump:
+        track: sfx
+    bunny:
+        track: sfx
+    By_Name:
+        track: sfx
+    candy:
+        track: sfx
+    cat_squeeze:
+        track: sfx
+    cause_im_mr_oogie_boogie:
+        track: sfx
+    chimes:
+        track: sfx
+    christmas_town:
+        track: sfx
+    Christmas_Toys:
+        track: sfx
+    cow:
+        track: sfx
+    curiosity_killed_the_cat:
+        track: sfx
+    deadly_nightshade:
+        track: sfx
+    demon_of_light:
+        track: sfx
+    did_anyone_think:
+        track: sfx
+    distbd1:
+        track: sfx
+        max_queue_time: .25s
+    doctor:
+        track: sfx
+    doctor_thank_you_for_coming:
+        track: sfx
+    Dont_Give_Up:
+        track: sfx
+    doorbell:
+        track: sfx
+    door_squeak:
+        track: sfx
+    doubleDead:
+        track: sfx
+    dr_finklestein2:
+        track: sfx
+    du_du_da_da:
+        track: sfx
+    excellent:
+        track: sfx
+    explosion:
+        track: sfx
+    fanfare_1:
+        track: sfx
+    fanfare_2:
+        track: sfx
+    fantastic:
+        track: sfx
+    flockaway:
+        track: sfx
+    frogs_breath:
+        track: sfx
+    gambling man:
+        track: sfx
+    gonna_do_the_best_i_can:
+        track: sfx
+    great_halloween_everybody:
+        track: sfx
+    gwbonus:
+        track: sfx
+    Halloweens_Finest:
+        track: sfx
+    ha_ha_ha:
+        track: sfx
+    ha_ha_haha_ha:
+        track: sfx
+    ha_ha_haha_haha:
+        track: sfx
+    ha_ha_ha_ha:
+        track: sfx
+    ha_ha_ha_ha2:
+        track: sfx
+    ha_ha_ha_ha_3:
+        track: sfx
+    ha_ha_huh_huh:
+        track: sfx
+    head_spin1:
+        track: sfx
+    head_spin2:
+        track: sfx
+    hear_that:
+        track: sfx
+    here_let_me_show_you:
+        track: sfx
+    here_you_go_boy:
+        track: sfx
+    hes_not_home:
+        track: sfx
+    hex_killed:
+        track: sfx
+    he_hasnt_been_home:
+        track: sfx
+    he_he_he_he:
+        track: sfx
+    hmmm2:
+        track: sfx
+    ho1:
+        track: sfx
+    ho2:
+        track: sfx
+    ho3:
+        track: sfx
+    holiday_worlds_of_old:
+        track: sfx
+    how_about_it:
+        track: sfx
+    how_horrible_our_christmas:
+        track: sfx
+    ho_ho:
+        track: sfx
+    ho_ho_ha:
+        track: sfx
+    hub_create_gem:
+        track: sfx
+    hurry_jack:
+        track: sfx
+    if_you_please:
+        track: sfx
+    immediately:
+        track: sfx
+    im_conducting_a_series:
+        track: sfx
+    im_not_in_the_mood:
+        track: sfx
+    im_sorry:
+        track: sfx
+    im_the_master_of_fright:
+        track: sfx
+    isnt_that_wonderful:
+        track: sfx
+    its_a_bat:
+        track: sfx
+    its_a_phase_my_dear:
+        track: sfx
+    its_a_rat:
+        track: sfx
+    its_christmas_time:
+        track: sfx
+    its_hopeless:
+        track: sfx
+    its_oogies_boys:
+        track: sfx
+    its_payback_time:
+        track: sfx
+    its_peculiar:
+        track: sfx
+    Its_Someplace_New:
+        track: sfx
+    its_suspicious:
+        track: sfx
+    it_couldnt_be_more_wonderful:
+        track: sfx
+    it_goes_something_like:
+        track: sfx
+    it_isnt:
+        track: sfx
+    it_is_scary:
+        track: sfx
+    i_believe_our_most_horrible:
+        track: sfx
+    i_cant_make_decisions:
+        track: sfx
+    I_have_every_confidence_in_you:
+        track: sfx
+    i_knew_it:
+        track: sfx
+    i_knew_this_christmas:
+        track: sfx
+    i_know:
+        track: sfx
+    i_made_you:
+        track: sfx
+    i_need_your_help:
+        track: sfx
+    i_wont_swallow_a_spoonfull:
+        track: sfx
+    jack:
+        track: sfx
+    jackpot:
+        track: sfx
+    jackpot1:
+        track: sfx
+    jack_answer_me:
+        track: sfx
+    jack_but_they_said:
+        track: sfx
+    jack_please_im_only_an_elected:
+        track: sfx
+    Jack_Sent_For_Us:
+        track: sfx
+    jack_skellington:
+        track: sfx
+    jack_you_home:
+        track: sfx
+    jellied_brain:
+        track: sfx
+    Keep_Calm_Turn_Off:
+        track: sfx
+    le_hit:
+        track: sfx
+    little metal:
+        track: sfx
+    little swoosh:
+        track: sfx
+    lock:
+        track: sfx
+    locklit:
+        track: sfx
+    lock_laugh:
+        track: sfx
+    look_zero_search_lights:
+        track: sfx
+    LSB_He_He_He:
+        track: sfx
+    Magnificent:
+        track: sfx
+    making_soup:
+        track: sfx
+    medium metal:
+        track: sfx
+    Merry_Christmas_Jack:
+        track: sfx
+    mmmmm:
+        track: sfx
+    My_What_A_Brilliant_Nose:
+        track: sfx
+    naughty:
+        track: sfx
+    nice1:
+        track: sfx
+    nice2:
+        track: sfx
+    nice3:
+        track: sfx
+    nice4:
+        track: sfx
+    nice5:
+        track: sfx
+    Nice6:
+        track: sfx
+    nice_work_bone_daddy:
+        track: sfx
+    nothings_more_suspicious:
+        track: sfx
+    Now_I_Have_all_The_Doors:
+        track: sfx
+    now_who_could_that_be:
+        track: sfx
+    now_why_dont_you_practice:
+        track: sfx
+    no_no_no_that_thing:
+        track: sfx
+    no_problem:
+        track: sfx
+    no_thanks_to_you_jack:
+        track: sfx
+    No_Zero_Down_Boy:
+        track: sfx
+    of_course_jack:
+        track: sfx
+    oh:
+        track: sfx
+    oh_well:
+        track: sfx
+    oh_zero_not_now:
+        track: sfx
+    Oogie_Byebye:
+        track: sfx
+    our_first_award_goes_to:
+        track: sfx
+    Oww:
+        track: sfx
+    pacman_0029:
+        track: sfx
+    perfect:
+        track: sfx
+    perhaps_it_can_be_improved:
+        track: sfx
+    quark_lose_petal:
+        track: sfx
+        max_queue_time: .25s
+    q_1:
+        track: sfx
+    q_2:
+        track: sfx
+    q_3:
+        track: sfx
+    q_4:
+        track: sfx
+    q_5:
+        track: sfx
+    rainbow:
+        track: sfx
+    ramp 1:
+        track: sfx
+    ramp 2:
+        track: sfx
+    ribbit:
+        track: sfx
+    sally:
+        track: sfx
+    sally2:
+        track: sfx
+    sandi_claws_huh:
+        track: sfx
+    Sandy_Claws:
+        track: sfx
+    santa_claus:
+        track: sfx
+    santa_claus_o_im_really:
+        track: sfx
+    scrumptious:
+        track: sfx
+    shall_we_then:
+        track: sfx
+    shhh:
+        track: sfx
+    shield:
+        track: sfx
+    shock:
+        track: sfx
+    shootagain:
+        track: sfx
+    sigh:
+        track: sfx
+    skillshot:
+        track: sfx
+    sling_bounce:
+        track: sfx
+    sling_drum:
+        track: sfx
+    Somethings_Missing:
+        track: sfx
+    sorry_ill_be_good:
+        track: sfx
+    Specifically:
+        track: sfx
+    splat1:
+        track: sfx
+    splat2:
+        track: sfx
+    splat3:
+        track: sfx
+    splat4:
+        track: sfx
+    splat5:
+        track: sfx
+    splat6:
+        track: sfx
+    Squishy:
+        track: sfx
+    standup hit lit:
+        track: sfx
+    standup hit unlit:
+        track: sfx
+    such_a_scream_jack:
+        track: sfx
+    surprised_arent_you_i_knew:
+        track: sfx
+    thankyou_everyone:
+        track: sfx
+    thats_not_sandi_claws:
+        track: sfx
+    thats_splendid:
+        track: sfx
+    thats_twice:
+        track: sfx
+    thats_what_im_missing:
+        track: sfx
+    that_soup_ready_yet:
+        track: sfx
+    there_goes_christmas:
+        track: sfx
+    The_Better_To_Light:
+        track: sfx
+    the_door_is_opened:
+        track: sfx
+    the_job_i_have_for_you:
+        track: sfx
+    think_you_can_manage:
+        track: sfx
+    this_has_never_happened_before:
+        track: sfx
+    this_is_a_disaster:
+        track: sfx
+    this_is_a_thing_called:
+        track: sfx
+    this_is_worse_than_i_thought:
+        track: sfx
+    This_Will_Be_Fun_To_Watch:
+        track: sfx
+    This_Will_Stop_Jack:
+        track: sfx
+    three_times:
+        track: sfx
+    throwing_star:
+        track: sfx
+    thump:
+        track: sfx
+    tiny laser:
+        track: sfx
+    trick_or_treat:
+        track: sfx
+    trick_or_treat_2:
+        track: sfx
+    try_again:
+        track: sfx
+    uhhhgh:
+        track: sfx
+    volt1:
+        track: sfx
+    volt2:
+        track: sfx
+    waiting to plunge loop:
+        track: sfx
+    well_come_on_bone_man:
+        track: sfx
+    well_well_well:
+        track: sfx
+    weve_got_to_find_jack:
+        track: sfx
+    we_need_some_of_these:
+        track: sfx
+    what:
+        track: sfx
+    whats_in_it:
+        track: sfx
+    whats_that_you_said_about_luck:
+        track: sfx
+    whats_this:
+        track: sfx
+    whats_this2:
+        track: sfx
+    whats_this3:
+        track: sfx
+    whats_this4:
+        track: sfx
+    Whats_This7:
+        track: sfx
+    Whats_This8:
+        track: sfx
+    Whats_This9:
+        track: sfx
+    Whats_This_Place:
+        track: sfx
+    What_Are_You_Doing_Here:
+        track: sfx
+    what_a_pleasure_to_meet_you:
+        track: sfx
+    what_have_we_here:
+        track: sfx
+    what_is_this:
+        track: sfx
+    What_Was_That:
+        track: sfx
+    Wheelchair_Noise:
+        track: sfx
+    Wheelchair_Noise2:
+        track: sfx
+    Wheelchair_Noise3:
+        track: sfx
+    Wheelchair_Noise4:
+        track: sfx
+    where_have_you_been:
+        track: sfx
+    where_is_he:
+        track: sfx
+    Whew_What_A_Day:
+        track: sfx
+    whoa:
+        track: sfx
+    who_is_it:
+        track: sfx
+    why_you_have_hands:
+        track: sfx
+    Woah:
+        track: sfx
+    Woah2:
+        track: sfx
+    wonderful:
+        track: sfx
+    wormswort:
+        track: sfx
+    'Yes':
+        track: sfx
+        max_queue_time: .25s        
+    youre_a_witches_fondest_dream:
+        track: sfx
+    youre_finished:
+        track: sfx
+    youre_joking:
+        track: sfx
+    youre_mine:
+        track: sfx
+    youve_come_back:
+        track: sfx
+    you_havent_got_a_prayer:
+        track: sfx
+    You_Really_Are_Too_Much:
+        track: sfx
+    you_tried_to_make:
+        track: sfx
+    you_will_be_a_decided_improvement:
+        track: sfx
+    zero:
+        track: sfx
+    mayor_hum1:
+        track: sfx
+    mayor_hum2:
+        track: sfx
+    mayor_hum3:
+        track: sfx
+    mayor_hum4:
+        track: sfx
+    minesound1:
+        track: sfx
+    minesound2:
+        track: sfx
+    minesound3:
+        track: sfx
+    minesound4:
+        track: sfx
+    tunnel:
+        track: sfx
+    making_christmas_drone:
+        track: sfx    
+    moo:
+        track: sfx    
+    goat:        
+        track: sfx    
+    its_going_to_be_a_disaster:
+        track: sfx
+
+    dice_roll:
+        track: sfx        
+        max_queue_time: .25s
+        
+    what_snake_eyes:
+        track: sfx        
+
+    one_more_roll:
+        track: sfx  
+
+    rooster:
+        track: sfx    
+        
+    fireworks_1:
+        track: sfx    
+
+    fireworks_2:
+        track: sfx    
+
+    fireworks_3:
+        track: sfx    
+
+    fireworks_4:
+        track: sfx    
+
+    fireworks_5:
+        track: sfx    
+        
+    oogieloop:
+        track: sfx    
+
+    oogieloop_reverse:
+        track: sfx    
+
+    kidnap_la_la_la:
+        track: sfx
+        
+    kidnap_turn_off_lights:
+        track: sfx
+        
+    you_want_me_to_starve:
+        track: sfx
+        
+    oh_my_head:
+        track: sfx
+        
+    be_carefull_with_sandiclaws:
+        track: sfx
+        
+    open_it_up:
+        track: sfx
+    
+    we_got_him:
+        track: sfx
+    
+    quickly:
+        track: sfx
+    
+        

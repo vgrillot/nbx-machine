@@ -1,0 +1,183 @@
+# show_version=4
+- time: 0
+
+  slides:
+    attract_dmd_loop_slide_8:
+    - type: text
+      text: (machine|player1_score)
+      color: yellow
+      style: tall_title
+      font_size: 20
+      number_grouping: true
+      min_digits: 2
+      anchor_y: top
+      anchor_x: left
+      x: left+20
+      y: top+0
+    - type: text
+      text: (machine|player2_score)
+      color: yellow
+      style: tall_title
+      font_size: 20
+      anchor_y: top
+      anchor_x: right
+      number_grouping: true
+      min_digits: 2
+      x: right-20
+      y: top+0
+    - type: text
+      text: (machine|player3_score)
+      color: yellow
+      style: tall_title
+      font_size: 20
+      anchor_y: bottom
+      anchor_x: left
+      x: left+20
+      y: bottom+5
+      number_grouping: true
+      min_digits: 2
+    - type: text
+      text: (machine|player4_score)
+      color: yellow
+      style: tall_title
+      font_size: 20
+      anchor_y: bottom
+      anchor_x: right
+      x: right-20
+      y: bottom+5
+      number_grouping: true
+      min_digits: 2
+    - type: text
+      style: tall_title
+      font_size: 12
+      text: (machine|credits_string)
+      anchor_y: bottom
+      y: bottom
+- time: '+3'
+
+
+  slides:
+    attract_dmd_loop_slide_1:
+      widgets:        
+        - type: text
+          text: (machine|score1_label)
+          style: tall_title
+          font_size: 20
+          anchor_y: top
+          y: top
+        - type: text
+          text: (machine|score1_name) (machine|score1_value)
+          style: tall_title
+          font_size: 20
+          number_grouping: true
+- time: '+4'
+
+
+  slides:
+    attract_dmd_loop_slide_2:
+      widgets:    
+        - type: video
+          video: welcome
+          z: 200
+          control_events: 
+            - event: pre_show_slide
+              action: seek 
+              value: 0.0
+            - event: pre_show_slide
+              action: play
+- time: '+6'
+
+
+  slides:
+    attract_dmd_loop_slide_3:
+      widgets:
+        - type: image
+          image: title
+- time: '+4'
+
+
+  slides:
+    attract_dmd_loop_slide_4:
+    - type: text
+      style: nightmare
+      text: PRESS START
+      color: lime
+      font_size: 20
+      animations:
+        pre_show_slide:
+        - property: opacity
+          value: 1
+          duration: 0.5s
+        - property: opacity
+          value: 0
+          duration: 0.5s
+          repeat: true
+    - type: text
+      style: tall_title
+      font_size: 12
+      text: (machine|credits_string)
+      anchor_y: bottom
+      y: bottom
+- time: '+4'
+
+
+  slides:
+    attract_dmd_loop_slide_5:
+    - type: text
+      text: DESIGNED, BUILT AND PROGRAMMED
+      color: yellow
+      style: tall_title
+      font_size: 20
+      y: 100
+    - type: text
+      text: BY MARK INCITTI
+      color: green
+      style: tall_title
+      font_size: 20
+      y: 80
+    - type: text
+      text: VERY SPECIAL THANKS
+      color: yellow
+      style: tall_title
+      font_size: 20
+      y: 50
+    - type: text
+      text: RULES - Kris Asick (Gemini)
+      color: green
+      style: tall_title
+      font_size: 20
+      y: 30
+- time: '+5'
+
+
+  slides:
+    attract_dmd_loop_slide_6:
+      widgets:
+        - type: image
+          image: fast_pinball_logo
+          x: 315
+          anchor_x: center
+          animations:
+              pre_show_slide:        
+                property: x
+                value: 30
+                duration: 1s
+- time: '+3'
+
+
+  slides:
+    attract_dmd_loop_slide_7:
+      widgets:
+        - type: image
+          image: Mission-Pinball-Logo-with-Script-200
+          x: -315
+          anchor_x: center
+          animations:
+              pre_show_slide:
+                property: x
+                value: 30
+                duration: 1s
+- time: '+3'
+
+
+

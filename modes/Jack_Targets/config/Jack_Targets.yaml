@@ -1,0 +1,331 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+# Jack_Targets
+# When you light all four JACK lights by hitting the standups 
+# for them at the sides of the two major ramps, you raise the bonus 
+# multiplier by 1x up to a maximum of 12x. Completing the JACK lights 
+# with no character mode or multiball running also qualifies
+# the frenzy mode "What's This?" by getting the ball into the Hinterlands
+# (normally, shooting the Hinterlands starts a Door Mode) 
+# and also qualifies "Where's Jack?" or "The Scientific Method" 
+# (if all other character modes are completed)by shooting any of
+# the other holes. (Graveyard, Mayor, Soup.) Since both are qualified at 
+# the same time, if you qualify a different character mode, all JACK-related 
+# modes are disqualified. If one's already been completed it won't be qualified. 
+# If both have been completed neither will. 
+#
+# Completing the JACK lights when the bonus multiplier is already up to a 
+# maximum of 12x awards 1,000,000 points.
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Jack_Targets.Jack_Targets
+  priority: 400
+
+
+sound_player:
+  jack_standups_jack_lights_lit_complete: jack
+  say_jack_letter_hit: Oww
+
+
+shot_groups:
+  jack_standups:
+    profile: jack_lights
+    reset_events:
+      jack_standups_jack_lights_lit_complete: 2s
+    enable_events: ball_started
+    disable_events: ball_ending
+
+    
+scoring:
+  jack_standups_jack_lights_lit_complete:
+    score: 10000
+  lrampstandup_left_jack_lights_unlit_hit:
+    score: 500
+  lrampstandup_right_jack_lights_unlit_hit:
+    score: 500
+  rrampstandup_left_jack_lights_unlit_hit:
+    score: 500
+  rrampstandup_right_jack_lights_unlit_hit:
+    score: 500
+  lrampstandup_left_jack_lights_lit_hit:
+    score: 100
+  lrampstandup_right_jack_lights_lit_hit:
+    score: 100
+  rrampstandup_left_jack_lights_lit_hit:
+    score: 100
+  rrampstandup_right_jack_lights_lit_hit:
+    score: 100 
+
+
+widget_player:
+  show_jack_letters: 
+    w_jack_letters:
+      widget_settings:    
+        expire: 1.75s
+      
+  show_jack_letter_j: 
+    w_jack_letter_j:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_a: 
+    w_jack_letter_a:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_c: 
+    w_jack_letter_c:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_k: 
+    w_jack_letter_k:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_blink_j: 
+    w_jack_letter_blink_j:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_blink_a: 
+    w_jack_letter_blink_a:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_blink_c: 
+    w_jack_letter_blink_c:
+      widget_settings:    
+        expire: 1.75s
+
+  show_jack_letter_blink_k: 
+    w_jack_letter_blink_k:
+      widget_settings:    
+        expire: 1.75s
+        
+  bonus_multiplier_increased: 
+    w_jack_letter_bonus:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letters:        
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_j:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_a:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_c:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_k:
+      widget_settings:    
+        expire: 1.75s
+    
+  jack_spelled_12: 
+    w_jack_letter_bonus_max:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letters:        
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_j:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_a:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_c:
+      widget_settings:    
+        expire: 1.75s
+    w_jack_letter_blink_k:
+      widget_settings:    
+        expire: 1.75s
+  
+
+
+animations:
+    blink_letter:
+    - property: opacity
+      value: 1
+      duration: 50ms
+      timing: after_previous
+    - property: opacity
+      value: 0
+      duration: 50ms
+      timing: after_previous
+    - property: opacity
+      value: 1
+      duration: 75ms
+      timing: after_previous
+    - property: opacity
+      value: 0
+      duration: 75ms
+      timing: after_previous
+    - property: opacity
+      value: 1
+      duration: 100ms
+      timing: after_previous
+    - property: opacity
+      value: 0
+      duration: 100ms
+      timing: after_previous
+    - property: opacity
+      value: 1
+      duration: 150ms
+      timing: after_previous
+    - property: opacity
+      value: 0
+      duration: 150ms
+      timing: after_previous
+      value: 1
+      duration: 150ms
+      timing: after_previous
+
+
+  
+  
+widgets:
+  w_jack_letters:
+      - type: image
+        image: jack_large_dark        
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1200        
+        
+  w_jack_letter_j:
+      - type: image
+        image: jack_large_bright_j
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+           
+
+  w_jack_letter_a:
+      - type: image
+        image: jack_large_bright_a
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        
+  w_jack_letter_c:
+      - type: image
+        image: jack_large_bright_c
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+
+  w_jack_letter_k:
+      - type: image
+        image: jack_large_bright_k
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        
+
+  w_jack_letter_blink_j:
+      - type: image
+        image: jack_large_bright_j
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        animations:
+          add_to_slide: blink_letter       
+           
+
+  w_jack_letter_blink_a:
+      - type: image
+        image: jack_large_bright_a
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        animations:
+          add_to_slide: blink_letter       
+        
+  w_jack_letter_blink_c:
+      - type: image
+        image: jack_large_bright_c
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        animations:
+          add_to_slide: blink_letter       
+
+  w_jack_letter_blink_k:
+      - type: image
+        image: jack_large_bright_k
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 25        
+        z: -1201
+        animations:
+          add_to_slide: blink_letter       
+        
+  w_jack_letter_bonus:
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ff8800
+        y: 70
+        x: middle
+        text: BONUS (bonus_multiplier) X
+        z: -1222
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        y: 69
+        x: middle+1
+        text: BONUS (bonus_multiplier) X
+        z: -1220
+    
+  w_jack_letter_bonus_max:
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ff8800
+        y: 70
+        x: middle
+        text: '1000000'
+        number_grouping: true
+        z: -1222        
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        y: 69
+        x: middle+1
+        text: '1000000'
+        number_grouping: true
+        z: -1220        
+   
+    
+show_player:
+  jack_standups_jack_lights_lit_complete:
+    jack_fanfare:
+      speed: 8
+      loops: 3
+      priority: 1
+
+

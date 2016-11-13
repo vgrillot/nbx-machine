@@ -1,0 +1,315 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Door_Valentines 
+# TODO - use clip of Jack uncorking butterfly bottle from Sally
+# for mode complete
+
+mode:
+  start_events: door_mode_1_start
+  stop_events: door_mode_1_stop
+  code: Door_Valentines.Door_Valentines
+  priority: 950
+ 
+sound_player:
+  holiday_valentines_music_start:
+    loop_Whistler:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  holiday_valentines_music_stop:
+    loop_Whistler:
+      action: stop
+      
+  mode_door_valentines_stopping:
+    loop_Whistler:
+      action: stop
+      
+  valentines_spin_score_increased: candy
+  valentines_spin_value_increased: flockaway
+
+  
+widget_player:
+  show_valentines_msg_1: 
+    valentines_spinner_value:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_valentines_msg_2: 
+    valentines_increase_spinner:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe                
+  show_valentines_msg_3: 
+    valentines_shoot_spinner:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe                
+
+  show_valentines_msg_1_n: 
+    valentines_spinner_value_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_valentines_msg_2_n: 
+    valentines_increase_spinner_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe                
+  show_valentines_msg_3_n: 
+    valentines_shoot_spinner_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_valentines_slide_wide:
+    widget_valentines_wide: 
+      slide: leftframe     
+      
+  show_valentines_slide_narrow:   
+    widget_valentines_narrow:  
+      slide: leftframe     
+
+  show_valentines_slide_full:
+    widget_valentines_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+
+  remove_valentines_slide_wide:
+    widget_valentines_wide:     
+      action: remove
+      slide: leftframe      
+      
+  remove_valentines_slide_narrow:
+    widget_valentines_narrow:  
+      action: remove     
+      slide: leftframe      
+      
+  remove_valentines_slide_full:
+    widget_valentines_full:  
+      action: remove     
+      slide: leftframe      
+
+  remove_valentines_messages:      
+    valentines_spinner_value:
+      action: remove        
+      slide: leftframe           
+    valentines_increase_spinner:
+      action: remove       
+      slide: leftframe           
+    valentines_shoot_spinner:
+      action: remove       
+      slide: leftframe           
+    valentines_spinner_value_n:
+      action: remove       
+      slide: leftframe           
+    valentines_increase_spinner_n:
+      action: remove       
+      slide: leftframe           
+    valentines_shoot_spinner_n:
+      action: remove       
+      slide: leftframe           
+
+      
+
+      
+widgets:
+  valentines_spinner_value:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: (door_valentines_spin_value_pts) per spin
+        number_grouping: true
+        y: 90
+        z: -110
+  valentines_increase_spinner:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Pink Shots Increase Value
+        y: 90
+        z: -110
+  valentines_shoot_spinner:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Shoot Spinner to collect
+        y: 90
+        z: -110
+
+  valentines_spinner_value_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: (door_valentines_spin_value_pts) 
+        x: 52
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: per spin
+        number_grouping: true                
+        x: 52
+        y: 90
+        z: -110
+        
+
+  valentines_increase_spinner_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: Pink Shots Increase
+        x: 52
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: Spinner Value
+        number_grouping: true                
+        x: 52
+        y: 90
+        z: -110
+        
+  valentines_shoot_spinner_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: Shoot Spinner
+        x: 52
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: to collect
+        number_grouping: true                
+        x: 52
+        y: 90
+        z: -110
+        
+
+  widget_valentines_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: VALENTINES
+        color: ff8888
+        anchor_y: top
+        y: top
+        x: 52
+        z: -101
+      - type: text
+        text: (door_valentines_spin_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: ff8888
+        x: 52        
+        y: 71
+        z: -102        
+      - type: text
+        text: (door_valentines_spin_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 000000
+        x: 53
+        y: 70
+        z: -101      
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_valentines_timeleft)
+        y: 8
+        x: 95        
+        z: -3000
+      - type: image
+        image: valentines_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100        
+        
+    
+  widget_valentines_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: valentines
+        color: ff8888
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: text
+        text: (door_valentines_spin_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: ff8888
+        x: 105
+        y: 71
+        z: -102        
+      - type: text
+        text: (door_valentines_spin_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 000000
+        x: 106
+        y: 70
+        z: -101        
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (door_valentines_timeleft)
+        x: 105        
+        y: 8
+        z: -3000
+      - type: image
+        image: valentines_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+        
+
+  widget_valentines_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: VALENTINES INTRO
+        color: ff8888
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -101
+      - type: text
+        text: 5 second vid
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -101        
+      - type: image
+        image: valentines_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        
+
+    

@@ -1,0 +1,445 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Mystery
+
+mode:
+  start_events: ball_starting
+  stop_events: game_ending
+  code: Mystery.Mystery
+  priority: 1800
+
+
+slide_player:
+  mystery_award_ready: slide_74
+  
+  
+sound_player:
+  mystery_sfx: cat_squeeze
+  mystery_ready_sfx: bump  
+  mystery_award_choose: this_is_a_thing_called
+  mystery_swap_sfx: hmmm2
+  
+  
+widget_player:
+  show_box1: 
+    box1:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box2: 
+    box2:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box3: 
+    box3:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box4: 
+    box4:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box5: 
+    box5:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box6: 
+    box6:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box7: 
+    box7:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box8: 
+    box8:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box9: 
+    box9:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box10: 
+    box10:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box11: 
+    box11:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box12: 
+    box12:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box13: 
+    box13:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box14: 
+    box14:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box15: 
+    box15:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+  show_box16: 
+    box16:
+      widget_settings:    
+        x: 126
+        y: 35
+        z: -1195
+      slide: leftframe              
+
+
+  show_mystery_award_background:
+    mystery_award_background:
+      widget_settings:    
+      slide: leftframe              
+
+  remove_mystery_award_background:
+    mystery_award_background:
+      action: remove    
+  
+
+  remove_box1: 
+    box1:
+      action: remove
+  remove_box2: 
+    box2:
+      action: remove
+  remove_box3: 
+    box3:
+      action: remove
+  remove_box4: 
+    box4:
+      action: remove
+  remove_box5: 
+    box5:
+      action: remove
+  remove_box6: 
+    box6:
+      action: remove
+  remove_box7: 
+    box7:
+      action: remove
+  remove_box8: 
+    box8:
+      action: remove
+  remove_box9: 
+    box9:
+      action: remove
+  remove_box10: 
+    box10:
+      action: remove
+  remove_box11: 
+    box11:
+      action: remove
+  remove_box12: 
+    box12:
+      action: remove
+  remove_box13: 
+    box13:
+      action: remove
+  remove_box14: 
+    box14:
+      action: remove
+  remove_box15: 
+    box15:
+      action: remove
+  remove_box16: 
+    box16:
+      action: remove
+
+  mystery_award_selected:
+    w_mystery_award_selected:
+      widget_settings:    
+        expire: 4s        
+      slide: leftframe              
+  show_box1_selected: 
+    box1:
+      widget_settings:    
+        x: 130
+        y: 100
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box2_selected: 
+    box2:
+      widget_settings:    
+        x: 138
+        y: 100
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box3_selected: 
+    box3:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box4_selected: 
+    box4:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box5_selected: 
+    box5:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box6_selected: 
+    box6:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box7_selected: 
+    box7:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box8_selected: 
+    box8:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195        
+        expire: 4s                
+      slide: leftframe              
+  show_box9_selected: 
+    box9:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box10_selected: 
+    box10:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box11_selected: 
+    box11:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box12_selected: 
+    box12:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box13_selected: 
+    box13:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box14_selected: 
+    box14:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box15_selected: 
+    box15:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+  show_box16_selected: 
+    box16:
+      widget_settings:    
+        x: 130
+        y: 100        
+        z: -1195
+        expire: 4s                
+      slide: leftframe              
+
+
+
+widgets:
+  box1:
+     - type: image
+       image: box1
+  box2:
+     - type: image
+       image: box2
+  box3:
+     - type: image
+       image: box3
+  box4:
+     - type: image
+       image: box4
+  box5:
+     - type: image
+       image: box5
+  box6:
+     - type: image
+       image: box6
+  box7:
+     - type: image
+       image: box7
+  box8:
+     - type: image
+       image: box8
+  box9:
+     - type: image
+       image: box9
+  box10:
+     - type: image
+       image: box10
+  box11:
+     - type: image
+       image: box11
+  box12:
+     - type: image
+       image: box12
+  box13:
+     - type: image
+       image: box13
+  box14:
+     - type: image
+       image: box14
+  box15:
+     - type: image
+       image: box15
+  box16:
+     - type: image
+       image: box16
+
+  mystery_award_background:
+    - type: text
+      style: tall_title
+      font_size: 24
+      anchor_y: top
+      y: top
+      z: -1200      
+      text: CHOOSE YOUR GIFT
+    - type: text
+      style: tall_title
+      font_size: 24
+      anchor_y: bottom
+      text: (choose_gift_timeleft)
+      y: bottom
+      z: -1200      
+    - type: image
+      image: jack_present_choose
+      anchor_y: top
+      anchor_x: left
+      y: 128
+      x: 0        
+      z: -1190
+
+  w_mystery_award_selected:
+    - type: text
+      style: tall_title
+      font_size: 28
+      text: YOUR AWARD
+      y: 50
+      z: -1200
+    - type: text
+      style: tall_title
+      font_size: 24
+      text: (mystery_award_description)
+      y: 30
+      z: -1200
+    - type: image
+      image: jack_present_selected
+      anchor_y: top
+      anchor_x: left
+      y: 128
+      x: 0        
+      z: -1190
+       
+      
+    
+ 
+    
+    
+slides:
+  slide_74:
+    widgets:    
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: YOUR GIFT IS READY
+        anchor_y: top
+        y: top
+      - type: video
+        video: gift_smashcar
+    expire: 4s    
+

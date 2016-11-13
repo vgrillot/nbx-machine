@@ -1,0 +1,382 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+shots:
+    #SANTA
+  left_out_lane:
+    switch: outlanel_sw
+    show_tokens:
+        leds: rgb_santa_s
+  left_return_lane:
+    switch: returnlanel_sw
+    show_tokens:
+        leds: rgb_santa_a
+  right_return_lane:
+    switch: returnlaner_sw
+    show_tokens:
+        leds: rgb_santa_n
+  right_out_lane:
+    switch: outlaner_sw
+    show_tokens:
+        leds: rgb_santa_t
+  pac_loop:
+    switch: pacloop_sw
+    show_tokens:
+        leds: rgb_santa_b
+
+    #JACK
+  lrampstandup_left:
+    switch: lrampstandl_sw
+    show_tokens:
+        leds: rgb_lramp_ldiamond
+  lrampstandup_right:
+    switch: lrampstandr_sw
+    show_tokens:
+        leds: rgb_lramp_rdiamond
+  rrampstandup_left:
+    switch: rrampstandl_sw
+    show_tokens:
+        leds: rgb_rramp_ldiamond
+  rrampstandup_right:
+    switch: rrampstandr_sw
+    show_tokens:
+        leds: rgb_rramp_rdiamond
+
+    #LSB
+  lock_rect:
+    switch: lock_sw
+    show_tokens:
+        leds: rgb_lock_rect
+  shock_rect:
+    switch: shock_sw
+    show_tokens:
+        leds: rgb_shock_rect
+  barrel_rect:
+    switch: barrel_sw
+    show_tokens:
+        leds: rgb_barrel_rect
+
+    #Target Bank Bugs
+  ob_bug_1:
+    switch: oogietarget1_sw
+    show_tokens:
+        leds: rgb_bug_1
+  ob_bug_2:
+    switch: oogietarget2_sw
+    show_tokens:
+        leds: rgb_bug_2
+  ob_bug_3:
+    switch: oogietarget3_sw
+    show_tokens:
+        leds: rgb_bug_3
+
+  mystery_rect:
+    switch: mystery_sw
+    show_tokens:
+        leds: rgb_mystery_rect
+
+  doctor_rect:
+    switch: doctor_sw
+    show_tokens:
+        leds: rgb_doctor_rect
+
+  major_0:
+    switch: mayor_sw
+    delay_switch:
+      subwayoogie_sw: 2s
+      mayor_sw: 1s
+  major_1:
+    switch_sequence: leftorbitlower_sw, leftorbitupper_opt
+    time: 2s
+  major_2:
+    switch_sequence: lrampgate_sw, hintertreegate_sw
+    time: 2s
+  major_2a:
+    switch_sequence: lrampgate_sw, tublock3_opt
+    time: 2s
+  major_3:
+    switch: innerloop_opt
+  major_3b:
+    switch_sequence: innerloop_opt, leftorbitupper_opt
+    time: 2s
+  major_4:
+    switch_sequence: oogiecw_opt, oogiedivertertrap_opt
+    time: 2s
+  major_5:
+    switch_sequence: oogieccw_opt, oogiecw_opt
+    time: 2s
+  major_5a:
+    switch_sequence: oogieccw_opt, sneakinloop_opt
+    time: 2s
+  major_6:
+    switch: gravestone_sw
+    delay_switch:
+      gravestone_sw: 1s    
+  major_6a:
+    switch: jacksaucer_sw
+    delay_switch:
+      jacksaucer_sw: 1s    
+  major_7:
+    switch_sequence: rrampgate_sw, rampreturnl_sw
+    time: 3s
+  major_7a:
+    switch_sequence: rrampgate_sw, rampreturnr_sw
+    time: 3s
+  major_8:
+    switch_sequence: rightorbit_opt, rightorbitupper_opt
+    time: 2s
+  major_8a:
+    switch_sequence: rightorbit_opt, sneakinloop_opt
+    time: 2s
+  major_9:
+    switch: soupentrance_opt
+
+  oogie_loop_cw:
+    switch_sequence: oogiecw_opt, oogiedivertertrap_opt
+    time: 2s
+  oogie_loop_ccw:
+    switch_sequence: oogieccw_opt, oogiedivertertrap_opt
+    time: 2s
+    
+  returned_to_plunger2x:
+    switch_sequence: soupentrance_opt, plungerlane_sw
+    time: 2s
+    delay_switch:
+      zerokickback_sw: 4s    
+
+  returned_to_plunger3x:
+    switch_sequence: zerokickback_sw, soupentrance_opt, plungerlane_sw
+    time: 4s  
+
+  taste_the_soup:
+    switch_sequence: soupentrance_opt, soupvuk_opt
+    time: 2s  
+
+  plunged:
+    switch_sequence: plungerlane_sw, rightorbit_opt
+    time: 2s  
+
+  sneakin:
+    switch_sequence: sneakinloop_opt, subwaysneak_sw
+    time: 2s  
+
+  left_ramp:
+    switch_sequence: lrampgate_sw, hintertreegate_sw
+    time: 3s
+  left_ramp2:
+    switch_sequence: lrampgate_sw, tublock3_opt
+    time: 3s
+  oogie_cw_loop:
+    switch_sequence: oogiecw_opt, oogieccw_opt
+    time: 2s
+  oogie_ccw_loop:
+    switch_sequence: oogieccw_opt, oogiecw_opt
+    time: 2s
+  inner_right_loop:
+    switch_sequence: oogieccw_opt, sneakinloop_opt
+    time: 3s
+  right_ramp_left:
+    switch_sequence: rrampgate_sw, rampreturnl_sw
+    time: 3s
+  right_ramp_right:
+    switch_sequence: rrampgate_sw, rampreturnr_sw
+    time: 3s
+  right_orbit:
+    switch_sequence: rightorbit_opt, leftorbitupper_opt
+    time: 2s  
+
+  tub_lock:
+    switch_sequence: lrampgate_sw, tublock3_opt
+    time: 3s  
+
+
+
+shot_groups:
+
+  rollover_lanes:
+    shots:
+    - left_out_lane
+    - left_return_lane
+    - right_return_lane
+    - right_out_lane
+    - pac_loop
+
+  jack_standups:
+    shots:
+    - lrampstandup_left
+    - lrampstandup_right
+    - rrampstandup_left
+    - rrampstandup_right
+#        debug: yes           
+
+  lsb_standups:
+    shots:
+    - lock_rect
+    - shock_rect
+    - barrel_rect
+
+  ob_bug_shots:
+    shots:
+    - ob_bug_1
+    - ob_bug_2
+    - ob_bug_3
+
+  bugbash_targets:
+    shots:
+    - lrampstandup_left
+    - lrampstandup_right
+    - rrampstandup_left
+    - rrampstandup_right
+    - lock_rect
+    - shock_rect
+    - barrel_rect
+    - doctor_rect
+    - ob_bug_1
+    - ob_bug_2
+    - ob_bug_3
+
+  major_shots:
+    shots:
+    - major_0
+    - major_1
+    - major_2
+    - major_2a
+    - major_3
+    - major_4
+    - major_5
+    - major_5a
+    - major_6
+    - major_6a
+    - major_7
+    - major_7a
+    - major_8
+    - major_8a
+    - major_9
+
+  skill_shots:
+    shots:
+    - major_0
+    - major_1
+    - major_2
+    - major_2a
+    - major_3
+    - major_4
+    - major_5
+    - major_5a
+    - major_6
+    - major_6a
+    - major_7
+    - major_7a
+    - major_8
+    - major_8a
+    - major_9
+    - sneakin
+
+  multiplier_shots:
+    shots:
+    - major_0
+    - major_1
+    - major_2
+    - major_2a
+    - major_3
+    - major_4
+    - major_5
+    - major_5a
+    - major_6
+    - major_6a
+    - major_7
+    - major_7a
+    - major_8
+    - major_8a
+    - major_9
+    - plunged
+    - returned_to_plunger2x
+    - returned_to_plunger3x
+    - taste_the_soup
+    - oogie_loop_cw
+    - oogie_loop_ccw
+
+
+shot_profiles:
+  singlestep:
+    states:
+    - name: unlit
+      show: off
+      loops: 1
+      
+  lsbp_halloween:
+    states:
+    - name: unlit
+      show: sc_lsb_unlit
+      loops: -1
+    - name: lit
+      loops: -1
+      show: sc_lsb_lit
+      
+  lsbp:
+    states:
+    - name: unlit
+      show: l_off
+      loops: 1
+    - name: lit
+      loops: 1
+      show: yellow_lights
+      
+  jack_lights:
+    states:
+    - name: unlit
+      show: off
+      loops: 1
+    - name: lit
+      loops: 1
+      show: orange_lights
+      
+  santa_lights:
+    states:
+    - name: unlit
+      show: off
+      loops: 1
+    - name: lit
+      show: red_lights
+      
+  wheres_jack:
+    states:
+    - name: unlit
+      show: w_jack_unlit
+      loops: -1
+    - name: lit
+      show: w_jack_lit
+      loops: -1     
+
+  science_jack:
+    states:
+    - name: unlit
+      show: off
+      loops: 1
+    - name: lit
+      show: orange_lights
+  bb:
+    states:
+    - name: blue
+      show: bb_blue
+      loops: -1
+      speed: 8
+    - name: green
+      show: bb_green
+      loops: -1
+      speed: 8
+    - name: yellow
+      show: bb_yellow
+      loops: -1
+      speed: 8
+    - name: orange
+      show: bb_orange
+      loops: -1
+      speed: 8
+    - name: red
+      show: bb_red
+      loops: -1
+      speed: 8             
+
+
+

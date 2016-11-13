@@ -1,0 +1,438 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_LSB
+
+mode:
+  start_events: char_LSB_start
+  stop_events: char_LSB_stop
+  code: Char_LSB.Char_LSB
+  priority: 1500
+
+          
+sound_player:
+  tub_mb_music_start:
+    loop_kidnap:
+      loops: -1        
+      action: play
+      
+  tub_mb_music_stop:
+    loop_kidnap:
+      action: stop
+
+  mode_Char_LSB_stopping:
+    loop_kidnap:
+      action: stop
+
+
+  #shot_tub_lock: fanfare_1
+  tub_ball_1_locked: Jack_Sent_For_Us
+  tub_ball_2_locked: specifically
+  tub_ball_3_locked: By_Name
+  LSB_bathtub_ready: fanfare_1
+  
+  lock_rect_lsbp_unlit_hit: lock
+  shock_rect_lsbp_unlit_hit: shock
+  barrel_rect_lsbp_unlit_hit: barrel
+  lock_rect_lsbp_lit_hit: bump
+  shock_rect_lsbp_lit_hit: bump
+  barrel_rect_lsbp_lit_hit: bump
+  
+  say_sandy_claws: Sandy_Claws
+  say_thats_not_santa: thats_not_sandi_claws
+  say_who_is_it: who_is_it
+  say_bunny: bunny
+  say_we_got_him: we_got_him
+  say_you_dont_have_claws: why_you_have_hands
+  say_what_a_pleasure: what_a_pleasure_to_meet_you  
+
+  say_its_oogies_boys: its_oogies_boys
+  say_what_are_you_doing: What_Are_You_Doing_Here  
+  
+  say_be_carefull: be_carefull_with_sandiclaws
+  
+
+scoring:
+  lock_rect_lsbp_lit_hit:
+    score: 660
+  shock_rect_lsbp_lit_hit:
+    score: 660
+  barrel_rect_lsbp_lit_hit:
+    score: 660
+  lock_rect_lsbp_unlit_hit:
+    score: 6600
+  shock_rect_lsbp_unlit_hit:
+    score: 6600
+  barrel_rect_lsbp_unlit_hit:
+    score: 6600
+
+
+shot_groups:
+  lsb_standups:
+    profile: lsbp
+    reset_events:
+      lsb_standups_lsbp_lit_complete: 2s
+    enable_events: ball_started
+    disable_events: ball_ending
+    
+
+show_player:
+  lsb_standups_lsbp_lit_complete:
+    lsb_complete_fanfare:
+      speed: 8
+      loops: 3
+      priority: 1
+    
+#not used    
+animations:
+  fade_out:
+    property: opacity
+    value: 0
+    duration: 750ms
+    timing: with_previous
+  expand:
+    property: font_size
+    value: 150
+    duration: 750ms
+    timing: with_previous
+  zig_zag_zoom:
+      - property: font_size
+        value: 30
+        duration: 250ms
+        timing: after_previous
+      - property: font_size
+        value: 20
+        duration: 250ms
+        timing: after_previous
+        repeat: true    
+
+widget_player:  
+  char_lsb_show_tub_full:
+    slide_lsb_tub_full:
+      slide: charframe    
+  
+  char_lsb_hide_tub:
+    slide_lsb_tub_full:
+      action: remove
+      slide: charframe      
+    slide_lsb:
+      action: add
+      slide: charframe      
+        
+  tub_mb_music_stop:
+    slide_lsb:
+      action: remove
+      slide: charframe      
+
+  LSB_bathtub_ready: 
+    widget_bathtub:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s         
+
+  LSB_bathtub_ready1: 
+    widget_bathtub1:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s         
+
+  LSB_bathtub_ready2: 
+    widget_bathtub2:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s         
+        
+        
+  tub_ball_1_locked: 
+    widget_ball_1_locked:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s         
+        
+  tub_ball_2_locked: 
+    widget_ball_2_locked:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s         
+
+  char_lsb_show_slide:
+    slide_lsb:
+      action: add
+      slide: charframe      
+
+  show_santa_at_jacks_super:
+    widget_santa_at_jacks2:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s      
+
+  show_santa_at_jacks: 
+    widget_santa_at_jacks:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s      
+        
+  show_santa_captured: 
+    widget_santa_captured:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s      
+  
+  show_not_santa: 
+    widget_not_santa:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s        
+  
+  show_angry_jack: 
+    widget_angry_jack:
+      action: add
+      slide: charframe      
+      widget_settings:
+        expire: 3s        
+
+
+widgets:
+  widget_angry_jack:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BRING ME SANDICLAWS
+       y: 35
+       z: -2311     
+       color: ff0f0f
+     - type: video
+       video: jack_roar
+       auto_play: true
+       end_behavior: stop
+       z: -2200        
+       
+
+  widget_santa_at_jacks2:
+     - type: text
+       style: tall_title
+       font_size: 24
+       text: SANTA SUPER JACKPOT
+       y: 55
+       z: -2311     
+       color: ff0f0f
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2300
+
+  widget_santa_at_jacks:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: SANTA JACKPOT
+       y: 55
+       z: -2311     
+       color: ff0f0f
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2300
+
+  widget_santa_captured:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: SANTA CAPTURED
+       y: 55
+       z: -2311     
+       color: ff0f0f
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2300
+
+  widget_not_santa:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: NOT SANTA
+       y: 55
+       z: -2311     
+       color: ff0f0f
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2300
+
+
+
+  widget_bathtub:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BATHTUB IS READY
+       y: 40
+       z: -2011     
+       color: f020f0       
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+
+  widget_bathtub1:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BATHTUB IS READY
+       y: 40
+       z: -2011     
+       color: f020f0       
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+     - type: image
+       image: bathtub_lock
+       y: 74
+       z: -2010     
+
+  widget_bathtub2:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BATHTUB IS READY
+       y: 45
+       x: 105
+       z: -2011      
+       color: f020f0
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BATHTUB IS READY
+       y: 44
+       x: 106
+       z: -2010      
+       color: 000000
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+     - type: image
+       image: bathtub_lock
+       y: 74
+       z: -2010     
+     - type: image
+       image: bathtub_shock
+       y: 74
+       z: -2010
+
+
+       
+  widget_ball_1_locked:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 1 IS LOCKED
+       y: 45
+       x: 105
+       z: -2011      
+       color: f020f0
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 1 IS LOCKED
+       y: 44
+       x: 106
+       z: -2010      
+       color: 000000
+     - type: image
+       image: bathtub_lock
+       y: 74
+       z: -2010     
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+       
+  widget_ball_2_locked:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 2 IS LOCKED
+       y: 45
+       x: 105
+       z: -2011      
+       color: f020f0
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 2 IS LOCKED
+       y: 44
+       x: 106
+       z: -2010      
+       color: 000000
+     - type: image
+       image: bathtub_lock
+       y: 74
+       z: -2010     
+     - type: image
+       image: bathtub_shock
+       y: 74
+       z: -2010
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+
+  slide_lsb_tub_full:
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 3 IS LOCKED
+       y: 45
+       x: 105
+       z: -2011      
+       color: f020f0
+     - type: text
+       style: tall_title
+       font_size: 20
+       text: BALL 3 IS LOCKED
+       y: 44
+       x: 106
+       z: -2010      
+       color: 000000
+     - type: image
+       image: bathtub_lock
+       y: 74
+       z: -2010     
+     - type: image
+       image: bathtub_shock
+       y: 74
+       z: -2010
+     - type: image
+       image: bathtub_barrel
+       y: 74
+       z: -2010       
+     - type: image
+       image: bathtub
+       y: 74
+       z: -2000
+       
+       
+  slide_lsb:
+    - type: text
+      style: tall_title
+      font_size: 24
+      text: KIDNAP SANDICLAWS
+      anchor_y: top
+      color: 70FF68
+      y: top
+      z: -210
+    - type: image
+      image: Santa_bag
+      z: -200       

@@ -1,0 +1,245 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Oogie mode 2 
+
+mode:
+  start_events: ob_mode_2_start
+  stop_events: ob_mode_2_stop
+  code: OB_Santa.OB_Santa
+  priority: 800
+
+
+sound_player:
+  OB_Santa_music_start:
+    loop_This_is_halloween_finale:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  OB_Santa_music_stop:
+    loop_This_is_halloween_finale:
+      action: stop
+
+  mode_OB_Santa_stopping:
+    loop_This_is_halloween_finale:
+      action: stop
+
+widget_player:
+  show_OB_Santa_slide_wide:
+    widget_ob_santa_wide: 
+      slide: leftframe     
+      
+  show_OB_Santa_slide_narrow:   
+    widget_ob_santa_narrow:  
+      slide: leftframe
+      
+  show_OB_Santa_slide_intro:
+    widget_ob_santa_full:   
+      slide: leftframe  
+      widget_settings:    
+        expire: 5s      
+      
+  show_OB_Santa_msg_1:         
+    widget_OB_Santa_msg_1:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Santa_msg_1_n:         
+    widget_OB_Santa_msg_1_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Santa_msg_2:         
+    widget_OB_Santa_msg_2:    
+      slide: leftframe  
+      widget_settings:    
+        expire: 1.95s      
+
+  show_OB_Santa_msg_2_n:         
+    widget_OB_Santa_msg_2_n:    
+      slide: leftframe    
+      widget_settings:    
+        expire: 1.95s      
+        
+
+  remove_OB_Santa_slide_wide:
+    widget_ob_santa_wide: 
+      action: remove
+      slide: leftframe
+      
+  remove_OB_Santa_slide_narrow:      
+    widget_ob_santa_narrow:    
+      action: remove
+      slide: leftframe
+      
+  remove_OB_Santa_slide_intro:      
+    widget_ob_santa_full:    
+      action: remove
+      slide: leftframe
+      
+  remove_OB_Santa_messages:
+    widget_OB_Santa_msg_1:    
+      action: remove    
+      slide: leftframe      
+    widget_OB_Santa_msg_1_n:        
+      action: remove  
+      slide: leftframe      
+    widget_OB_Santa_msg_2:    
+      action: remove  
+      slide: leftframe      
+    widget_OB_Santa_msg_2_n:        
+      action: remove  
+      slide: leftframe      
+
+        
+        
+widgets:      
+  widget_OB_Santa_msg_1:
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: Head to the nearest hole!
+        y: 90
+        z: -110        
+
+  widget_OB_Santa_msg_2:
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: Hurry!!
+        y: 90
+        z: -110        
+        
+  widget_OB_Santa_msg_1_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Head to the
+        y: 105
+        x: 157
+        z: -110        
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: nearest hole!
+        y: 90
+        x: 157
+        z: -110        
+
+  widget_OB_Santa_msg_2_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Hurry!!
+        y: 95
+        x: 157
+        z: -110        
+
+  widget_ob_santa_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SANTA VS OOGIE
+        color: ff33ff
+        anchor_y: top
+        y: 128
+        x: 157
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SANTA VS OOGIE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 158
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Santa_timeleft)
+        y: 8
+        x: 115        
+        z: -3000
+      - type: image
+        image: ob_santa_backdrop_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 105
+        z: -100        
+
+  widget_ob_santa_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SANTA VS OOGIE
+        color: ff33ff
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SANTA VS OOGIE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (OB_Santa_timeleft)
+        y: 8
+        x: 105        
+        z: -3000
+      - type: image
+        image: ob_santa_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+               
+  widget_ob_santa_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SANTA VS OOGIE
+        color: purple
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -102
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SANTA VS OOGIE
+        color: black
+        anchor_y: top
+        y: 127
+        x: 106        
+        z: -101
+      - type: text
+        style: tall_title
+        font_size: 24
+        text: 5 second vid
+        color: white
+        anchor_y: top
+        y: 100
+        x: 105        
+        z: -101
+      - type: image
+        image: ob_santa_backdrop
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+
+

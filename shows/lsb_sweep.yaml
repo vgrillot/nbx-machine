@@ -1,0 +1,97 @@
+# show_version=4
+- time: 0
+  leds:
+    rgb_shock_rect: ffff00
+    rgb_lock_rect: 777700
+    rgb_barrel_rect: 333300
+    rgb_zero_circle: ff0000
+    rgb_jack_saucer: 00d000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: ffff00
+    rgb_lock_rect: bbbb00
+    rgb_barrel_rect: '000000'
+    rgb_zero_circle: ffff00
+    rgb_jack_saucer: 00c000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: bbbb00
+    rgb_lock_rect: ffff00
+    rgb_barrel_rect: '000000'
+    rgb_zero_circle: 00ff00
+    rgb_jack_saucer: 00b000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: 777700
+    rgb_lock_rect: ffff00
+    rgb_barrel_rect: 333300
+    rgb_zero_circle: 00ffff
+    rgb_jack_saucer: 00a000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: 333300
+    rgb_lock_rect: ffff00
+    rgb_barrel_rect: 777700
+    rgb_zero_circle: 0000ff
+    rgb_jack_saucer: 009000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: '000000'
+    rgb_lock_rect: ffff00
+    rgb_barrel_rect: bbbb00
+    rgb_zero_circle: ff00ff
+    rgb_jack_saucer: 008000
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: '000000'
+    rgb_lock_rect: bbbb00
+    rgb_barrel_rect: ffff00
+    rgb_zero_circle: ff0000
+    rgb_jack_saucer: '007000'
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: 333300
+    rgb_lock_rect: 777700
+    rgb_barrel_rect: ffff00
+    rgb_zero_circle: ffff00
+    rgb_jack_saucer: '006000'
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: 777700
+    rgb_lock_rect: 333300
+    rgb_barrel_rect: ffff00
+    rgb_zero_circle: 00ff00
+    rgb_jack_saucer: '005000'
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: bbbb00
+    rgb_lock_rect: '000000'
+    rgb_barrel_rect: ffff00
+    rgb_zero_circle: 00ffff
+    rgb_jack_saucer: '004000'
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: ffff00
+    rgb_lock_rect: '000000'
+    rgb_barrel_rect: bbbb00
+    rgb_zero_circle: 0000ff
+    rgb_jack_saucer: '003000'
+
+- time: '+1'
+  leds:
+    rgb_shock_rect: ffff00
+    rgb_lock_rect: 333300
+    rgb_barrel_rect: 777700
+    rgb_zero_circle: ff00ff
+    rgb_jack_saucer: '002000'
+- time: '+1'

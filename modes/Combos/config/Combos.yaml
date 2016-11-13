@@ -1,0 +1,79 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Combos
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Combos.Combos
+  priority: 950
+
+ 
+sound_player:
+  combo_collected_2x: 'yes'
+  combo_collected_3x: 'yes'
+  combo_collected_4x: 'yes'
+  combo_collected_5x: wonderful
+  combo_collected_6x: wonderful
+  combo_collected_7x: wonderful
+  combo_collected_8x: amazing
+  combo_collected_9x: amazing
+  combo_collected_10x: fantastic
+
+
+shot_groups:
+  major_shots:
+    profile: singlestep
+
+widget_player:
+  combos_collected: 
+    w_combos:
+      widget_settings:    
+        expire: 2s
+
+widgets:
+  w_combos:
+     - type: text
+       style: tall_title
+       font_size: 32
+       text: (combos_number_display) X COMBO
+       anchor_y: top
+       anchor_x: center
+       y: top-5
+       x: 225
+       z: -1220
+       color: ffff00
+       animations:
+         add_to_slide:
+           - property: x
+             value: 60
+             duration: .35s
+           - property: x
+             value: 60
+             duration: .75s
+           - property: x
+             value: -170
+             duration: .35s
+       
+     - type: text
+       style: tall_title
+       font_size: 32
+       text: (combos_number_display) X COMBO
+       anchor_y: top
+       anchor_x: center       
+       y: top-6
+       x: 226
+       z: -1210
+       color: 000000
+       animations:
+         add_to_slide:
+           - property: x
+             value: 61
+             duration: .35s
+           - property: x
+             value: 61
+             duration: .75s
+           - property: x
+             value: -171
+             duration: .35s

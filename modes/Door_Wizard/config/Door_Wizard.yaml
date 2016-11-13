@@ -1,0 +1,172 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Door_Wizard 
+
+mode:
+  start_events: door_mode_7_start
+  stop_events: door_mode_7_stop
+  code: Door_Wizard.Door_Wizard
+  priority: 950
+
+
+slide_player:
+  holiday_wizard_music_start: slide_351
+  holiday_wizard_jackpot: slide_353
+  door_wizard_sjackpot_hit: slide_354
+  door_wizard_points_hit: slide_355
+  
+  
+  
+sound_player:
+  holiday_wizard_music_start:
+    loop_Cymbalic:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  holiday_wizard_music_stop:
+    loop_Cymbalic:
+      action: stop
+      
+  mode_door_wizard_stopping:
+    loop_Cymbalic:
+      action: stop
+
+  holiday_wizard_jackpot: jackpot
+  door_wizard_sjackpot_hit: jackpot1
+  door_wizard_sjackpot_hit: he_he_he_he
+
+
+
+widget_player:
+  show_wizard_msg_1: 
+    wizard_shoot_RWB:
+      widget_settings:    
+        expire: 1.95s
+      slide: slide_351
+  show_wizard_msg_2: 
+    wizard_light_SJ:
+      widget_settings:    
+        expire: 1.95s
+      slide: slide_351        
+  show_wizard_msg_3: 
+    wizard_shoot_roaming:
+      widget_settings:    
+        expire: 1.95s
+      slide: slide_351        
+
+
+widgets:
+  wizard_shoot_RWB:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: Return the leaders
+        number_grouping: true
+        y: 90
+        z: 10
+  wizard_light_SJ:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: back to their holidays
+        y: 90
+        z: 10
+  wizard_shoot_roaming:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Shoot the forest ramp!
+        y: 90
+        z: 10  
+  
+  
+slides:
+  slide_351:
+    widgets:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: Holiday Rescue
+        anchor_y: top
+        y: top
+        z: 90
+#      - type: text
+#        text: (score)
+#        number_grouping: true
+#        min_digits: 2
+#        style: tall_title
+#        font_size: 32
+#        color: 339966
+#        z: 90
+      - type: image
+        image: wizard_door      
+        z: 100
+
+        
+  slide_353:
+    widgets:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: JACKPOT
+        anchor_y: top
+        y: top
+        z: 90                
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: (value)
+        number_grouping: true
+        x: 105
+        y: 71
+        z: 90        
+      - type: image
+        image: wizard_door      
+        z: 100                
+    expire: 2s
+    
+  slide_354:
+    widgets:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SUPER JACKPOT
+        anchor_y: top
+        y: top
+        z: 90                
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: (value)
+        number_grouping: true
+        x: 105
+        y: 71
+        z: 90                
+      - type: image
+        image: wizard_door  
+        z: 100        
+    expire: 2s
+    
+  slide_355:
+    widgets:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: Points
+        anchor_y: top
+        y: top
+        z: 90                
+      - type: text
+        style: tall_title
+        font_size: 26
+        text: (value)
+        number_grouping: true
+        x: 105
+        y: 71
+        z: 90                
+      - type: image
+        image: wizard_door      
+        z: 100                
+    expire: 2s

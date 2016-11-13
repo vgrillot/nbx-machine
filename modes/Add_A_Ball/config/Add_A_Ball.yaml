@@ -1,0 +1,86 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Add_A_Ball
+
+mode:
+  start_events: add_a_ball_start
+  stop_events: add_a_ball_stop
+  code: Add_A_Ball.Add_A_Ball
+  priority: 1900
+
+  
+sound_player:
+    jack_random_points: rooster
+    addaball_mystery1: hmmm2
+    addaball_mystery2: flute_flutter
+    addaball_mystery3: bump  
+    show_addaball: flockaway
+  
+
+widget_player:
+  show_addaball:
+    widget_addaball:
+      widget_settings:    
+        expire: 1.5s
+      slide: charframe    
+      
+  jack_random_points:
+    widget_jackpoints:
+      widget_settings:    
+        expire: 2s
+      slide: charframe    
+  
+  
+  
+widgets:
+  widget_addaball:
+  - type: text
+    style: tall_title
+    font_size: 32
+    color: 020202
+    text: Add-a-Ball
+    y: 105
+    z: -1301
+  - type: image
+    image: moon_backdrop_1
+    anchor_y: top
+    anchor_x: left
+    y: top
+    x: 0        
+    z: -1300        
+
+  widget_jackpoints:
+  - type: text
+    style: tall_title
+    font_size: 26
+    color: 0090ff
+    text: RISE AND SHINE
+    x: 125
+    y: 110
+    z: -1301
+  - type: text
+    style: tall_title
+    font_size: 26
+    color: 0090ff
+    text: (jackpoints)
+    y: 45
+    x: 105
+    z: -1302
+  - type: text
+    style: tall_title
+    font_size: 26
+    color: 000000
+    text: (jackpoints)
+    y: 44
+    x: 106
+    z: -1301
+  - type: image
+    image: rooster
+    anchor_y: top
+    anchor_x: left
+    y: top
+    x: 0        
+    z: -1300        
+    
+    

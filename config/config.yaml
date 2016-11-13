@@ -1,0 +1,67 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+config:
+- videos.yaml
+- fasthardware.yaml
+- shots.yaml
+- leds.yaml
+- lightscripts.yaml
+- display.yaml
+- modes.yaml
+- keys.yaml
+- audio.yaml
+
+machine:
+  balls_installed: 6
+  min_balls: 1 
+
+
+
+
+Widget_Styles:
+  text_default:
+    font_name: Quadrit
+    font_size: 10
+    crop_top: 2
+    crop_bottom: 3
+  medium:
+    font_name: pixelmix3
+    font_size: 12
+    crop_top: 1
+    crop_bottom: 1
+  small:
+    font_name: smallest_pixel-7
+    font_size: 9
+    crop_top: 2
+    crop_bottom: 3
+  tall_title:
+    font_name: big_noodle_titling
+    font_size: 10
+  mdm:
+    #font_name: seguisb
+    font_name: currrentplayer2
+    antialias: false    
+    font_size: 18
+  tinyscore:
+    font_name: segoeuil
+    antialias: false
+    font_size: 9
+  nightmare_l:
+    font_name: NITEMARE
+    font_size: 32
+    antialias: true
+    crop_top: 2
+    crop_bottom: 2
+  nightmare:
+    font_name: NITEMARE
+    font_size: 16
+    antialias: true
+  tinyscore2:
+    font_name: pixelmix3
+    antialias: false
+    font_size: 8
+    crop_top: 2
+    crop_bottom: 2
+    
+

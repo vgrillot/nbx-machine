@@ -1,0 +1,1722 @@
+The Nightmare Before Christmas Pinball Adventure - Ruleset Draft                                                                                                        Kris Asick (Gemini)
+
+                                                                                                         Original Rules Draft and Actual Pinball Machine By: Mark Incitti
+
+
+
+                                                                                             - - - CONTENTS - - -
+
+
+
+     Main Ruleset and Details                                                                                   Hinterlands Door Modes
+     Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2                   Valentines - "Love is in the Air" . . . . . . . . . . . . . . . . . . . . 23
+     Playfield Breakdown . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3                          St. Patrick's - "Pot o' Gold" . . . . . . . . . . . . . . . . . . . . . . . . 24
+     Mode List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4                    Easter - "Easter Egg Hunt" . . . . . . . . . . . . . . . . . . . . . . . . 25
+     Features List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5                    Independence - "Fireworks Festival" Multiball . . . . . . . . . 26
+     Skill Shots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5                  Halloween - "Trick or Treat!" . . . . . . . . . . . . . . . . . . . . . . 27
+     Toys & Pop Bumpers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6                             Thanksgiving - "Harvest Frenzy" . . . . . . . . . . . . . . . . . . . 28
+     SANTA Lights . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6                       Christmas - "Naughty or Nice?" Multiball . . . . . . . . . . . . . 29
+     JACK Targets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6                       Wizard - "Holiday Rescue" . . . . . . . . . . . . . . . . . . . . . . . . 30
+     Shot Multiplier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+     Soup Hurry-Up . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+     End of Ball Bonus . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7                        Oogie Boogie Modes
+     Combos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8                     1 - "Bug Bash" Multiball . . . . . . . . . . . . . . . . . . . . . . . . . 31
+                                                                                                                 st
+
+     "This is Halloween" Video Mode . . . . . . . . . . . . . . . . . . . . . 9                                  nd
+                                                                                                                2   - "Santa vs. Oogie Boogie" . . . . . . . . . . . . . . . . . . . . . 32
+      Status Display Sequence . . . . . . . . . . . . . . . . . . . . . . . . . . 9                             3 - "Sally vs. Oogie Boogie" . . . . . . . . . . . . . . . . . . . . . . 33
+                                                                                                                 rd
+
+      Mystery Awards . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10                         4 - "Luck o' the Dice" . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+                                                                                                                 th
+
+      Gate Keeper Multiball . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11                          5 - "Jack vs. Oogie Boogie" . . . . . . . . . . . . . . . . . . . . . . 35
+                                                                                                                 th
+
+      Starting Modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12                       6 - "Oogie Boogie's Unravelling" Multiball . . . . . . . . . . . . 36
+                                                                                                                 th
+
+                                                                                                                Wizard - "Mega Oogie Showdown" . . . . . . . . . . . . . . . . . 37
+
+
+      Character Modes
+     Jack - "W hat's This?" Frenzy . . . . . . . . . . . . . . . . . . . . . . 14                               Ultimate W izard Mode
+     Jack - "W here's Jack?" Multiball . . . . . . . . . . . . . . . . . . . 15                                 "Christmastime in Halloween Town" . . . . . . . . . . . . . . . . 38
+     Jack - "The Scientific Method" Multiball . . . . . . . . . . . . . . 16
+     Sally - "Sally's Stitches" . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+     Doctor - "A Marked Improvement" . . . . . . . . . . . . . . . . . . 18                                     Miscellaneous Notes
+     Mayor - "I Can't Make Decisions!" . . . . . . . . . . . . . . . . . . 19                                   Recommended Adjustments . . . . . . . . . . . . . . . . . . . . . . 39
+     Zero - "Go Fetch!" . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20                          Recommended Audits . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+     LSB - "Kidnap the Sandi-Claws" Multiball . . . . . . . . . . . . . 21                                      Light Colours Reference Table . . . . . . . . . . . . . . . . . . . . . 42
+     Wizard - "Deliver the Presents" . . . . . . . . . . . . . . . . . . . . 22                                 Table Lighting and Elements . . . . . . . . . . . . . . . . . . . . . . 43
+
+Overview                                                                                                                                                         Page 2
+
+
+The Nightmare Before Christmas Pinball Adventure is so named because it is ultimately an adventure through many pinball modes, ultimately culminating in several
+wizard modes for those who's skills are supreme. The modes which can be played on the table are separated into three groups: Character Modes which are started
+in various ways based on which character is represented by the mode, Hinterlands Door Modes which are activated by getting the ball into the Hinterlands, and
+Oogie Boogie modes which are started by bashing down the bugs guarding his lair, dropping a gate, and getting the ball inside.
+
+
+There is some stacking involved, as you can have one Character, one Hinterlands, and one Oogie Boogie mode all running at once, but you can only activate new
+modes while a single ball is in play. If a multiball begins, new modes cannot be started until the multiball ends. The most dynamic aspect of the scoring is shot
+multiplying. There are ten major shots on the board which can be multiplied through a fairly simple, but tricky process. Multiplying shots not only multiplies the
+scores given by those shots, but also any other numerical happenings, such as getting multiple spins per spin of a spinner, or extra toys.
+
+
+"Toys" are one of the more interesting aspects of the game as they have several effects as you collect them. Typically, you earn toys as awards or from the pop
+bumpers. Toys go towards your end of ball bonus, but also come into play in one of the wizard modes and also affects how much time you get to complete modes
+in general.
+
+
+The scoring is laid out so that it's possible to get extremely high scores compared to the average person, but doing so requires making a lot of different things come
+together all at once. To compare the scoring to existing games, the best comparisons would be Creature from the Black Lagoon and Fish Tales, which are also built
+to give fairly balanced scores unless you're able to chain multiple tricky shots all together exactly when you need them. Here in TNBC, qualifying shot multipliers
+and super jackpots on those multiplied shots is how you're able to get excessive scores, but making this work is incredibly difficult, more so than just playing the
+game and going for wizard modes.
+
+
+There are a total of four wizard modes, one for each group of regular modes and a final, ultimate wizard mode which can only be reached if all three of the other
+wizard modes have been played. Qualifying the first three wizard modes not only means playing the regular modes, but completing them, thus timing out modes is
+not an option if you want to go for wizard modes.
+
+Playfield Breakdown                                                                                                                                        Page 3
+
+
+3 Flippers            Two Main, One Upper (right) which gives way to a major shot while held up
+3 Pop Bumpers         Cluster in upper left corner, used to give "toys" throughout the game
+2 Ramps               Left Ramp for Hinterlands and Bathtub, Right Ramp for Rooftops, leading to Left Inlane, Right Inlane, or Zero the ghost dog
+1 Drop Target         Placed inline in front of the Graveyard / Jack Skellington shot
+5 Lanes               2 Out, 3 Return, used to spell SANTA
+9 Standup Targets     3 near the left ramp for Lock, Shock and Barrel, one under the upper flipper for Doctor Finklestein, 4 to spell JACK at the ramp shot sides,
+                      one to light mystery awards and add-a-ball on the Graveyard shot
+1 Vertical Up-Kicker  Situated right over the hole for the Soup Shot underneath the upper flipper
+5 Diverters           Hinterlands~Bathtub, Inner Loop Diverter, Right Ramp to 'N' Return Lane, Right Ramp to 'A' Return or Zero Kickback, Soup~Shooter
+1 Kickback            Labelled as Zero the ghost dog, has the exact power necessary to send the ball into the Soup Shot under the upper flipper when raised
+1 Spinner             Left Orbit, labelled for Sally
+1 Popup Post          Used to divert outer orbit shots into the pops
+2 Slingshots          Cycles the selected Hinterland Door
+1 Scoop               Labelled as the Mayor of Halloween Town
+The Hinterlands       Area in the upper-right of the playfield with a hole used to start Door Modes
+Oggie Boogie's Lair   Centre playfield area with a three-target gate that can raise and lower, a magnet, and a hole behind, used to start Oogie Boogie Modes
+Bathtub               Shot from the left ram p, able to lock up to three balls, used to start "Kidnap the Sandi-Claws" multiball
+
+Mode List                                                                                                                                                     Page 4
+
+
+Character Modes
+Jack           What's This?                 Frenzy mode where all switches award points and some increase the point value
+Jack           Where's Jack?                Standard 3-ball multiball mode
+Jack           The Scientific Method        Advanced multiball which starts with 2 balls but can be brought up to 4 (excluding add-a-ball)
+Sally          Sally's Stitches             Spinner shooting mode
+Doctor         A Marked Improvement         Clear major shots to win
+Mayor          I Can't Make Decisions!      Must make a travelling shot, but it travels really fast, thus you have to shoot the mayor to hold it in place
+Zero           Go Fetch!                    Make random shots
+LSB            Kidnap the Sandi-Claws       Standard 3-ball multiball mode
+
+
+Hinterland Door Modes
+Valentines     Love is in the Air           Increase the spinner value by clearing lit shots/targets
+St. Patrick's  Pot o' Gold                  Use the pops to fill the pot of gold, then shoot for the Hinterlands to collect, can only collect once in the time limit
+Easter         Easter Egg Hunt              Certain major shots will have eggs hidden for points
+Independence Fireworks Festival             Standard 3-ball multiball mode
+Halloween      Trick or Treat!              Complete the LSB target bank as many times as possible but don't bug Doctor Finklestein!
+Thanksgiving   Harvest Frenzy               An inverse frenzy where only one shot will award points but the value awarded is increased by all other switches
+Christmas      Naughty or Nice?             Standard 2-ball mutliball mode where two shots are lit at all times, one worth a few points, the other a lot more
+
+
+Oogie Boogie Modes
+1 Mode
+ st            Bug Bash                     2-ball multiball mode where each standup target starts at a high value and decreases in value each time it's hit
+ nd
+2   Mode       Santa Vs. Oogie Boogie       Try to escape from Oogie Boogie by getting the ball off the playfield down a hole
+3 Mode
+ rd            Sally Vs. Oogie Boogie       Health-bar limited mode where health goes down constantly and must be recharged by making shots
+4 Mode
+ th            Luck o' the Dice             Roll the dice as many times as you can without going over a cumulative value of 32
+5 Mode
+ th            Jack Vs. Oogie Boogie        You must clear all the lit shots in a very short time limit while shooting the spinner to get more time
+6 Mode
+ th            Oogie Boogie's Unravelling   Unusual 3-ball multiball frenzy which can't be completed until you're down to one ball
+
+
+Wizard Modes
+Characters     Deliver the Presents                 Health-bar limited mode where you must make certain shots while avoiding certain shots
+Doors          Holiday Rescue                       Find random holiday individuals and return them to their proper realm through the Hinterlands
+Oogie Boogie   Mega Oogie Showdown                  Battle Mega Oogie with unlimited balls until someone wins
+Ultimate       Christmastime in Halloween Town      Timed multiball frenzy where the more different switches you hit, the greater your scores are multiplied
+
+Features List                                                                                                                                                         Page 5
+
+
+Toys                       Running value advanced by the pop bumpers which factors into your bonus, as well as the Deliver the Presents wizard mode
+Mystery Award              Gives "random" awards based on the state of the game, though holding both flipper buttons allows you to choose your award (just once)
+Add-a-Ball                 All multiballs allow for one add-a-ball, qualified by hitting the mystery target and collected on the graveyard shot
+Gate Keeper Multiball      Secretive 2-ball multiball where you must bash the gate down with one ball and get the other ball past in the brief moment it's down for
+SANTA Award                These lights get more valuable every time you complete them over the course of the entire game
+2x/3x Shots                The Soup Shot opens the shooter lane diverter briefly, upon getting the ball in you can multiply the scoring of the next major shot you hit
+Soup Scoring               Hurry-Up started every 100+ spinner spins where you must make the soup shot for lots of points
+Combos                     Whenever you shoot one of the 10 major shots, the other 9 will light for a combo potential, with each shot made clearing the combo light
+This is Halloween          Video Mode which plays like DDR or Guitar Hero, awarded as the third mystery award (then every 5 following)th
+
+
+
+
+Skill Shots
+
+
+Skill Shot #1
+If you soft-plunge into the Bathtub Hole, you get a 1,000,000 skill shot, multiplied by the current ball number.
+
+
+Skill Shot #2
+If you soft-plunge to the upper-right flipper and make the left toy-orbit shot, you will get a Skill Shot worth a fixed 2,500,000 points. This is the best one to go for on
+Ball 1 and 2, however, for Ball 3 (and 4/5 if playing a 5-ball game) you're better off going with Skill Shot #1.
+
+
+Super Skill Shot
+Normally, if you attempt to full-plunge, the popup post will cause the ball to fall into the toy pops. If you hold the left flipper up while plunging, the popup post will go
+down (and stay down) the instant the ball leaves the shooter lane, allowing the ball to go all the way around the orbit. Simply make any major shot after this without
+qualifying the playfield to score 4,000,000 points and 25 toys. All major shot triangles will flash cyan to indicate that you're ready to go for a Super Skill Shot.
+
+
+Secret Skill Shot
+If you want to get really crazy, soft-plunge the ball and get it down to the main flippers without hitting any switches or slingshots, then shoot the right ramp. This will
+always send the ball into the Zero lane and will award a "Secret Skill Shot" worth 1,000,000 points, multiplied by the current ball number, 25 toys, lowers the Oogie
+Boogie gate if it's up, increases the bonus multiplier by 1x, and opens the shooter lane diverter on the Soup Shot for 10 seconds as though you had just made the
+Soup Shot, making it possible to immediately go for a shot tripler. The game will actually flash the right ramp triangle cyan after about seven seconds if it thinks
+you're in the process of doing this, detected by confirming that the ball is not in the shooter lane, that you didn't qualify a Super Skill Shot, that no switches have
+been hit, and that one of the flippers has been up for seven seconds straight.
+
+Toys & Pop Bumpers                                                                                                                                                   Page 6
+
+
+The pop bumpers are only worth 1,200 points per hit. However, each time you hit one you also get a "Toy" which is a cumulative value kept throughout the game
+which factors into your end of ball bonus, but is also a factor for jackpots, timed modes, and the "Deliver the Presents" wizard mode.
+
+
+Jackpots         All "jackpots" are increased by 10,000 points per toy you have. If the shot is worth a lot but is NOT a jackpot, it is unaffected.
+Timed Modes      All modes with time limits will get a 1 second increase to its initial time limit per 100 toys you have. Does not affect combos and non-mode timers.
+Presents         When in "Deliver the Presents" each present delivered actually drops your toy count by 1. More details can be found in the section for this mode.
+
+
+Toys are often awarded from other methods as well, plus you can upgrade a single pop bumper by spelling SANTA or by collecting the appropriate Mystery award,
+or there's also a mystery award "Pops at Max" which will upgrade all three pop bumpers to triple value. The lights of the pops change from white, to green, to red to
+indicate 1x, 2x, and 3x value, which affects both the points awarded and the toys collected.
+
+
+Also, any time a shot you make which scores toys happens to have a shot multiplier attached, the toys awarded are also affected. Thus if you make a combo which
+awards 10 toys on a tripled shot, you get 30 toys!
+
+
+
+
+SANTA Lights
+
+
+There are five lanes by the flippers: two outlanes and three return lanes. The lights above them spell SANTA. If they're completed, you're given a SANTA award
+which consists of several things:
+
+
+�        Awards a base value of 100,000 points, increased by 50,000 for each subsequent completion over the course of the game (capped at 500,000), plus an
+         additional 200 multiplied by the end-of-ball bonus multiplier and multiplied again by the number of toys collected. (125 toys at 4x bonus would be 100,000
+         additional points.)
+�        Awards a Toy Pops upgrade.
+�        Lights the Mystery Shot once per ball. If the mystery shot is already lit, this is NOT wasted and can still be obtained later in the ball.
+
+
+One trick to this however is that it's possible to alley pass the first 'A' in Santa. To prevent abuse of this, if SANTA is completed twice in a row without hitting any
+other switches other than SANTA switches, the SANTA lights will flash red and the display will show "Santa is Exhausted" which is worth a random number of
+points from 10 to 19,990.
+
+
+
+
+JACK Targets
+
+
+When you light all four JACK lights by hitting the standups for them at the sides of the two major ramps, you raise the bonus multiplier by 1x up to a maximum of
+12x. Completing the JACK lights with no character mode or multiball running also qualifies the frenzy mode "W hat's This?" by getting the ball into the Hinterlands
+(normally, shooting the Hinterlands starts a Door Mode) and also qualifies "Where's Jack?" or "The Scientific Method" (if all other character modes are completed)
+by shooting any of the other holes. (Graveyard, Mayor, Soup.) Since both are qualified at the same time, if you qualify a different character mode, all JACK-related
+modes are disqualified. If one's already been completed it won't be qualified. If both have been completed neither will.
+
+
+Completing the JACK lights when the bonus multiplier is already up to a maximum of 12x awards 1,000,000 points.
+
+Shot Multiplier                                                                                                                                                       Page 7
+
+
+Whenever you make the Soup Shot under the upper flipper, the diverter beside it opens up for 10 seconds. If you manage to quickly get the ball into the Soup Shot
+again, the ball will be diverted to the shooter lane and the circle lights on all the major shots will start flashing blue. The next major shot you make will then have a
+2x multiplier applied to it for the rest of the ball, indicated by a solid blue circle. This not only affects raw points awarded from making the shot, but affects ALL things
+awarded by that shot, including stitches, toys, jackpots, mystery awards, combos, time awards, multiplier advances, etc. The only things you can't double are extra
+balls and specials. This is referred to by the display as the Soup Doubler.
+
+
+However, it's also possible to get a tripler, but this process is trickier. You not only have to get the diverter open, but you have to get the ball into the Zero kickback,
+then let the kickback fire the ball all the way to the diverter without hitting more than one unintended switch along the way. This is referred to on the display as the
+"Zero Tripler" and the circle lights will flash purple instead of blue, plus the tripled shot will stay solid purple instead of solid blue.
+
+
+There are some tricks to this. First of all, if you apply a doubler or tripler to a shot which has already been affected, it's wasted. Furthermore, overwriting a doubled
+shot with a tripled shot is all well and good, but you can also accidentally overwrite a tripled shot with a doubled shot. There's no time limit on setting your
+doubled/tripled shot. Once the ball ends all doublers and triplers are lost.
+
+
+
+
+Soup Hurry-Up
+
+
+If you get 100 stitches in normal play (outside of all modes and so long as the hurry up is not running) it starts the Soup Hurry-Up where you must get the ball to the
+Soup Shot under the upper flipper within 15 seconds. The base value of the hurry up starts at 2,000,000 and after 2 seconds starts dropping by 2.5% of its base
+value every quarter-second down to a minimum value of 10% of the base value. Every stitch earned from the spinner while the hurry up is running increases the
+base value by 50,000 points for the rest of the game. If the shooter lane diverter is open when you make the Soup Shot you still get the hurry up award.
+
+
+
+
+End of Ball Bonus
+
+
+At the end of each ball you get bonus points based on the following cumulative values tracked throughout the game:
+
+
+1 Toy = 250 Bonus
+1 Tombstone = 1,000 Bonus
+1 Stitch (spinner spins) = 100 Bonus
+1 Mode Completed = 2,500 Bonus
+Bonus Multiplier Held on Last Ball = 100,000 Bonus
+
+
+There is also a bonus multiplier which is raised by spelling JACK. It can be raised up to a maximum of 12x and can also be held between balls by making a 4x
+combo or from a potential mystery award. Because the bonus does not decrement at any point in the game, if your bonus is held when you lose your last ball you
+simply get a special awarded factored into your multiplied bonus, as opposed to getting your bonus twice as would be the case in some games.
+
+Combos                                                                                                                                                            Page 8
+
+
+Whenever you hit one of the 10 major shots without a multiball running, the other 9 will light up with flashing yellow triangles to indicate a combo potential for the
+next 7 seconds of ball time (combo timer stops if no balls are on the playfield). When you hit one of these shots, the light goes out and you'll have one less shot you
+can combo off of. Getting a 10x combo is worth huge points as well as a special, but is incredibly challenging to do. Combos are not awarded if a multiball is
+running and modes have priority for the colour of the triangle lights. The potential combo awards are as follows:
+
+
+2x      50,000 Points
+3x      75,000 Points + 5 Toys
+4x      100,000 Points + 5 Toys + Hold Bonus Multiplier (Only once per ball)
+5x      125,000 Points + 10 Toys
+6x      150,000 Points + 10 Toys + Light Mystery (Only once per ball)
+7x      300,000 Points + 20 Toys
+8x      500,000 Points + 30 Toys + Extra Ball (Only once per game)
+9x      1,000,000 Points + 50 Toys
+10x     5,000,000 Points + 100 Toys + Special (Only once per game)
+
+
+Three of the major shots may not return the ball imm ediately or may act unusual. The Mayor shot is a scoop, thus the combo timer is halted until the ball is back on
+the playfield. The Soup shot is the same way, although the Soup shot can also divert to the shooter lane, in which case the timer is halted until the ball is plunged
+back onto the playfield and a switch is hit. The Graveyard shot has the tombstone drop target in front of it, but hitting the tombstone will count towards the combo all
+the same, unlike most shots to the Graveyard which must actually make it past the tombstone to count.
+
+"This is Halloween" Video Mode                                                                                                                                      Page 9
+
+
+This video mode plays a lot like DDR or Guitar Hero. The screen will show two rows of scrolling flipper buttons on the sides with animation from the movie in the
+middle while playing a clip from "This is Halloween". There are several clips which can be selected at random. Each clip has timings in place for the buttons, but the
+buttons are different every time you play, thus just because you had to hit three left flippers, one right, then two more lefts one time you see a clip, the next time you
+see it you may need to hit two right, then two left, then one right and then both together. Each clip should be around 16 seconds long (covers approximately 40
+flipper hits based on how the song goes) and you are awarded points based on your accuracy:
+
+
+Display Effect   Margin of Error          Award
+Perfect!         0~2 ms                   100,000 Points
+Excellent        2~6 ms                   75,000 Points
+Great            6~12 ms                  50,000 Points
+Good             12~20 ms                 25,000 Points
+OK               20~30 ms                 10,000 Points
+Poor             30~40 ms                 5,000 Points
+Bad              40~80 ms                 1,000 Points
+Miss             80+ ms                   0 Points
+
+
+There's also a 2,500,000 point award for making it through the song without failing. You fail the song and end up ejected from the mode prematurely if you miss
+three times. You don't actually have to push a button for a miss as it will happen automatically. Once a miss occurs you can't actually get another miss until the next
+note comes into the hit range as the flippers will be ignored beforehand.
+
+
+One potential hurdle for making this video mode is there might be a delay between the audio, video, and feedback from the flippers. This delay will have to be
+measured extremely accurately and compensated for to ensure this video mode plays as best as it can.
+
+
+
+
+Status Display Sequence
+
+
+The following display sequence will come up if you hold either or both flippers up for a moment while there are balls in play and no other major display sequences
+are processing:
+
+
+�        "The Nightmare Before Christmas" - "Game Status"
+�        "Character Modes" - "_ of 7 Completed" - "Complete all to "Deliver the Presents""
+�        "Hinterland Doors" - "_ of 7 Completed" - "Complete all for "Holiday Rescue""
+�        "Oogie Boogie Battles" - "_ of 6 Completed" - "Complete all for "Mega Oogie Showdown""
+�        "_ Shots to light Mystery Award at Graveyard"
+�        "SANTA" - "Current Value = ______ [+ Upgrade] [+ Mystery]"
+�        "_ Toys Collected" - "Bonus Value = _____" - "Shoot pops to collect more"
+�        "_ Stitches" -"Bonus Value = _____" - "Shoot spinner for more"
+�        "_ Stitches Needed for Soup Hurry-Up" - "Maximum Value = _____"
+�        "End of Ball Bonus" - "_____" - "[Multiplier Held]"
+�        Grand Champion Score
+�        1 and 2
+           st     ndScores
+�        3 and 4 Scores
+           rd     th
+
+Mystery Awards                                                                                                                                                         Page 10
+
+
+Right next to the Graveyard/Jack shot is the mystery target. Hitting this just once the first time (twice the second time, thrice the third, etc. up to a max of 5) lights
+the Graveyard as a mystery award, indicated by flashing the triangle light purple. The visuals for this sequence shows Santa pulling up in his sleigh and reaching
+into his giant bag of toys, which then zooms into the screen, fades away, then four different-looking presents drop onto the display. Three of those four presents
+then drop away and the one remaining opens, revealing an award.
+
+
+This sequence is important because there's a secret with this: If both flipper buttons are detected as being held when the presents finish lining up on the display, a
+message will appear (along with a seven second countdown) saying to choose a present! The initial present selected is the same one which was going to be
+chosen automatically. You can then use the flipper buttons to change your selection and press both at the same time again, or the start button, to select a gift.
+Furthermore, the award given is actually determined by the look of the gift, thus clever players can learn what awards come from each and every gift. This trick can
+only be done once per game and is also the only way to access Gate Keeper Multiball. It's also a good way to earn rare awards once you know to recognize them.
+
+
+Despite the name though, the awards are not entirely random. Firstly, several of the awards are marked as (Default), meaning that if no awards are qualified, one of
+the defaults is selected entirely at random with equal odds. That said, each award has random odds attached, but this only determines how likely the gift is to be
+selected to appear along with the four gifts which show up prior to opening one. This way, certain awards like Extra Ball and Special remain difficult to acquire, even
+when you know how to perform the selection trick. You'll never see two of the same gift on the display at the same time, as each gift selected in sequence is
+prevented from being selected again for the spread of four gifts being shown. If multiple gifts are qualified, the one selected to appear will be randomly chosen while
+the others will be ignored and the other three gifts showing up on the display will be selected as usual.
+
+
+Add-a-Ball is slightly different. When in any multiball, the mystery target will be solid green. Hit it once to make it start flashing, then again to clear it and light the
+graveyard shot with a green triangle. Hitting the graveyard now will start to display the mystery award sequence, but a giant pinball will fall on the bag of toys,
+pushing the sleigh and Santa out of the display area and showing "Add-a-Ball" text. Afterwards, the mystery shot no longer functions for the duration of the multiball.
+Also, if you start a multiball with the mystery award lit, the graveyard shot immediately lights for an add-a-ball.
+
+Mystery Awards     (Continued)                                                                                                                                              Page 11
+
+
+The potential mystery awards are as follows:
+
+
+Odds              Award                     Qualifying Method
+40 in 1,000       1,000,000                 [Default] Cannot be Qualified; Can only be selected with secret selection feature, or by random chance as a default award
+125 in 1,000      Add Bonus Multiplier      [Default] (Adds 1x to bonus multiplier) Get at least 100 toys in a single ball.
+125 in 1,000      +1 Toy Upgrade            [Default] Exit out of a multiball with add-a-ball lit but without collecting it. (Mystery award will stay lit but will flash purple.)
+125 in 1,000      +25 Toys                  [Default] Go for a full minute of ball time without hitting a single pop bumper.
+50 in 1,000       Award Bonus               [Default] Raise the bonus multiplier at least 4 times on the current ball.
+125 in 1,000      5,000,000                 Trigger the ball saver five times, either by starting balls, multiballs, even from the mystery award.
+30 in 1,000       10,000,000                Play any wizard mode.
+10 in 1,000       10 Points                 Somehow manage to get the ball into the Graveyard while mystery is lit and the Gravestone drop target is still up.
+100 in 1,000      30 Second Ball Saver      Score less than 1,000,000 on the previous ball.
+100 in 1,000      Complete SANTA            Have four of the five SANTA lights lit. Will relight the mystery shot again if possible. (See details on SANTA lights.)
+50 in 1,000       Pops at Max               Have collected no toys at all for the current ball.
+50 in 1,000       Clear Bugs                (Opens Gate to Oogie Boogie) Make the mystery award shot within 5 seconds of hitting the gate.
+10 in 1,000       Spot Mode                 Have only one mode completion left for Characters, Hinterlands or Oogie Boogie. Will spot the appropriate mode.
+5 in 1,000        Extra Ball                Go for 10 minutes of ball time without getting a mystery award.
+1 in 1,000        Special                   Reach ball 3 in under 1 minute of ball time.
+50 in 1,000       Gate Keeper Multiball     Cannot be Qualified; Can only be selected with the secret mystery award selection feature.
+4 in 1,000        Video Mode                ALW AYS awarded as the third mystery award, then every fifth mystery award following.
+N/A               Add 10 Seconds            ALW AYS awarded if a mode timer is running.
+N/A               Add-a-Ball                ALWAYS awarded as the first (and only award possible) in multiball.
+
+
+
+
+Gate Keeper Multiball
+
+
+This is a super-secret multiball mode which can only be accessed by knowing how to select your gift from the mystery award process. This 2-ball multiball basically
+boils down to hitting the gate in front of Oogie Boogie's lair for 250,000 points each hit. The 9 hit lowers the gate and if you get the ball back into Oogie Boogie's lair
+                                                                                                     th
+
+you'll get an extra ball, after which the gate comes up and stays up and simply continues to award 250,000 points. The trick is there's no ball save on this multiball,
+although you do get one for 15 seconds when the multiball ends, thus you can't double-drain out of it. If multiple targets are hit at once, it still only counts as a single
+gate hit, as there's an extremely short delay after any target on the gate is hit where the targets won't register a second time.
+
+Starting Modes                                                                                                                                                      Page 12
+
+
+The process for starting a mode is different depending on if you're trying to start a Character Mode, Hinterland Door Mode, or an Oogie Boogie Mode.
+
+
+For Character Modes, each needs to first be qualified, then started. Each character mode has its own qualifying and starting methods. W hen a character mode is
+qualified, any shot which will start the mode will flash orange. Only one character's modes can be qualified at a time, thus if you qualify one character's mode then
+qualify another's, the one you qualified first will be disqualified and will have be requalified before you can start it. The exception to this is Lock, Shock and Barrel as
+they have a special bank of targets and bathtub for locking balls, so they don't override the other characters. (However, you can only have one Character Mode
+running at a time, so if you start say, "What's This?" Frenzy, the LSB multiball cannot be started until the frenzy ends. You CAN however combine "What's This?"
+Frenzy with a multiball from the Hinterlands or Oogie Boogie.)
+
+
+Character Mode                     Qualifying Method                                             Starting Method
+"What's This?" Frenzy              Spell JACK                                                    Hinterlands (Overrides starting a Door Mode)
+"Where's Jack?"                    Spell JACK (Some Character Modes not Complete)                Graveyard, Soup or Mayor
+"The Scientific Method"            Spell JACK (All other Character Modes Complete)               Graveyard, Soup or Mayor
+"Sally's Stitches"                 Get 100 spins on the spinner                                  Graveyard, Soup or Mayor
+"A Marked Improvement"             Shoot Doctor Finklestein                                      Graveyard, Soup or Mayor
+"I Can't Make Decisions!"          Shoot the Mayor                                               Mayor (Yes, you shoot once to qualify, again to start)
+"Go Fetch!"                        Knock down the Gravestone                                     Zero Kickback
+"Kidnap the Sandi-Claws"           Lock, Shock and Barrel Targets                                Bathtub Lock
+
+
+Character modes are tracked on the display as opposed to on the playfield. Each character mode you complete shows up as a small head symbol of that character
+under the scores. Jack gets two heads since you have to complete two different Jack modes (but not all three as you can only play one of "Where's Jack?" and "The
+Scientific Method"). Once a mode is complete it cannot be qualified again until you've completed all the other Character modes and play the "Deliver the Presents"
+Wizard Mode.
+
+
+"Kidnap the Sandi-Claws" is an exception to this as it simply gets more difficult to qualify and lock balls with each completion and is meant to be a multiball you can
+reliably go for without understanding the rest of the rules. The first time, you only have to complete the LSB standup targets once to enable all three bathtub locks.
+The second time and onwards you have to complete the LSB standups three times, once for each ball you wish to lock.
+
+
+For Hinterland Doors, there's seven lights arranged in a ring near the flippers. Any light which is off is a mode you haven't completed. Any light which is solid is a
+mode you have completed. Any light which is flashing is the mode currently selected to start if you shoot into the Hinterlands. The selected Hinterlands Door is
+changed by the slingshots, thus you have a little control over this. Completing (not necessarily starting) all the Hinterland Door modes in order awards an extra
+25,000,000 Chronological Holidays Jackpot. Once you have completed a particular door mode it cannot be played again until after playing the "Holiday Rescue"
+Wizard Mode.
+
+Starting Modes   (Continued)                                                                                                                                    Page 13
+
+
+For Oogie Boogie, there's a gate in front of his lair which bars access. Getting through the gate is a different process for each Oogie Boogie mode you have yet to
+play and involves different colours of bugs. Once the gate is down though, all you have to do is shoot the ball into his lair to start the next Oogie Boogie mode. If you
+manage to get a ball back there with the gate up, you can start the next mode without having to knock the gate down. Unlike Character and Door modes, Oogie
+Boogie modes MUST be completed in order.
+
+
+To open the gate for each Oogie Boogie mode (including the wizard mode), first it's important to understand the bug colours:
+
+
+Bug Colour       How it Works
+Yellow          Simply hit it and it clears away
+Green           When hit, it turns red and counts as cleared
+Red             If you hit a red bug before you finish clearing the rest, ALL bugs reset to how they started!
+Purple          When hit the first time, starts flashing. You then have 10 seconds to hit it again to clear it away, otherwise it stops flashing
+
+
+Oogie Boogie Mode                 Defending Bugs
+1 - Bug Bash                      All Yellow Bugs
+2 - Santa Vs. Oogie Boogie        Middle Green Bug, Outer Yellow Bugs
+3 - Sally Vs. Oogie Boogie        Middle Yellow Bug, Outer Green Bugs
+4 - Luck o' the Dice              All Green Bugs
+5 - Jack Vs. Oogie Boogie         Middle Purple Bug, Outer Yellow Bugs
+6 - Oogie Boogie's Unravelling    All Purple Bugs
+W - Mega Oogie Showdown           Middle Green Bug, Outer Purple Bugs
+
+Character Mode - "What's This?" Frenzy                                                                                                                           Page 14
+
+
+Brief Description
+30 Second timed frenzy mode where almost all switches award points. Hitting any of the JACK targets increases the frenzy value. You must reach a target score to
+complete the frenzy and progress towards "Deliver the Presents".
+
+
+Scenario
+Jack's fallen through the Christmas Town door in the Hinterlands and is wondering what everything is.
+
+
+Details
+To help Jack discover the magic of Christmas Town you must shoot everything! The base value for every switch starts at 40,000, but hitting any of the JACK
+standups increases this value by 5,000. The mode only lasts 30 seconds and you must score at least 2,000,000 to complete and end the mode.
+
+
+Scoring
+Frenzy Base Value                 40,000
+Increments to Base Value          5,000 / each
+
+
+Lighting
+The lighting in this mode is mostly just festive and fun and meant to distract the player. The JACK targets will be flashing yellow and will ALL flash green briefly when
+one is hit to indicate the increase in the frenzy value.
+
+
+Difficulty Adjustments
+Very Easy         40 Seconds - Goal of 1,000,000 Points
+Easy              35 Seconds - Goal of 1,500,000 Points
+Normal            30 Seconds - Goal of 2,000,000 Points
+Hard              30 Seconds - Goal of 2,500,000 Points
+Very Hard         25 Seconds - Goal of 3,000,000 Points
+
+Character Mode - "Where's Jack?" Multiball                                                                                                                           Page 15
+
+
+Brief Description
+Simple 3-Ball multiball with a jackpot shot which needs to be relit once collected and can be made super by completing other shots first.
+
+
+Scenario
+Nobody in Halloween Town knows where Jack's gone off to, but then, Jack's on his way back anyways so it's not a big deal.
+
+
+Details
+Once started, the ball count is brought up to 3 and three of the major shots will light up, one as a jackpot (always the right ramp), as well as two random shots as
+super qualifiers. If you hit the two super qualifiers first, the jackpot shot will become a super jackpot, but you must make it within 7 seconds or else it will time out, go
+back to a regular jackpot, and two major shots will relight to qualify for a super. Once a jackpot or super jackpot is made, the major shots will unlight and you must
+spell JACK to qualify another jackpot as well as the super modifiers. The mode is completed simply by being started.
+
+
+Scoring
+Jackpot                            5,000,000
+Next Jackpot Increase              2,500,000
+Super Jackpot                      20,000,000
+Next Super Increase                10,000,000
+
+
+Lighting
+The jackpot shot flashes yellow on the triangle only while the super qualifiers flash cyan on their triangles. If you qualify a super, the jackpot will now flash white, both
+on the triangle and the circle. W hen the jackpot needs to be re-qualified, the JACK lights will flash yellow and will go solid when one is hit. Once all are solid they will
+flash rapidly as the jackpot and super qualifier shots relight.
+
+
+Difficulty Adjustments
+Very Easy         Only one shot to qualify super for 10 seconds, only need to hit one JACK standup to relight jackpots
+Easy              Two shots to qualify super for 10 seconds, only need to hit one JACK standup to relight jackpots
+Normal            Two shots to qualify super for 7 seconds, need to hit all four JACK standups to relight jackpots
+Hard              Three shots to qualify super for 7 seconds, need to hit all four JACK standups to relight jackpots
+Very Hard         Three shots to qualify super for 5 seconds, need to hit all four JACK standups to relight jackpots
+
+Character Mode - "The Scientific Method" Multiball                                                                                                                    Page 16
+
+
+Brief Description
+Special multiball played instead of "W here's Jack?" if all other character modes are completed before trying to start "W here's Jack?" for your first time. The goal is to
+make randomly selected major shots, then get the ball into the graveyard for a jackpot.
+
+
+Scenario
+Jack is up in his tower trying to figure out what makes Christmas so special. He needs to experiment with various things to discover the answers he seeks.
+
+
+Details
+When this mode begins, the ball count is brought up to 2, the gravestone is reset, and two major shots (excluding the graveyard) will be selected at random. Add-a-
+Ball is disabled for this multiball. When you shoot a lit major shot, it will be cleared. Once all major shots are cleared, the gravestone can be knocked down and
+entering the Graveyard will award a jackpot. Attempting to shoot the graveyard without a jackpot lit will reset the gravestone immediately. You can upgrade the
+jackpot into a super jackpot by spelling JACK entirely after the jackpot is lit but before collecting it. Once a jackpot is collected, the ball count will increase by 1, a 10
+second ball saver will be activated, and the number of major shots you need to clear for the next jackpot to light will also be one higher. You can get the ball count all
+the way up to 5, though the number of major shots to clear can go as high as 7. Once no more balls are added no more ball saver time will be awarded. The mode is
+completed simply by being started.
+
+
+Scoring
+Lit Major Shot                       200,000
+Jackpot                              10,000,000
+Next Jackpot Increase                1,000,000
+Super Jackpot                        25,000,000
+Next Super Increase                  5,000,000
+
+
+Lighting
+The major shots flash yellow triangles. When the jackpot is ready the graveyard shot will flash a yellow triangle and the JACK lights will flash cyan. W hen you hit a
+JACK standup the light will go solid. If all JACK lights are completed they will rapidly flash white for a moment and the graveyard shot will flash white on both the
+triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy         1 Major Shot Initially to Light Jackpot, Maximum Ball Count of 5, Ball Saver 30 sec Initial, 15 sec Additional
+Easy              2 Major Shots Initially to Light Jackpot, Maximum Ball Count of 5, Ball Saver 30 sec Initial, 15 sec Additional
+Normal            2 Major Shots Initially to Light Jackpot, Maximum Ball Count of 5, Ball Saver 20 sec Initial, 10 sec Additional
+Hard              2 Major Shots Initially to Light Jackpot, Maximum Ball Count of 4, Ball Saver 15 sec Initial, 7 sec Additional
+Very Hard         3 Major Shots Initially to Light Jackpot, Maximum Ball Count of 4, Ball Saver 15 sec Initial, 7 sec Additional
+
+Character Mode - "Sally's Stitches"                                                                                                                                   Page 17
+
+
+Brief Description
+Shoot the spinner to get lots of points and to complete the mode before time runs out. Upper right flipper is disabled for the duration.
+
+
+Scenario
+Sally's arm has come off! She must stitch it back on before anyone comes looking for her.
+
+
+Details
+When the mode begins and for the duration of the mode, the upper right flipper is completely disabled and the popup post will be on standby to raise when the ball
+enters the loops. You must get 100 spinner spins to complete the mode and have 30 seconds to do so within, which seems very tricky, but you can upgrade the
+spinner during this mode by getting the ball into the pop bumpers. 10 pop hits will give one spinner upgrade so that each spin is now worth double. 20 more pop hits
+afterwards will triple the spinner. The shot multiplier will also factor in, thus a tripler on the spinner shot combined with a triple upgrade will award 9 spins at a time!
+
+
+Scoring
+Spinner Spin               25,000 (multiplied by upgrades)
+
+
+Lighting
+The pops will all flash orange to indicate that hitting them can get you an upgrade. Once both upgrades are acquired, the pop bumpers stop flashing. The spinner
+shot will have a flashing yellow triangle.
+
+
+Difficulty Adjustments
+Very Easy         40 Seconds, 60 Spins Needed, 6 + 12 Pops for Upgrades
+Easy              30 Seconds, 80 Spins Needed, 8 + 16 Pops for Upgrades
+Normal            30 Seconds, 100 Spins Needed, 10 + 20 Pops for Upgrades
+Hard              30 Seconds, 120 Spins Needed, 12 + 24 Pops for Upgrades
+Very Hard         25 Seconds, 150 Spins Needed, 15 + 30 Pops for Upgrades
+
+Character Mode - "A Marked Improvement"                                                                                                                         Page 18
+
+
+Brief Description
+5 major shots are lit. Specifically: Left Ramp, Right Ramp, Left Orbit, Right Orbit, and Left Pops Orbit. You must make all 5 shots within the time limit to complete the
+mode.
+
+
+Scenario
+Doctor Finklestein is trying to come up with a design for a new assistant, but he needs to find all of his build plans.
+
+
+Details
+When the mode begins, 5 major shots are lit: Left Ramp, Right Ramp, Left Orbit, Right Orbit, and Left Pops Orbit. Each one is worth an increasing number of points.
+Clearing all 5 completes the mode. There's a 30 second time limit to complete the mode within.
+
+
+Scoring
+First Major Shot Cleared                    200,000
+Increment for Each Additional Shot          200,000
+
+
+Lighting
+The shots you need to make will have flashing yellow triangles.
+
+
+Difficulty Adjustments
+Very Easy        40 Second Time Limit
+Easy             35 Second Time Limit
+Normal           30 Second Time Limit
+Hard             25 Second Time Limit
+Very Hard        20 Second Time Limit
+
+Character Mode - "I Can't Make Decisions!"                                                                                                                           Page 19
+
+
+Brief Description
+A travelling shot is scrolling across all the major shots really fast. It's worth a ton of points to hit, but completely comes down to luck because of how fast it moves.
+Instead, you can shoot the mayor to temporarily lock the shot in place so that it's not worth quite as much, but can be made at all so the mode can be completed.
+
+
+Scenario
+The mayor of Halloween Town needs help to plan the next Halloween, but Jack's not around to help out and the mayor can't make decisions on his own!
+
+
+Details
+When the mode starts, the Mayor toy flips to show that he's unhappy and one of the major shots will light up... but the shot travels to other major shots extremely
+quickly, changing about 10 times a second. This is nearly impossible to time, but the shot CAN be made while it's still travelling and is worth a lot more points if made
+this way. However, to complete the mode, you only have to make the travelling shot once, thus the best thing to do is to shoot the mayor. This will flip the mayor
+around to his happy side and will stop the lit shot from travelling around. It stays stopped for about 10 seconds and will begin to flash if it's getting ready to start
+moving again. Making the shot ends the mode, plain and simple.
+
+
+Scoring
+Major Shot Cleared (Travelling)             10,000,000
+Major Shot Cleared (Halted)                 2,500,000
+
+
+Lighting
+When the major shot is travelling it lights both the triangle and circle it's on red. When it's halted, it turns yellow. The Mayor shot shows a flashing blue triangle when
+the major shot is travelling and goes out once the major shot is halted.
+
+
+Difficulty Adjustments
+Very Easy        40 Second Time Limit
+Easy             35 Second Time Limit
+Normal           30 Second Time Limit
+Hard             25 Second Time Limit
+Very Hard        20 Second Time Limit
+
+Character Mode - "Go Fetch!"                                                                                                                             Page 20
+
+
+Brief Description
+Random shots will light up one at a time and you have to make them. Very simple mode.
+
+
+Scenario
+Zero wants to play fetch, so Jack takes off one of his bones and tosses it out.
+
+
+Details
+To complete this mode, all you have to do is make three major shots. However, the shots you need to make are random and only one is lit at a time. The same shot
+will not light more than once during this mode. Once you've made the three shots, the mode is completed.
+
+
+Scoring
+1 Major Shot
+ st                               500,000
+ nd
+2   Major Shot                    1,000,000
+3 Major Shot
+ rd                               2,000,000
+4 Major Shot (Very Hard)
+ th                               3,000,000
+
+
+Lighting
+The major shots you need to make light the triangle yellow.
+
+
+Difficulty Adjustments
+Very Easy         Make 2 Major Shots, 40 Second Time Limit
+Easy              Make 3 Major Shots, 40 Second Time Limit
+Normal            Make 3 Major Shots, 30 Second Time Limit
+Hard              Make 3 Major Shots, 25 Second Time Limit
+Very Hard         Make 4 Major Shots, 25 Second Time Limit
+
+Character Mode - "Kidnap the Sandi-Claws" Multiball                                                                                                                  Page 21
+
+
+Brief Description
+Similar multiball to CFTBL. Three random major shots are lit, but only one has Santa Claus in it. Once found, you have to get him back to Jack in the Graveyard for a
+jackpot, or you can make the jackpot super by hitting all of the LSB targets after finding Santa but before delivering him! This mode also overrides the normal
+functioning of the Hinterlands to give an alternative way of capturing Santa Claus.
+
+
+Scenario
+Lock, Shock and Barrel are out to kidnap Santa Claus!
+
+
+Details
+When this multiball starts, three major shots will be lit at random except for the Graveyard and the left ramp, as these have special usage in this multiball. One of the
+major shots will have Santa Claus, the other two will be bogus. Once you've got Santa Claus, the shot at the graveyard lights and you must get past the gravestone
+and get to Jack to score the jackpot. (You'll also get an add-a-ball if it's been qualified by the mystery target.) This process doesn't change throughout the multiball,
+although there's a couple interesting points of note. Firstly, it's possible to upgrade the jackpot into a super jackpot. To do this, you must hit all three of the LSB
+standups after kidnapping Santa Claus but before you deliver him to Jack. Secondly, the normal functioning of the Hinterlands is overridden while this mode is
+active. Normally, starting a multiball disables the Hinterlands Doors, but this mode keeps them going. If you shoot into the Hinterlands with the wrong door selected,
+you get a small bonus and are treated to Jack saying you kidnapped the wrong one. The slingshots will change the selected door as usual. When Christmas Town is
+selected, the left ramp triangle will light up to indicate that shooting the Hinterlands will imm ediately capture Santa Claus, guaranteed, but if you cycle the Hinterlands
+off of Christmas Town again, the light will go out. Needless to say, this shot doesn't do anything while Santa Claus is captured. As with all mutliballs, this mode is
+completed simply by starting it.
+
+
+Scoring
+Wrong Major Shot                  100,000
+Wrong Hinterlands Door            100,000
+Santa Claus Kidnapped             250,000
+Jackpot                           5,000,000
+Jackpot Increase                  1,000,000
+Super Jackpot                     12,500,000
+Super Jackpot Increase            2,500,000
+
+
+Lighting
+Major shots to aim for will flash with orange triangles. The one with Santa Claus will actually be VERY slightly more yellow. The Graveyard shot will flash a yellow
+triangle once ready for jackpot. The LSB targets will flash red when hit before capturing Santa Claus and will begin flashing white once Santa Claus is captured.
+Hitting them at this point makes them go solid white and once a super jackpot is ready, the Graveyard shot will flash both the triangle and circle white. If the correct
+Hinterlands Door is selected to kidnap Santa Claus in this alternate manner, the left ramp triangle will flash blue.
+
+
+Difficulty Adjustments
+Very Easy        2 Major Shots Lit for Santa Claus
+Easy              2 Major Shots Lit for Santa Claus the First Time, 3 Each Subsequent Time
+Normal            3 Major Shots Lit for Santa Claus
+Hard              3 Major Shots Lit for Santa Claus the First Time, 4 Each Subsequent Time
+Very Hard         4 Major Shots Lit for Santa Claus
+
+Character Wizard Mode - "Deliver the Presents"                                                                                                                         Page 22
+
+
+Brief Description
+You have a health gauge in this mode. Certain shots will be lit to score points, other shots will be lit to decrease health. The more good shots you make, the more
+bad shots will light up. You have unlimited balls in this mode, although you lose toys every time a ball drains. The mode ends if you run out of toys or health, draining
+all balls, then resuming normal gameplay for the current player.
+
+
+Scenario
+Jack is ready to deliver his toys for Christmas! He has to be careful though because it turns out his ghoulish toys may not be a welcome sight...
+
+
+Details
+This multiball mode always keeps four balls in play at all times. You also get a health gauge which doesn't show any numbers but has five (adjustable) points on it
+and your toys count will always be shown. At the start of this mode, three major shots will be lit green. Shooting a green shot does multiple things: It scores the
+wizard value of 4,000,000, unlights the shot, lights a different shot green, and also decreases your toys count by 1. You also lose 10% or 10 toys (whichever is
+greater) any time a ball drains. Every time you make three green shots one of the shots still unlit will light red. Shooting a red shot will damage the sleigh and
+decrease your health. If the sleigh runs out of energy, or if you run out of toys, the flippers will die, the balls will drain, and the wizard mode will end. Each red shot
+presently on the field also increases a multiplier for the wizard value up to a potential maximum of 8x. If a red shot is selected to become green after making a green
+shot, the green shot you just made will become red in its place. Every 12 major shots, regardless of if they're red or green (just so long as they're lit), will randomly
+light one of the major shots as a flashing white super shot, regardless of if that shot is already lit red or green, and it will stay this way for 10 seconds. Hitting a
+flashing white super shot will score double the wizard value on top of the wizard multiplier, doesn't decrease your toys count, and also restores one point of health,
+returning the shot to its previous state, either unlit, green, or red, which it will also return to if the 10 second counter expires. If you make another 12 lit shots while a
+flashing white shot is going, it simply adds 10 seconds to the timer for the flashing white shot already going. Ultimately, if you keep the mode going long enough,
+three major shots will be green and the remaining seven will be red. If you get to this state the animation on the display will also change to show things getting more
+desperate and a fifth ball will be added to the mix. It's important to note that all methods for increasing your toy count (such as the pop bumpers) will not do so while
+this mode is running.
+
+
+Scoring
+Base Wizard Value                  4,000,000
+Maximum Wizard Value               64,000,000 (8x W izard Multiplier + Super Shot)
+Red Major Shots                    500,000 (ALSO affected by the Wizard Multiplier!)
+
+
+Lighting
+Major shots will show flashing green triangles if they'll score the wizard value and will be solid red (not flashing) if they'll damage the sleigh. The super shot will flash
+a white triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy         Sleigh has 7 Health Points, 8 Major Shots Lights Super Shot for 15 Seconds, 3 Balls in Play by Default
+Easy              Sleigh has 6 Health Points, 10 Major Shots Lights Super Shot for 12 Seconds, 3 Balls in Play by Default
+Normal            Sleigh has 5 Health Points, 12 Major Shots Lights Super Shot for 10 Seconds, 4 Balls in Play by Default
+Hard              Sleigh has 5 Health Points, 14 Major Shots Lights Super Shot for 10 Seconds, 4 Balls in Play by Default
+Very Hard         Sleigh has 4 Health Points, 16 Major Shots Lights Super Shot for 8 Seconds, 5 Balls in Play by Default
+
+Hinterlands Door Mode - "Love is in the Air"                                                                                                                          Page 23
+
+
+Brief Description
+You must get a certain number of points off the spinner. To help out, the more lit shots you clear the more valuable the spinner gets.
+
+
+Scenario
+Cupid is out and about in Halloween Town trying to figure out how to make the denizens fall in love. He figures just shoot as many arrows as he can!
+
+
+Details
+The goal of this mode is to score 5,000,000 points off of the spinner alone within 45 seconds. However, the base value of the spinner in this mode is only 10,000,
+thus without a shot multiplier this would take 500 spins. However, all of the other major shots and many of the standups (JACK, Doctor, LSB and Mystery) start
+flashing pink at a moderate speed. When you hit one of these flashing shots or standups it will unlight and increase the spinner value. The idea is to hit lots of
+different things to get the spinner value up, then go for spinner shots to clear the 5,000,000 much more easily! The spinner value will double if all 18 of the pink shots
+are cleared!
+
+
+Scoring
+Base Spinner Value                         10,000 / spin
+Increase per Shot/Standup Cleared          25,000 / spin
+Maximum Potential Spinner Value            920,000 / spin (460,000 x2 for having all 18 pink shots cleared)
+
+
+Lighting
+The spinner will flash yellow on the triangle for most of the mode but will flash a white triangle and circle if all 18 pink shots are cleared. Each shot lit to increase the
+spinner value will flash pink.
+
+
+Difficulty Adjustments
+Very Easy         60 Seconds, Target Score of 3,000,000
+Easy              50 Seconds, Target Score of 4,000,000
+Normal            45 Seconds, Target Score of 5,000,000
+Hard              40 Seconds, Target Score of 6,000,000
+Very Hard         35 Seconds, Target Score of 7,000,000
+
+Hinterlands Door Mode - "Pot o' Gold"                                                                                                                        Page 24
+
+
+Brief Description
+Shoot to the Hinterlands to collect the Pot o' Gold value and complete the mode, but the value should be built up by the pop bumpers first.
+
+
+Scenario
+A leprechaun has snuck into Halloween Town. More specifically, into a cash vault in Oogie Boogie's Lair. He must collect as much gold for his pot as he can and get
+back home before he gets caught!
+
+
+Details
+All you have to do to complete this timed mode is shoot the ball back into the Hinterlands, which will collect the score for this mode. However, when the mode starts,
+this shot is only worth 100,000. Each pop bumper hit adds another 100,000 to this value with no cap, thus the idea is to collect as many pop bumper hits as you feel
+safe to, then shoot for the Hinterlands. The pop-up post to divert to the pops will fire on orbit shots for the duration of this mode.
+
+
+Scoring
+Base Left Ramp Value              100,000
+Left Ramp Increase per Pop        100,000
+
+
+Lighting
+The pop bumpers will be flashing various random colours during this mode while the Hinterlands shot will flash both its triangle and circle yellow.
+
+
+Difficulty Adjustments
+Very Easy         40 Second Time Limit
+Easy              35 Second Time Limit
+Normal            30 Second Time Limit
+Hard              25 Second Time Limit
+Very Hard         20 Second Time Limit
+
+Hinterlands Door Mode - "Easter Egg Hunt"                                                                                                                           Page 25
+
+
+Brief Description
+All the major shots are lit for various values, but the values are assigned at random from a pool of values. Once you know the value of a shot you can continue to
+shoot it to score those points over and over. You must uncover at least three different values to complete the mode.
+
+
+Scenario
+The Easter Bunny has hidden a whole bunch of eggs all over Halloween Town. Find them!
+
+
+Details
+All ten major shots will flash solid white when this mode begins. Each major shot will also have a value hidden within it. There are ten values to assign thus they are
+shuffled and distributed between all shots. There are 4x "50,000" values, 2x "100,000" values, 2x "250,000" values, 1x "500,000" and 1x "1,000,000". When you
+make a shot it will change colour to indicate how good of a shot it is. You can then go for that shot as much as you want within the 30 second time limit. Once you've
+unveiled three different shots, the mode is com plete and all other unveiled shots will go out, but until the mode timer expires you can continue to shoot the shots
+you've uncovered to score more points from them.
+
+
+Scoring
+Shot Values                50,000 / 100,000 / 250,000 / 500,000 / 1,000,000
+
+
+Lighting
+Major shot triangles will all flash white at first. Once a shot value is unveiled it will be red for 50,000, orange for 100,000, yellow for 250,000, green for 500,000 and
+blue for 1,000,000.
+
+
+Difficulty Adjustments
+Very Easy        40 Second Time Limit
+Easy             35 Second Time Limit
+Normal           30 Second Time Limit
+Hard             25 Second Time Limit
+Very Hard        20 Second Time Limit
+
+Hinterlands Door Mode - "Fireworks Festival" Multiball                                                                                                             Page 26
+
+
+Brief Description
+Four major shots are lit for jackpots. Once scored, a travelling super jackpot can be obtained.
+
+
+Scenario
+Uncle Sam's made it to Halloween Town and scared out of his wits... so he comes up with a great idea to avoid being scared: Celebrate with Fireworks!
+
+
+Details
+This is a 3-ball multiball which starts with four shots lit for jackpots: Left Ramp, Right Ramp, Mayor and Soup. Once all jackpots are collected a travelling super
+jackpot appears. Once collected, the original four jackpot shots relight.
+
+
+Scoring
+Jackpot                    2,000,000
+Super Jackpot              10,000,000
+
+
+Lighting
+Jackpot shots flash their triangles red, then white, then blue, then white. It's VERY important not to flash straight from red to blue or from blue to red as this may
+cause epileptic reactions in some people. The roaming super jackpot flashes both a white triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy        Super Jackpot Travels Slowest
+Easy             Super Jackpot Travels Slower
+Normal           Super Jackpot Travels Normal Speed
+Hard             Super Jackpot Travels Faster
+Very Hard        Super Jackpot Travels Fastest
+
+Hinterlands Door Mode - "Trick or Treat!"                                                                                                                       Page 27
+
+
+Brief Description
+You must complete the LSB standup bank as many time as you can without hitting the Doctor Finklestein standup.
+
+
+Scenario
+Lock, Shock and Barrel are out trick-or-treating. Everyone in Halloween Town is a good sport about it, but Doctor Finklestein is in the middle of a critical experiment,
+so disturbing him would be a really bad idea...
+
+
+Details
+Unlike all the other single-ball modes in this game, this one is not timed, however, hitting Doctor Finklestein imm ediately ends the mode. The trick is to complete the
+LSB standups as many times as you can without hitting Doctor Finklestein. You only have to complete the bank twice to complete the mode, but can then continue
+for as many completions as you want as the value increases with each completion.
+
+
+Scoring
+Lock, Shock or Barrel Standup              20,000
+Base LSB Completion Value                  1,000,000
+Completion Value Increase                  500,000
+Completion Value Cap                       5,000,000
+Doctor Finklestein                         10
+
+
+Lighting
+Doctor Finklestein is solid red for the duration of the mode while the LSB targets flash yellow when ready to hit and go solid yellow once hit. The LSB targets rapidly
+flash white each time they're completed.
+
+
+Difficulty Adjustments
+Very Easy        1 LSB Completion Completes Mode, Doctor Finklestein must be hit twice to end the mode
+Easy             1 LSB Completion Completes Mode
+Normal           2 LSB Completions Completes Mode
+Hard             2 LSB Completions Completes Mode
+Very Hard        3 LSB Completions Completes Mode
+
+Hinterlands Door Mode - "Harvest Frenzy"                                                                                                                       Page 28
+
+
+Brief Description
+This mode is like an inverse frenzy: Only one shot scores the frenzy value, but all other switches increases it.
+
+
+Scenario
+A turkey has found its way to the edge of Halloween Town... which prompts everyone to go nuts and start collecting all kinds of food!
+
+
+Details
+While this mode is running, the soup shot will score the frenzy value, which starts at 250,000. Every switch hit increases this value by 25,000. You can collect the
+frenzy value as many time as you want within the time limit. The ultimate goal is to score 2,500,000 points in total from the frenzy value.
+
+
+Scoring
+Base Frenzy Value                         250,000
+Frenzy Value Increase per Switch          25,000
+
+
+Lighting
+The soup shot will flash a white triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy        60 Second Time Limit, 1,500,000 Points to Complete
+Easy             50 Second Time Limit, 2,000,000 Points to Complete
+Normal           45 Second Time Limit, 2,500,000 Points to Complete
+Hard             40 Second Time Limit, 3,000,000 Points to Complete
+Very Hard        35 Second Time Limit, 3,500,000 Points to Complete
+
+Hinterlands Door Mode - "Naughty or Nice?" Multiball                                                                                                              Page 29
+
+
+Brief Description
+This multiball mode always has one shot lit for a few points and another lit for a lot of points. When you make either, they both change to different shots.
+
+
+Scenario
+Santa's having a rather hard time figuring out who's been naughty or nice in Halloween Town. You need to help him out!
+
+
+Details
+This is a 2-ball multiball which, unlike most multiballs in the game, is not completed simply by starting it. During this multiball mode, two major shots, selected at
+random, will be lit. One will be lit green for nice, the other red for naughty. Shooting the green shot will award lots more points than shooting the red shot. Once you
+hit either of them though, BOTH will change to different major shots. You must make three nice shots or three naughty shots to complete the mode, scoring either a
+Nice Jackpot or a Naughty Jackpot. The interesting dichotomy of this mode is that the Naughty Jackpot is actually worth more than the Nice Jackpot, but the
+naughty shots are worth significantly less than the nice shots. Once either jackpot is awarded both the nice and naughty counters reset, meaning you need three of
+either again to score another jackpot. Scoring either jackpot also completes the mode.
+
+
+Scoring
+Nice Shots Base Value               1,000,000
+Nice Shots Increment                100,000
+Naughty Shots Base Value            200,000
+Naughty Shots Increment             20,000
+Nice Jackpot                        4,000,000
+Naughty Jackpot                     7,500,000
+
+
+Lighting
+Nice shots flash a green triangle while naughty shots flash a red triangle. When either shot is ready for a jackpot it will also flash its circle.
+
+
+Difficulty Adjustments
+Very Easy        2 Shots for Jackpot
+Easy             2 Shots for Jackpot
+Normal           3 Shots for Jackpot
+Hard             3 Shots for Jackpot
+Very Hard        4 Shots for Jackpot
+
+Hinterlands Wizard Mode - "Holiday Rescue"                                                                                                                            Page 30
+
+
+Brief Description
+Most major shots are lit to rescue holiday figures once shot enough times. When a holiday figure is rescued you have to bring them back to the Hinterlands.
+
+
+Scenario
+So it turns out that opening the doors in the Hinterlands may not've been such a good idea... various holiday figures have ended up lost in various different worlds.
+Jack sends everyone out to help traverse the doors, find these important individuals, and bring them back to the Hinterlands in order to return them to their realm.
+
+
+Details
+This is a 4-ball multiball and you must keep all 4 balls going to get the best scores possible. The ball saver is a generous 30 seconds when you start and can be
+manually triggered and reset to 30 seconds a total of 3 times over the course of the multiball, each time simply by getting a ball into the Graveyard. When this mode
+begins, 7 of the major shots are lit to rescue holiday figures. The colour of the shot corresponds to the colour of the Hinterlands Door, so you know who you're
+rescuing. Of the 10 major shots, the ones not lit for rescues are Soup, Left Ramp and Graveyard. As for all the other shots, to make a rescue, you simply need to hit
+the same shot three times. When you do this, ALL other rescue shots go dark while the Left Ramp and Soup will both start flashing. At this point, you can upgrade
+the jackpot shot into a super jackpot by getting a ball into soup, then shooting the Hinterlands, but this upgrade only lasts 7 seconds, so you need to be quick. Once
+you get a ball into the Hinterlands, the holiday figure is rescued, you score a jackpot, and the rem aining rescues relight and reset to requiring 3 shots each. This
+means it's far more efficient to go for the same shot three times in a row rather than to scatter shots all across the playfield, since any progress you made on other
+rescues is lost once you're ready to rescue someone else. If you get down to a single ball, any remaining ball saver triggers are lost and a 30 second timer will show
+up. If you drain the last ball or the timer expires, the flippers die and the wizard mode ends, returning the player to regular play following.
+
+
+Scoring
+Rescue Jackpot                      2,500,000 (Multiplied by number of balls in play)
+Rescue Jackpot Increase             1,250,000
+Super Jackpot                       3x Jackpot Value
+
+
+Lighting
+Holiday figures to rescue will flash the triangle of their shots with the appropriate Hinterlands door colour. When that holiday figure is rescued, the Hinterlands shot
+will flash its triangle the appropriate colour. The Graveyard shot alternates its triangle between orange and white to indicate that it will trigger the ball saver. The soup
+shot alternates its triangle between white and the appropriate colour to indicate when it will upgrade the jackpot to a super jackpot. Super jackpots on the Hinterlands
+shot will flash both the triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy           5 Balls, Each Shot Needs to be Hit 2 Times for Rescue, Ball Saver Time is 40 Seconds, Can Re-Trigger Ball Saver 4 Times
+Easy                4 Balls, Each Shot Needs to be Hit 3 Times for Rescue, Ball Saver Time is 30 Seconds, Can Re-Trigger Ball Saver 4 Times
+Normal              4 Balls, Each Shot Needs to be Hit 3 Times for Rescue, Ball Saver Time is 30 Seconds, Can Re-Trigger Ball Saver 3 Times
+Hard                4 Balls, Each Shot Needs to be Hit 4 Times for Rescue, Ball Saver Time is 30 Seconds, Can Re-Trigger Ball Saver 3 Times
+Very Hard           3 Balls, Each Shot Needs to be Hit 4 Times for Rescue, Ball Saver Time is 25 Seconds, Can Re-Trigger Ball Saver 2 Times
+
+Oogie Boogie Mode #1 - "Bug Bash" Multiball                                                                                                                        Page 31
+
+
+Brief Description
+All of the standups light for huge points, but the point value of each decreases each time it's hit.
+
+
+Scenario
+Oogie Boogie's first line of defence is the army of bugs he has as his command! Squash as many as you can!
+
+
+Details
+This is a 2-ball multiball. When the mode begins, the gate rises and stays up for the duration of the multiball. The JACK targets, the LSB targets, the Doctor
+Finklestein target, and the Gate targets (11 in total) all light up to indicate bugs to squash. Each target you hit is worth an amount of points, but the am ount of points
+you get decreases per target each time it's hit. To get the most points possible before draining out of this multiball you must hit as many different standups as you
+can. As with most multiballs in this game, this mode is com pleted simply by starting it.
+
+
+Scoring
+First Hit of a Standup            200,000 (Blue)
+Second Hit                        100,000 (Green)
+Third Hit                         50,000 (Yellow)
+Fourth Hit                        25,000 (Orange)
+All Hits Following                10,000 (Red)
+
+
+Lighting
+Standups flash in the colours indicated in the scoring section.
+
+
+Difficulty Adjustments
+None
+
+Oogie Boogie Mode #2 - "Santa vs. Oogie Boogie"                                                                                                                    Page 32
+
+
+Brief Description
+You must hide from Oogie Boogie by shooting for any shot which would get the ball off of the playfield. In fact, the instructions on the display simply say, "Get the ball
+off the playfield!"
+
+
+Scenario
+Santa has no hope in combat against Oogie Boogie, so he hatches a plan to escape, but Oogie Boogie is effortlessly tracking him in the dark! You must find Santa
+someplace to hide!
+
+
+Details
+This mode has a 60 second time limit and NO ball saver. The reason for having no ball saver is because one of the potential hiding places for getting the ball off of
+the playfield... is the drain! Thus the first time you drain the ball in this mode actually counts as hiding from Oogie Boogie, but because you can't use the same hiding
+space more than once, draining a second time will end the ball as normal. This mode kills the playfield lighting, though things will still flash briefly when you shoot
+them so that the player knows the game isn't broken. Other places you can hide the ball include the hinterlands, the graveyard, soup and the mayor. Hide the ball in
+three different places to complete the mode... with Santa getting captured. Oh well, can't say he didn't TRY!
+
+
+Scoring
+1 Hiding Place
+ st                         500,000
+ nd
+2   Hiding Place            1,000,000
+3 Hiding Place
+ rd                         2,500,000
+
+
+Lighting
+The entire playfield goes dark for this mode, but shots will flash briefly when you hit them so the player doesn't think the game's broken.
+
+
+Difficulty Adjustments
+Very Easy          90 Second Time Limit, Need to Hide 2 Times to W in
+Easy               90 Second Time Limit, Need to Hide 3 Times to W in
+Normal             60 Second Time Limit, Need to Hide 3 Times to W in
+Hard               60 Second Time Limit, Need to Hide 4 Times to W in
+Very Hard          40 Second Time Limit, Need to Hide 4 Times to W in
+
+Oogie Boogie Mode #3 - "Sally vs. Oogie Boogie"                                                                                                                 Page 33
+
+
+Brief Description
+Health-bar limited mode where you must make shots to keep the mode going as long as you can... at least until you reach a target score.
+
+
+Scenario
+Sally's trying to rescue Santa a decides to distract Oogie Boogie with one of her detached legs. But, it's only a matter of time before Oogie Boogie figures it out, so
+you have to keep him going as long as you can!
+
+
+Details
+The health bar for this mode is actually more like a timer and will last 15 seconds. Three random, major shots will be lit for 250,000 points each and will reset the
+health bar to maximum as well. When you make one major shot, all three lit major shots will change. The spinner however will be lit for 50,000 points per spin and
+will never be selected as a random major shot, while Soup will award you all the points you've accumulated for the mode again, thus if you've scored 312,510 points
+since starting the mode, the soup shot will award this many points. To complete the mode you must accumulate 2,000,000 points while it's running, which will
+effectively end the mode as well.
+
+
+Scoring
+Lit Major Shot            250,000
+Spinner Spin              50,000
+Soup                      Equal to Number of Points Accumulated Since Starting the Mode
+
+
+Lighting
+The spinner rapidly flashes an orange triangle, lit major shots flash yellow triangles, soup flashes a white triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy         Health Bar Lasts 18 Seconds, 4 Major Shots Lit at a Time, Need 1,500,000 Points to Complete
+Easy              Health Bar Lasts 15 Seconds, 4 Major Shots Lit at a Time, Need 1,750,000 Points to Complete
+Normal            Health Bar Lasts 15 Seconds, 3 Major Shots Lit at a Time, Need 2,000,000 Points to Complete
+Hard              Health Bar Lasts 12 Seconds, 3 Major Shots Lit at a Time, Need 2,250,000 Points to Complete
+Very Hard         Health Bar Lasts 12 Seconds, 2 Major Shots Lit at a Time, Need 2,500,000 Points to Complete
+
+Oogie Boogie Mode #4 - "Luck o' the Dice"                                                                                                                            Page 34
+
+
+Brief Description
+You must get the ball into the pops to change the values of Oogie Boogie's dice rolls. If the cumulative value of all of his dice rolls exceeds 32, the mode ends.
+
+
+Scenario
+Santa and Sally are perilously tied up on an insidious platform Oogie Boogie has. If Oogie Boogie presses the lever of his machine enough times, Santa and Sally
+are doomed! Thankfully, he's decided to leave the number of his presses up to random chance...
+
+
+Details
+When this mode begins, a random roll of the dice is shown on-screen (total value of 9 or higher) and after 10 seconds elapse, or you shoot the right ramp, this will be
+what Oogie Boogie actually rolls. If you're not satisfied with the value currently shown, you need to get the ball up into the pops. To that end, the popup post will
+activate during the course of this mode. Each pop bumper hit will change the highest die to a new random value from 1 to 6 and will delay the timer for a moment
+until the pops aren't being hit anymore. Chances are good that you will at least get one die down to 1 with enough pop bumper hits, at which point the highest roll
+possible becomes 7. This is good because to complete this mode, you must survive four dice rolls without reaching or exceeding a cumulative value of 32. Once
+Oogie Boogie rolls the dice, the new value to come up will always be at least 9. The gate to Oogie Boogie's lair remains down for the duration of this mode and
+shooting the lair immediately awards 1,000,000 points, but also re-randomizes both dice without resetting the timer. If you make it past four dice rolls, Jack breaks in
+and distracts Oogie Boogie, though you only see Oogie Boogie's reaction on the display so as to instill a sense of wonder as to the next mode. If you fail to survive
+four rolls, Santa and Sally fall in and Oogie Boogie proclaims, "Better luck next time!"
+
+
+Scoring
+Survive 1 Dice Roll
+           st                       500,000
+           nd
+Survive 2    Dice Roll              1,000,000
+Survive 3 Dice Roll
+           rd                       1,500,000
+Survive 4 Dice Roll
+           th                       2,000,000
+Survive 5 Dice Roll
+           th                       2,500,000
+Early Roll                          Extra 500,000 if you survive
+Lair Shot                           1,000,000
+
+
+Lighting
+The right ramp will show a solid red triangle with any dice roll value higher than 7. A value of 7 will flash a yellow triangle on the right ramp. A value less than 7 will
+flash a green triangle on the right ramp. The pops will also be flashing in a particular lighting pattern to get the player's attention to shoot for them. The bug lights in
+front of the lair flash red.
+
+
+Difficulty Adjustments
+Very Easy           Need to survive 3 rolls
+Easy                Need to survive 3 rolls
+Normal              Need to survive 4 rolls
+Hard                Need to survive 4 rolls
+Very Hard           Need to survive 5 rolls
+
+Oogie Boogie Mode #5 - "Jack vs. Oogie Boogie"                                                                                                                 Page 35
+
+
+Brief Description
+Several major shots need to be cleared, but the time limit is too small to work within. You must shoot the spinner to build up more time, then you can focus on the
+major shots.
+
+
+Scenario
+Jack and Oogie Boogie are battling it out! Actually, it's more precise to say Oogie Boogie is sending Jack through a gauntlet full of traps and Jack's having to dodge
+everything.
+
+
+Details
+This mode only gives you a 15 second time limit to shoot 8 of the major shots. (The only two major shots not lit are the spinner and Graveyard.) This is too small of a
+time limit, obviously, so you need to get more time by shooting the spinner. Each spinner spin adds 2 seconds to the timer. Once a major shot is cleared it unlights.
+Hit all eight lit major shots and the mode is completed.
+
+
+Scoring
+Lit Major Shot             1,000,000
+Last Major Shot            5,000,000
+Spinner Spin               20,000 and +2 Seconds
+
+
+Lighting
+Major shots you still need to hit flash a yellow triangle. The spinner rapidly flashes both a blue triangle and circle.
+
+
+Difficulty Adjustments
+Very Easy          20 second initial time limit, 7 major shots to shoot.
+Easy               15 second initial time limit, 7 major shots to shoot.
+Normal             15 second initial time limit, 8 major shots to shoot.
+Hard               12 second initial time limit, 8 major shots to shoot.
+Very Hard          10 second initial time limit, 8 major shots to shoot.
+
+Oogie Boogie Mode #6 - "Oogie Boogie's Unravelling" Multiball                                                                                                       Page 36
+
+
+Brief Description
+This is a very unusual 3-ball multiball frenzy where all targets are worth points, but you don't actually get any of the points until you're down to one ball, at which point
+you have 15 seconds to get the ball into Oogie Boogie's lair, or the mode is failed and you don't get anything.
+
+
+Scenario
+Jack is ready to unravel Oogie Boogie, but he has to be careful in case Oogie Boogie happens to have an ace up his non-existent sleeves!
+
+
+Details
+This is a 3-ball multiball, but not in a traditional sense. When this mode begins, the whole playfield lights up and every switch is worth 50,000 points, the value of
+which can be raised by hitting the gate, which stays up for most of the multiball. However, none of the frenzy points scored while this mode is active will actually be
+given to the player, and instead are getting "Banked" according to the display. (Non-frenzy scoring will still be awarded as normal so as to be compatible with any
+other modes which happen to be running.) Once two balls have drained and only one ball remains, the gate finally goes down and you have 15 seconds to get the
+ball into Oogie Boogie's lair to finish the mode and score your banked points. Failing to do this will end the mode without awarding any of your banked points. (But at
+least you'll be able to play the mode again.)
+
+
+Scoring
+Every Switch                        50,000 (Banked)
+Frenzy Value Increments             2,500 (5,000 if two targets hit on gate simultaneously, 7,500 if all three)
+
+
+Lighting
+All the lights go crazy during this mode, though the gate lights will rapidly flash white. Once you're down to one ball, ALL of the playfield lights go out, except for the
+gate lights which will pulse yellow to alert the player to shoot for the lair ASAP!
+
+
+Difficulty Adjustments
+Very Easy         4-Ball Multiball, 25 Seconds to Make Final Shot
+Easy              3-Ball Multiball, 20 Seconds to Make Final Shot
+Normal            3-Ball Multiball, 15 Seconds to Make Final Shot
+Hard              3-Ball Multiball, 12 Seconds to Make Final Shot
+Very Hard         2-Ball Multiball, 10 Seconds to Make Final Shot
+
+Oogie Boogie Wizard Mode - "Mega Oogie Showdown"                                                                                                                Page 37
+
+
+Brief Description
+5-ball multiball where Jack and Mega Oogie both have health bars. You must make combos to deplete Mega Oogie's health before he has enough time to pummel
+Jack into the ground!
+
+
+Scenario
+Through an unknown power, Oogie Boogie has managed to revive himself, growing to many times his normal size as he prepares to smash Halloween Town to
+rubble! Jack must do battle with Mega Oogie and only one of them will come out standing!
+
+
+Details
+This wizard mode has some similarities to the wizard mode on Tales of the Arabian Nights. When the mode begins two health bars will show up on the display. One
+for Mega Oogie, the other for Jack. Every 4 to 12 seconds, randomly selected for each attack, Mega Oogie will attack Jack and damage his health. While this mode
+is running, all five balls will be in play and if one drains the player immediately gets it back. The idea of this mode is to score combos. Combos are normally disabled
+during multiballs because of how high they could get during multiballs. To that end, normal combo awards are not awarded during this wizard mode. The greater the
+combo you make, the more damage you do. A 10-hit combo, which is the maximum possible, will hurt Mega Oogie for almost 1/2 of his health, while a 2-hit combo
+will hardly scratch him. Jack can survive for approximately 1 1/2 minutes, but random luck could alter this a little. Jack and Mega Oogie both have 120 HP. Each time
+Jack is hit he takes 10 HP damage. A single major shot, starting a combo, damages Mega Oogie for 1 HP. When you obtain a 2x combo you do an additional 2HP
+damage. Getting up to 3x does an additional 3 HP damage. Thus if you manage to max out at a 10x combo, you will have done a total of 1 + 2 + 3 + 4 + 5 + 6 + 7 +
+8 + 9 + 10 HP of damage, which is 55 HP in total. Every point of damage you do scores a large number of points and winning the battle scores an additional
+100,000,000. The gate also stays closed during this mode and each hit to a standup target on the gate counts as 1 HP of damage to Mega Oogie.
+
+
+Scoring
+Every 1 HP Damage to Mega Oogie                        1,000,000
+Win the Battle                                         100,000,000
+
+
+Lighting
+Combo lighting works as expected, except all major shots flash when no combo is ready to indicate that you can start a combo. The lights in front of the gate flash
+green and rapidly flash white when hit.
+
+
+Difficulty Adjustments
+Very Easy          Jack has 140 HP, Mega Oogie has 100 HP
+Easy               Jack has 130 HP, Mega Oogie has 110 HP
+Normal             Jack has 120 HP, Mega Oogie has 120 HP
+Hard               Jack has 110 HP, Mega Oogie has 130 HP
+Very Hard          Jack has 100 HP, Mega Oogie has 140 HP
+
+Ultimate Wizard Mode - "Christmas Time in Halloween Town" Multiball Frenzy                                                                                           Page 38
+
+
+Brief Description
+5-ball multiball frenzy where every switch is worth the same number of points, except each time you hit a switch you haven't yet hit since starting the mode, the point
+value goes up.
+
+
+Scenario
+Well, you've come to the end of a long journey. As such, it's time to celebrate with Christmas with everyone in Halloween Town!
+
+
+Details
+This is a 5-ball multiball frenzy mode. The base value for all switches starts at 100,000, but increases by 25,000 each time you hit a switch you haven't yet hit during
+the mode. This includes switches you normally wouldn't want to hit such as the drain, outlanes, etc. A 2x multiplier is applied to all frenzy scores once you've hit at
+least 50% of all switches, a 3x multiplier once you've hit 85% of all switches, a 4x multiplier once you've hit all but two switches, a 5x multiplier for all but one switch,
+and a 10x multiplier for managing to hit every switch in the game at least once!
+
+
+Scoring
+Base Frenzy Value                                    100,000
+Frenzy Increment for each Unique Switch Hit          25,000
+
+
+Frenzy Multipliers
+Less than 50% of All Switches = 1x
+50% of All Switches = 2x
+85% of All Switches = 3x
+All But 2 Switches = 4x
+All But 1 Switch = 5x
+All Switches Hit at least Once = 10x
+
+
+Lighting
+The lighting goes nuts in this mode for obvious reasons: It doesn't really matter what you hit! However, the display will actually tell you what percentage of the
+switches you've hit at least once until there's only 5 left. At which point, it will count them down individually. The display never actually tells you which switches you
+still have left, since part of the challenge of this mode is keeping a mental record of what tricky switches you've gotten, since there's little else to do other than shoot
+everything!
+
+
+Difficulty Adjustments
+Very Easy          6-Ball Multiball, 40 Seconds of Ball Saver at Start
+Easy               5-Ball Multiball, 35 Seconds of Ball Saver at Start
+Normal             5-Ball Multiball, 30 Seconds of Ball Saver at Start
+Hard               5-Ball Multiball, 25 Seconds of Ball Saver at Start
+Very Hard          4-Ball Multiball, 20 Seconds of Ball Saver at Start
+
+Recommended Adjustments                                                                                                                                        Page 39
+
+
+Category - Disables
+Adj. D00 - "Disable Gate"               Default "No". Set to "Yes - Stuck Up" or "Yes - Stuck Down" when there is a problem with the gate to allow the game to
+                                        continue to play. When stuck down, shots to Oogie Boogie's Lair will simply squash the bugs from left to right with each
+                                        shot. When stuck up, shots to the gate when the gate should be down will be treated as shots to Oogie Boogie's Lair.
+Adj. D01 - "Disable OB Magnet"          Default "No". Set to "Yes" when there is a problem with the magnet in front of Oogie Boogie's Lair.
+Adj. D02 - "Disable Bathtub Locks"      Default "No". Set to "Yes" when there is a problem with the bathtub. Shots which should normally go to the bathtub will be
+                                        diverted to the Hinterlands instead and will count as virtual locks in the bathtub.
+Adj. D03 - "Disable Gravestone"         Default "No". Set to "Yes" if the gravestone drop target isn't resetting or registering.
+Adj. D04 - "Disable Spinner"            Default "No". Set to "Yes" if the spinner is having issues so that shots which would pass through the spinner will award
+                                        virtual spins.
+
+
+Category - Features
+Adj. F00 - "Difficulty"        Default "Normal". Settings of "Very Easy", "Easy", "Normal", "Hard" and "Very Hard" which determines how many aspects of the
+                               game will function in terms of how hard they are to accom plish, such as by reducing time limits or by making target scores larger.
+Adj. F01 - "Tournament Mode"   Default "Off". Turning "On" will force extra balls and specials to award "2,500,000" and "5,000,000" respectively and will also force
+                               "Mystery Awards" to "Fixed - Tournament", and "Allow Missing Balls" to "No".
+Adj. F02 - "Novelty Mode"      Default "Off". Turning "On" will force extra balls and specials to award "2,500,000" and "5,000,000" respectively and will also force
+                               "End of Game Match" to "Off".
+Adj. F03 - "Add-a-Ball Mode"   Default "Off". Turning "On" will force extra balls and specials to award extra balls. "Balls Remaining" will also be forced "On", "Max.
+                               Extra Balls" will be forced to "Unlimited" and "End of Game Match" will be forced "Off".
+Adj. F04 - "Tilt Warnings"     Default "2". Can be set between 0 and 5. Determines the number of times the game will warn you about excessive nudging before
+                               tilting out.
+Adj. F05 - "Extra Ball Award"  Default "Extra Ball". Settings of "Nothing", "Extra Ball", "Special", "1,000,000", "2,500,000", "5,000,000", "10,000,000". Cannot be
+                               modified if one of the special game modes is set.
+Adj. F06 - "Special Award"     Default "Special". Settings of "Nothing", "Extra Ball", "Special", "1,000,000", "2,500,000", "5,000,000", "10,000,000". Cannot be
+                               modified if one of the special game modes is set.
+Adj. F07 - "Max. Extra Balls"  Default "Unlimited". Set to "Unlimited" or between 1 and 16. Determines the number of extra balls a player can have stocked at a
+                               time. Extra balls which attempt to be awarded when the limit is reached are lost.
+Adj. F08 - "Extra Ball Flips"  Default "Unlimited". Set to "Unlimited" or any number between 1 and 16. For special circumstances where extra balls are allowed
+                               but cannot be played due to league/tournament rules, once the ball is launched out of the shooter lane, the game will count how
+                               many times the flippers are energized. Once the indicated limit of flips is reached, the flippers can no longer change state from off to
+                               energized until the ball ends. (An energized flipper will stay energized until the player lets go of the flipper button.)
+Adj. F09 - "Balls per Game"    Default "3". Set between 1 and 7 for number of balls to give per game.
+Adj. F10 - "Balls Remaining"   Default "Off". Turning "On" will show the number of balls remaining instead of the number of balls played.
+Adj. F11 - "Ball Saver"        Default "on New Balls". Settings of "Never", "at Start of Ball", "on New Balls". Determines when the ball saver should kick in.
+Adj. F12 - "Ball Saver Time"   Default "100% - 15 sec". Settings of "33% - 5 sec", "50% - 7 sec", "67% - 10 sec", "75% - 12 sec", "100% - 15 sec", "133% - 20
+                               sec", "167% - 25 sec" and "200% - 30 sec". Determines how long the ball saver runs for. Some aspects of the game trigger ball
+                               savers for more or less than the default of 15 seconds, in which case they're affected by the percentage indicated instead.
+Adj. F13 - "Mystery Awards"    Default "On". Settings of "Off", "On", "Fixed - Tournament", "Fixed - Extra Ball", "Fixed - 1,000,000", "Fixed - 5,000,000", "Fixed -
+                               Add Bonus Multiplier", "Fixed - Video Mode" The tournament sequence is discussed in the section regarding mystery awards.
+Adj. F14 - "Mystery Selecting" Default "Allowed Once per Game". Settings of "Not Allowed", "Allowed Once per Game", "Allowed Once per Ball", "Always Allowed",
+                               and "Forced". Determines if the secret process to select your mystery award can be used or not and also determines the conditions
+                               it can be used in. You can also force it so that you're always allowed to select your mystery award.
+
+Recommended Adjustments         (Continuted)                                                                                                                          Page 40
+
+
+Adj. F15 - "Multiball Add-a-Ball" Default "Allowed". Settings of "Not Allowed" and "Allowed". Determines if the Add-a-Ball award on the mystery shots is allowed
+                                  during most multiballs.
+Adj. F16 - "End Game Match"       Can set to "On" or "Off". Determines if a match number will be shown at the end of the game.
+Adj. F17 - "Match % Chance"       Can set between "1%" and "20%". Determines how often a match is awarded at the end of a game. One chance is rolled per
+                                  different match number at the end, thus if four players have four different match numbers at the end of a game and the chance is
+                                  set to 7%, there's 4x 7% chances a match will be selected to occur.
+Adj. F18 - "Replay Setting"       Default "Automatic". Settings of "Automatic", "Fixed" and "Disabled". Determines if a replay award is present and if it's based on an
+                                  automatically adjusted score, or if it's based on a fixed score.
+Adj. F19 - "Replay Score"         Default of "35,000,000". Can be set to any multiple of 5,000,000 up to 995,000,000. This is either the fixed replay value, or the
+                                  minimum automatic replay value. In automatic mode, the replay value advances by 50% of its minimum value each time it's
+                                  exceeded and drops back to normal at a rate of 10% of its minimum value per game.
+Adj. F20 - "Replay Award"         Default of "Special". Can be set to "Special" or "Extra Ball".
+Adj. F21 - "Custom Message"       Defaults to disabled, or you can input three lines of a custom message to show during the attract mode.
+Adj. F22 - "Attract Sound"        Defaults to "On". Can be set to "On" or "Off". Determines if sound and music can play during attract mode.
+Adj. F23 - "Allow Missing Balls" Defaults to "1", can be set to "No", "1" or "2". Allows this many balls to be reported as missing to the system while still allowing the
+                                  game to play. Multiballs which would normally go up past 3 or 4 balls when in missing balls mode will simply not go that high. If the
+                                  number of balls in the trough ever exceeds how many the game figures are present for a period of at least 2 seconds it will figure
+                                  the missing balls have been found/unstuck. Balls won't be assumed missing mid-game until the game attem pts to start a third ball
+                                  search. Prior to starting, if any balls are missing the game will always do one ball search, wait a moment, then treat the game as
+                                  having as many balls as are in the trough.
+Adj. F24 - "Use Knocker"          Default to "For Specials". Can be set to "No", "For Specials", "For Extra Balls & Specials". Determines if and when to use the
+                                  knocker.
+Adj. F25 - "Set Time & Date"      Can change the current time and date used by the game's internal clock.
+
+
+
+Category - High Scores
+Adj. H00 - "High Scores Enabled"            Default "Yes". Can be set to "No" to turn off the high score tracking feature.
+Adj. H01 - "Insert Score"                   Allows a score to be inserted into the high score table, including initials. It will be ranked accordingly. You can also insert a
+                                            Toy Builder score.
+Adj. H02 - "Save Custom Defaults"           Saves the current high score table as custom defaults so they can be reloaded at a later date to reset the high scores.
+Adj. H03 - "Grand Champion Award"           Default "2 Credits". Can be set to "Nothing" or up to "3 Credits". This is the award for attaining the Grand Champion score.
+Adj. H04 - "1 Place Award"
+             st                             Default "1 Credit". Can be set to "Nothing" or up to "3 Credits". This is the award for attaining the 1 Place score.
+                                                                                                                                                    st
+
+             nd                                                                                                                                     nd
+Adj. H05 - "2   Place Award"                Default "1 Credit". Can be set to "Nothing" or up to "3 Credits". This is the award for attaining the 2    Place score.
+Adj. H06 - "3 Place Award"
+             rd                             Default "1 Credit". Can be set to "Nothing" or up to "3 Credits". This is the award for attaining the 3 Place score.
+                                                                                                                                                    rd
+
+Adj. H07 - "4 Place Award"
+             th                             Default "1 Credit". Can be set to "Nothing" or up to "3 Credits". This is the award for attaining the 4 Place score.
+                                                                                                                                                    th
+
+Adj. H08 - "Toy Builder Award"              Default "1 Credit". Can be set to "Nothing" or up to "3 Credits". This is the award for making a new Toy Builder high score,
+                                            which is based on the total number of toys collected throughout the game. (Including any lost during a wizard mode.)
+Adj. H09 - "Reset Scores to 0"              Resets all high scores to 0, allowing defaults to be manually input with the "Insert Score" adjustment.
+Adj. H10 - "Reset Scores to Custom"         Resets all high scores to the saved custom defaults.
+Adj. H11 - "Reset Scores to Default"        Resets all high scores to the built-in defaults.
+
+Recommended Adjustments          (Continuted)                                                                                                                       Page 41
+
+
+Category - Pricing
+NOTE: This section seems like it might be more trouble than it's worth given the massive number of payment variations around the world... at the same time though,
+there's something to be said about having a game which is perfectly capable of being set to coin-op... You'd have to do more research on this as what I've included
+here is only a very basic understanding of what it takes to properly credit and audit a coin-op game.
+Adj. P00 - "Free Play"                               Set between "Yes" and "No". Determines if the game can be played without credits.
+Adj. P00 - "Payment Slots Present"                   Set to "None", or any value from 1 to 3. Sets what slots below will function. (Middle for 1, Left/Right for 2)
+Adj. P00 - "Left Slot Qty. for Credits"              Set between 1 and 16 for number of slot triggers on the left coin-door slot to provide one or more credits.
+Adj. P00 - "Left Slot Credits per Qty."              Set between 1 and 16 for number of credits given when enough payment is put through the left coin-door slot.
+Adj. P00 - "Left Slot Payment Type"                  Set to "Coins", "Tokens" or "Bills" so the game can indicate what to put into the left coin-door slot.
+Adj. P00 - "Left Slot Special Deal"                  Set to "Yes" or "No" to indicate if the left coin-door slot is a special deal compared to the other slots.
+Adj. P00 - "Right Slot Qty. for Credits"             Set between 1 and 16 for number of slot triggers on the right coin-door slot to provide one or more credits.
+Adj. P00 - "Right Slot Credits per Qty."             Set between 1 and 16 for number of credits given when enough payment is put through the right coin-door slot.
+Adj. P00 - "Right Slot Payment Type"                 Set to "Coins", "Tokens" or "Bills" so the game can indicate what to put into the right coin-door slot.
+Adj. P00 - "Right Slot Special Deal"                 Set to "Yes" or "No" to indicate if the right coin-door slot is a special deal compared to the other slots.
+Adj. P00 - "Middle Slot Qty. for Credits"            Set between 1 and 16 for number of slot triggers on the middle coin-door slot to provide one or more credits.
+Adj. P00 - "Middle Slot Credits per Qty."            Set between 1 and 16 for number of credits given when enough payment is put through the middle coin-door slot.
+Adj. P00 - "Middle Slot Payment Type"                Set to "Coins", "Tokens" or "Bills" so the game can indicate what to put into the middle coin-door slot.
+Adj. P00 - "Middle Slot Special Deal"                Set to "Yes" or "No" to indicate if the middle coin-door slot is a special deal compared to the other slots.
+
+
+
+
+Recommended Audits
+
+
+Aud. 00 - "Earnings & Plays"                 Total earnings and plays since the first power on. Can view by year, month and day. Can also analyse earnings by days of
+                                             the week as well as by times of day. Can also limit to 1 player, 2 player, 3 player and 4 player games.
+Aud. 01 - "Extra Balls & Free Plays"         Number of extra balls and free games awarded per completed game per player. Can see both raw values and percentages
+                                             and can also separate free plays into specials, replays, matches, and high score awards.
+Aud. 02 - "Ball Times"                       Average and median ball times for overall games and each mode in the game.
+Aud. 03 - "Features"                         Can see how many times various features of the game have been triggered per player per game, including how many times
+                                             each mode is started/completed, ball saves, mystery awards, add-a-balls, doublers / triplers, etc. Both raw values and
+                                             percentages are included.
+
+Light Colours Reference Table                                                                                                                                                            Page 42
+
+
+This table is meant as a quick reference to what each colour means when seen on certain lights outside of modes. (As modes may alter the colour behaviour of
+some or all of these.) Some lights are grouped together as they have similar functionality.
+
+
+              Colour
+                                Red                     Orange                    Yellow                   Green                      Blue                     Purple                White
+Light
+
+Main Shot Triangles                             Mode Start               Combo                    Lock Ball / Add a Ball   (Cyan) Skill Shots        Mystery Award Ready    Wizard Mode Start
+
+Main Shot Circles                               1-Ball Mode Start                                 Multiball Mode Start     Doubled Shot              Tripled Shot           Wizard Mode Start
+
+Pop Bumpers           3 Toys                                                                      2 Toys                                                                    1 Toy
+
+Middle of Pops        3 Toys Awarded                                                              2 Toys Awarded                                                            1 Toy Awarded
+
+Bug Lights            Don't Hit This!                                    Hit to Clear             Hit This, Avoid Red                                Hit Twice in 10 sec
+
+Oogie Boogie Modes    Mode Played or Going                               Mode Cleared                                                                                       Wizard Mode Ready
+
+Lock, Shock, Barrel                                                      Hits
+
+Mystery Shot                                                                                      Light "Add a Ball"                                 Light "Mystery"
+
+JACK Lights                                     Letter Lit
+
+Hinterlands Doors     The colours of these lights correspond to the door colours. Flashing means the mode is ready. Solid means it's been played and beaten.
+
+Hinterlands Middle                                                                                                                                                          Wizard Mode Ready
+
+SANTA Lights          Santa Exhausted                                                                                                                                       Letter Lit
+
+Drain Light                                     Extra Ball                                        Ball Saver
+
+Zero Kickback                                                            Diverters Set for Zero                                                      Ready to Apply Tripler Wizard Mode Start
+
+Mode Lights           Last Mode Failed          Mode Ready               1-Ball Running           Multiball Running        Wizard Complete                                  Wizard Ready
+
+Popup Post Alert                                Popup Post Ready
+
+Timer Alert           Flashes once per second, faster during final moments, slowly transitions from green to red to show time left on the timer soonest to run out.
+
+Table Lighting and Elements                                     Page 43
+
+
+
+Major Shots
+Each major shot has a triangle used to show if a shot should be shot
+at or not, as well as a circle to indicate an increased shot value.
+1.      Mayor Scoop
+2.      Spinner (Sally Shot)
+3.      Left Ramp -> Hinterlands / Bathtub
+4.      Left Pops Orbit (Popup Post Diverter in Place)
+5.      Left Inner Orbit
+6.      Right Inner Orbit
+7.      Graveyard / Jack (Gravestone In-Line Drop Target)
+8.      Right Ramp -> Return Lanes / Zero Kickback
+9.      Right Pops Orbit (Popup Post Diverter in Place)
+10.     Under-Flipper Soup Shot (Can Divert to Shooter Lane)
+
+
+
+Other Elements & Lights
+11.     Oogie Boogie's Lair (Throw Magnet @ Black Circle)
+12.     Gate with Bug Targets
+13.     Oogie Boogie Mode Completion Lights
+14.     Oogie Boogie Wizard Mode Light
+15.     Lock, Shock and Barrel Standup Targets
+16.     Toy Pop Bumpers
+17.     Doctor Finklestein Standup Target
+18.     Character/Door/OB Mode Status Lights
+19.     Timer Status Light
+20.     Popup Post Alert Light
+21.     Hinterland Doors and Wizard Mode Light
+22.     Extra Ball / Ball Saver Light
+23.     Zero Kickback
+
+
+
+Special Elements
+JACK             Standup Targets for Spelling JACK
+SANTA            Rollovers for Spelling SANTA
+?                Mystery / Add-a-Ball Standup Target
+

@@ -1,0 +1,52 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Toys - pop bumpers
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Toys.Toys
+  priority: 400
+
+  
+  
+sound_player:
+  sw_bumper: distbd1
+
+
+
+widget_player:
+  toys_collected_update: 
+    w_toys_collected:
+      widget_settings:    
+        expire: 2s
+
+    
+widgets:
+  w_toys_collected:
+    - type: text
+      style: tall_title
+      text: 'Toys Collected: (toys_collected)'
+      font_size: 22
+      y: middle+5
+      x: middle
+      z: -1190
+      color: ff40ff
+    - type: text
+      style: tall_title
+      text: 'Toys Collected: (toys_collected)'
+      font_size: 22
+      y: middle+4
+      x: middle+1
+      z: -1190
+      color: 000000
+
+
+
+
+show_player:
+  sw_bumper:
+    pops_flash:
+      loops: 0
+      speed: 10        

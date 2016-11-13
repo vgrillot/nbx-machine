@@ -1,0 +1,146 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Sally
+
+mode:
+  start_events: char_sally_start
+  stop_events: char_sally_stop
+  code: Char_Sally.Char_Sally
+  priority: 1500
+
+  
+sound_player:
+  char_sally_music_start:
+    loop_sad_sally:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  char_sally_music_stop:
+    loop_sad_sally:
+      action: stop
+      
+  mode_Char_Sally_stopping:
+    loop_sad_sally:
+      action: stop
+      
+
+
+  sally_10_spins: hex_killed      
+      
+
+      
+widget_player:
+  char_sally_music_start: 
+    slide_sally:
+      slide: charframe
+      
+  show_sally_msg_1:
+    sally_spin_value:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_sally_msg_2:
+    sally_spin_increase:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_sally_msg_3:
+    sally_stitches_left:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+      
+  char_sally_show_slide: 
+    slide_sally:
+      slide: charframe          
+
+  char_sally_hide_slide:       
+    slide_sally:
+      action: remove
+      slide: charframe          
+      
+  remove_sally_messages:       
+    sally_spin_value:
+      action: remove      
+      slide: charframe                
+    sally_spin_increase:
+      action: remove      
+      slide: charframe                
+    sally_stitches_left:
+      action: remove    
+      slide: charframe                
+
+      
+
+widgets:
+  sally_spin_value:
+      - type: text
+        style: tall_title
+        text: Stitches per
+        color: ff6090
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: 'spin: (char_sally_spin_worth)' 
+        color: ff6090
+        font_size: 16
+        y: 35
+        z: -210  
+        x: 105
+  
+  sally_spin_increase:        
+      - type: text
+        style: tall_title
+        text: pop bumpers
+        color: ff6090
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: increase spin value
+        color: ff6090
+        font_size: 16
+        y: 35
+        z: -210  
+        x: 105
+
+  sally_stitches_left:
+      - type: text
+        style: tall_title
+        text: Stitches to 
+        color: ff6090
+        font_size: 16
+        y: 49
+        z: -210
+        x: 105
+      - type: text
+        style: tall_title
+        text: 'go: (char_sally_spins_needed)'
+        color: ff6090
+        font_size: 16
+        y: 35
+        z: -210  
+        x: 105
+
+
+        
+      
+  slide_sally:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SALLY'S STITCHES
+        anchor_y: top
+        color: bb8888
+        y: top
+        z: -210
+      - type: image
+        image: sally_stitch
+        z: -200

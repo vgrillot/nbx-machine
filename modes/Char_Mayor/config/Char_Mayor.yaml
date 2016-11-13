@@ -1,0 +1,226 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Mayor
+
+mode:
+  start_events: char_mayor_start
+  stop_events: char_mayor_stop
+  code: Char_Mayor.Char_Mayor
+  priority: 1500
+
+
+ 
+sound_player:
+  char_mayor_music_start:
+    loop_Scratchy:
+      action: play    
+      loops: -1
+      volume: 0.75 
+  
+  char_mayor_music_stop:
+    loop_Scratchy:
+      action: stop
+      
+  mode_char_mayor_stopping:
+    loop_Scratchy:
+      action: stop
+      
+    
+  say_i_cant: i_cant_make_decisions
+  mayor_shot_unfrozen: oh
+  mayor_shot_frozen: jack_please_im_only_an_elected
+  say_jackpot: jackpot
+  say_super_jackpot: magnificent
+
+  
+widget_player:
+  show_mayor_msg_1: 
+    mayor_shoot_roaming:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_mayor_msg_2: 
+    mayor_for_10:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_mayor_msg_3: 
+    mayor_shoot_mayor:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_mayor_msg_4: 
+    mayor_shoot_frozen:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_mayor_msg_5: 
+    mayor_for_25:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_mayor_msg_6: 
+    mayor_unfreezes:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+
+  show_happy_face: 
+    w_happy_mayor:
+      action: add
+      slide: charframe
+    w_scared_mayor:
+      action: remove
+
+  show_scared_face:
+    w_scared_mayor:
+      action: add
+      slide: charframe      
+    w_happy_mayor:
+      action: remove
+      
+  char_mayor_music_start: 
+    slide_mayor:
+      action: add    
+      slide: charframe            
+    w_happy_mayor:
+      action: add
+      slide: charframe            
+
+  char_mayor_show_slide_happy: 
+    slide_mayor:
+      action: add    
+      slide: charframe            
+    w_happy_mayor:
+      action: add
+      slide: charframe            
+
+  char_mayor_show_slide_scared: 
+    slide_mayor:
+      action: add    
+      slide: charframe            
+    w_scared_mayor:
+      action: add
+      slide: charframe            
+
+  char_mayor_hide_slide: 
+    slide_mayor:
+      action: remove    
+      slide: charframe                  
+    w_happy_mayor:
+      action: remove
+      slide: charframe                  
+    w_scared_mayor:
+      action: remove
+      slide: charframe                  
+
+  remove_mayor_messages:
+    widget_char_timer:
+      action: remove      
+      slide: charframe                        
+    mayor_shoot_roaming:
+      action: remove      
+      slide: charframe                        
+    mayor_for_10:
+      action: remove      
+      slide: charframe                        
+    mayor_shoot_mayor:
+      action: remove      
+      slide: charframe                        
+    mayor_shoot_frozen:
+      action: remove      
+      slide: charframe                        
+    mayor_for_25:
+      action: remove      
+      slide: charframe                        
+    mayor_unfreezes:
+      action: remove      
+      slide: charframe                        
+
+      
+      
+widgets:
+  mayor_shoot_roaming:
+      - type: text
+        style: tall_title
+        text: SHOOT ROAMING SHOT!
+        color: red        
+        font_size: 18
+        y: 44
+        z: -210
+        x: 105
+  mayor_for_10:
+      - type: text
+        style: tall_title
+        text: FOR 10,000,000 
+        color: red        
+        font_size: 18
+        y: 44
+        z: -210
+        x: 105
+  mayor_shoot_mayor:
+      - type: text
+        style: tall_title
+        text: SHOOT MAYOR TO FREEZE
+        color: yellow
+        font_size: 18
+        y: 44
+        z: -210  
+        x: 105
+  mayor_shoot_frozen:
+      - type: text
+        style: tall_title
+        text: SHOOT THE FROZEN SHOT!
+        color: blue        
+        font_size: 18
+        y: 44
+        z: -210
+        x: 105
+  mayor_for_25:
+      - type: text
+        style: tall_title
+        text: FOR 2,500,000
+        color: blue        
+        font_size: 18
+        y: 44
+        z: -210
+        x: 105
+  mayor_unfreezes:
+      - type: text
+        style: tall_title
+        text: BEFORE IT UNFREEZES
+        color: blue        
+        font_size: 18
+        y: 44
+        z: -210
+        x: 105
+        
+        
+  w_scared_mayor:
+      - type: image
+        image: mayor_scared
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -200
+
+  w_happy_mayor:
+      - type: image
+        image: mayor_happy
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -200
+        
+  slide_mayor:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: DECISIONS
+        anchor_y: top
+        color: a0a0ff
+        y: top
+        z: -210

@@ -1,0 +1,539 @@
+# config_version=4
+
+#Door_Independence
+
+mode:
+  start_events: door_mode_4_start
+  stop_events: door_mode_4_stop
+  code: Door_Independence.Door_Independence
+  priority: 950
+
+  
+random_event_player:
+  show_independence_fireworks:
+  -  show_independence_fireworks_1
+  -  show_independence_fireworks_2
+  -  show_independence_fireworks_3    
+  -  show_independence_fireworks_4    
+  -  show_independence_fireworks_5    
+
+  show_independence_jackpot_collected: 
+  - play_fireworks_1
+  - play_fireworks_2
+  - play_fireworks_3
+  - play_fireworks_4  
+
+  show_independence_jackpot_collected_n:
+  - play_fireworks_1
+  - play_fireworks_2
+  - play_fireworks_3
+  - play_fireworks_4  
+
+
+  
+sound_player:
+  holiday_independence_music_start:
+    loop_STRIVING1:
+      action: play    
+      loops: 1
+      volume: 0.5 
+      
+  loop_STRIVING1_played:
+    loop_STRIVING2:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  holiday_independence_music_stop:
+    loop_STRIVING2:
+      action: stop
+      
+  mode_door_independence_stopping:
+    loop_STRIVING2:
+      action: stop
+      
+
+  show_independence_sjackpot_collected: jackpot1
+  show_independence_sjackpot_collected_n: jackpot1
+  
+  play_fireworks_1: fireworks_1
+  play_fireworks_2: fireworks_2
+  play_fireworks_3: fireworks_3
+  play_fireworks_4: fireworks_4
+
+  show_independence_points_collected: oh
+  show_independence_points_collected_n: oh
+
+
+
+
+widget_player:
+  show_independence_msg_1: 
+    independence_shoot_RWB:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+      
+  show_independence_msg_2: 
+    independence_light_SJ:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe       
+       
+  show_independence_msg_3: 
+    independence_shoot_roaming:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_independence_msg_1_n: 
+    independence_shoot_RWB_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+      
+  show_independence_msg_2_n: 
+    independence_light_SJ_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe       
+       
+  show_independence_msg_3_n: 
+    independence_shoot_roaming_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+     
+  show_independence_jackpot_collected:
+    independence_jackpot_collected:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe
+      
+  show_independence_sjackpot_collected:
+    independence_sjackpot_collected:
+      widget_settings:    
+        expire: 3s
+      slide: leftframe
+
+  show_independence_jackpot_collected_n:
+    independence_jackpot_collected_n:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe
+      
+  show_independence_sjackpot_collected_n:
+    independence_sjackpot_collected_n:
+      widget_settings:    
+        expire: 3s
+      slide: leftframe
+      
+  show_independence_slide_wide:
+    widget_independence_wide: 
+      slide: leftframe     
+      
+  show_independence_slide_narrow:   
+    widget_independence_narrow:  
+      slide: leftframe     
+
+  show_independence_slide_full:
+    widget_independence_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+      
+  show_independence_fireworks_1:      
+    independence_fireworks_1:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe   
+
+  show_independence_fireworks_2:      
+    independence_fireworks_2:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe      
+      
+  show_independence_fireworks_3:      
+    independence_fireworks_3:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe      
+      
+  show_independence_fireworks_4:      
+    independence_fireworks_4:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe      
+      
+  show_independence_fireworks_5:      
+    independence_fireworks_5:
+      widget_settings:    
+        expire: 2.2s
+      slide: leftframe      
+
+  show_independence_fireworks_super:  
+  #show_independence_fireworks_6:      
+    independence_fireworks_6:
+      widget_settings:    
+        expire: 3s
+      slide: leftframe     
+                      
+  remove_independence_slide_wide:
+    widget_independence_wide:     
+      action: remove
+      slide: leftframe      
+        
+  remove_independence_slide_narrow:
+    widget_independence_narrow:  
+      action: remove     
+      slide: leftframe      
+      
+  remove_independence_slide_full:
+    widget_independence_full: 
+      action: remove         
+      slide: leftframe      
+      
+  remove_independence_messages:      
+    independence_shoot_RWB:
+      action: remove    
+      slide: leftframe           
+    independence_light_SJ:
+      action: remove    
+      slide: leftframe           
+    independence_shoot_roaming:
+      action: remove    
+      slide: leftframe           
+    independence_shoot_RWB_n:
+      action: remove    
+      slide: leftframe           
+    independence_light_SJ_n:
+      action: remove    
+      slide: leftframe           
+    independence_shoot_roaming_n:
+      action: remove    
+      slide: leftframe           
+    independence_jackpot_collected:
+      action: remove    
+      slide: leftframe           
+    independence_sjackpot_collected:
+      action: remove    
+      slide: leftframe           
+    independence_jackpot_collected_n:
+      action: remove    
+      slide: leftframe           
+    independence_sjackpot_collected_n:
+      action: remove
+      slide: leftframe           
+
+
+      
+      
+      
+animations:
+    jackpot_delay:
+    - property: opacity
+      value: 0
+      duration: 50ms
+      timing: after_previous      
+    - property: opacity
+      value: 1
+      duration: 250ms
+      timing: after_previous
+
+widgets:
+  independence_fireworks_1:
+      - type: video
+        video: fireworks_1
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+        
+  independence_fireworks_2:
+      - type: video
+        video: fireworks_2
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+
+  independence_fireworks_3:
+      - type: video
+        video: fireworks_3
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+
+  independence_fireworks_4:
+      - type: video
+        video: fireworks_4
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+
+  independence_fireworks_5:
+      - type: video
+        video: fireworks_5
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+        
+  independence_fireworks_6:
+      - type: video
+        video: fireworks_6
+        auto_play: true
+        end_behavior: stop
+        z: -2200        
+        
+        
+
+  independence_shoot_RWB:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SHOOT THE RED, WHITE AND BLUE
+        number_grouping: true
+        y: 90
+        z: -110
+  independence_light_SJ:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: To light SUPER Jackpot
+        y: 90
+        z: -110
+  independence_shoot_roaming:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Shoot the Roaming Jackpot!
+        y: 90
+        z: -110  
+
+  independence_shoot_RWB_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT THE RED
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: WHITE AND BLUE
+        x: 52        
+        y: 90
+        z: -110
+
+  independence_light_SJ_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: TO LIGHT
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SUPER JACKPOT
+        x: 52        
+        y: 90
+        z: -110
+        
+  independence_shoot_roaming_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT THE ROAMING
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SUPER JACKPOT!
+        x: 52        
+        y: 90
+        z: -110
+        
+  widget_independence_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: INDEPENDENCE
+        color: ffffff
+        anchor_y: top
+        y: top
+        x: 52
+        z: -110
+      - type: image
+        image: independence_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100 
+
+  widget_independence_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: INDEPENDENCE
+        color: ffffff
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -110
+      - type: image
+        image: independence_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+        
+  widget_independence_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: INDEPENDENCE INTRO
+        color: ffffff
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -110
+      - type: text
+        text: 5 second vid
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -110        
+      - type: image
+        image: independence_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        
+
+  independence_jackpot_collected:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: JACKPOT
+        color: ffffff
+        y: 90
+        x: 105
+        z: -2210
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ffffff
+        text: (door_independence_jackpot_score)
+        number_grouping: true        
+        x: 105
+        y: 71
+        z: -2212  
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_independence_jackpot_score)
+        number_grouping: true        
+        x: 106
+        y: 70
+        z: -2210
+        animations:
+          add_to_slide: jackpot_delay
+        
+
+  independence_sjackpot_collected:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: SUPER JACKPOT
+        color: ffffff
+        y: 90
+        x: 105
+        z: -2210
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: ffffff
+        text: (door_independence_sjackpot_score)
+        number_grouping: true        
+        x: 105
+        y: 71
+        z: -2212                
+      - type: text
+        style: tall_title
+        font_size: 26
+        color: 000000
+        text: (door_independence_sjackpot_score)
+        number_grouping: true        
+        x: 106
+        y: 70
+        z: -2210                
+        animations:
+          add_to_slide: jackpot_delay
+
+  independence_jackpot_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: JACKPOT
+        color: ffffff
+        y: 90
+        x: 52
+        z: -2210
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: ffffff
+        text: (door_independence_jackpot_score)
+        number_grouping: true        
+        x: 52
+        y: 71
+        z: -2212                
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_independence_jackpot_score)
+        number_grouping: true        
+        x: 53
+        y: 70
+        z: -2210                
+        
+
+  independence_sjackpot_collected_n:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SUPER JACKPOT
+        color: ffffff
+        y: 90
+        x: 52
+        z: -2210
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: ffffff
+        text: (door_independence_sjackpot_score)
+        number_grouping: true        
+        x: 52
+        y: 71
+        z: -2212                
+      - type: text
+        style: tall_title
+        font_size: 16
+        color: 000000
+        text: (door_independence_sjackpot_score)
+        number_grouping: true        
+        x: 53
+        y: 70
+        z: -2210                
+        

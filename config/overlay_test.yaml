@@ -1,0 +1,75 @@
+#config_version=4
+
+config:
+  - audio.yaml
+
+displays:
+  default:
+    height: 300
+    width: 400
+
+keyboard:
+  1:
+    mc_event: key1
+  2:
+    mc_event: key2
+  3:
+    mc_event: key3
+  4:
+    mc_event: key4
+  5:
+    mc_event: key5
+
+slides:
+  base1:
+    background_color: red
+    widgets:
+      - type: text
+        text: BASE SLIDE 1
+  base2:
+    background_color: blue
+    widgets:
+      - type: text
+        text: BASE SLIDE 2
+  overlay_slide:
+    background_color: yellow
+    widgets:
+      - type: text
+        text: OVERLAY SLIDE
+        color: red
+        y: 90%
+
+slide_player:
+  mc_ready: base1
+  key1: base1
+  key2: base2
+  display_overlay_ready:
+    overlay_slide:
+      target: overlay
+
+widgets:
+  overlay_widget:
+    type: slide_frame
+    height: 100
+    width: 300
+    name: overlay
+    z: -1
+    y: 0
+    x: center
+    
+  overlay_text:    
+    type: text
+    text: remove this
+    z: -2
+
+widget_player:
+  key3: overlay_widget
+
+  key4:
+    overlay_text:
+      slide: overlay_widget     
+  
+  key5:
+    overlay_text:
+      action: remove
+      

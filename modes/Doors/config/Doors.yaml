@@ -1,0 +1,15 @@
+# config_version=4
+
+# Doors
+
+mode:
+  start_events: ball_starting
+  stop_events: game_ending
+  code: Doors.Doors
+  priority: 2800
+
+sound_player:
+  change_door: splat1
+  
+
+  

@@ -1,0 +1,138 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#char_Science
+
+mode:
+  start_events: char_science_start
+  stop_events: char_science_stop
+  code: Char_Science.Char_Science
+  priority: 1500
+
+
+shot_groups:
+  jack_standups:
+    profile: science_jack
+    reset_events:
+      jack_standups_science_jack_lit_complete: 2s
+    enable_events: char_science_start
+    disable_events: ball_ending
+
+
+sound_player:
+  char_science_music_start:
+    loop_making_toys:
+      loops: -1        
+      action: play
+      
+  char_science_music_stop:
+    loop_making_toys:
+      action: stop
+
+  mode_char_science_stopping:
+    loop_making_toys:
+      action: stop
+
+  char_science_qualifier_hit1: jack_you_home
+  char_science_qualifier_hit2: hes_not_home
+  char_science_qualifier_hit3: he_hasnt_been_home
+  char_science_jackpot_hit: he_he_he_he
+  char_science_sjackpot_hit: jackpot1
+
+
+widget_player:
+  char_science_music_start: 
+    slide_science:
+      slide: charframe          
+
+  show_science_msg_1: 
+    science_one:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe
+  show_science_msg_2: 
+    science_two:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+  show_science_msg_3: 
+    science_three:
+      widget_settings:    
+        expire: 1.95s
+      slide: charframe        
+
+  char_science_show_slide: 
+    slide_science:
+      slide: charframe          
+
+  char_science_hide_slide: 
+    slide_science:
+      action: remove
+      slide: charframe          
+
+  remove_science_messages:
+    science_one:
+      action: remove      
+      slide: charframe                        
+    science_two:
+      action: remove      
+      slide: charframe                        
+    science_three:
+      action: remove      
+      slide: charframe                        
+      
+      
+      
+widgets:
+  science_one:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: Do something
+        color: 6060ff        
+        y: 44
+        z: -210  
+        x: 105
+  science_two:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: and something else
+        color: 6060ff        
+        y: 44
+        z: -210
+        x: 105
+  science_three:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: for points :)
+        number_grouping: true
+        color: 6060ff        
+        y: 44
+        z: -210 
+        x: 105
+  
+  slide_science:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: SCIENTIFIC
+        color: ff3030
+        anchor_y: top
+        y: top
+        z: -210
+      - type: image
+        image: jack_chaulkboard
+        z: -200        
+
+    
+    
+show_player:
+  jack_standups_science_jack_lit_complete:
+    jack_fanfare2:
+      speed: 8
+      loops: -1
+      priority: 1
+
+

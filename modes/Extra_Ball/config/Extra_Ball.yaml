@@ -1,0 +1,47 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#EB
+
+mode:
+  start_events: award_EB_start
+  code: Extra_Ball.Extra_Ball
+  priority: 1000
+  
+
+sound_player:
+  EB_start_2: youre_a_witches_fondest_dream
+
+
+widget_player:
+  EB_start_1: 
+    EB_slide_1:
+      slide: leftframe
+      widget_settings:    
+        expire: 4.5s
+
+  EB_start_2:
+    EB_slide_2:
+      slide: leftframe
+      widget_settings:    
+        expire: 2.5s
+  
+        
+widgets:
+  EB_slide_1:
+  - type: video
+    video: extraballmovie
+    auto_play: true
+    end_behavior: stop        
+    z: -1300        
+
+
+  EB_slide_2:
+  - type: text
+    style: tall_title
+    font_size: 32
+    text: EXTRA BALL
+    y: 35
+    x: 105
+    z: -1301
+    

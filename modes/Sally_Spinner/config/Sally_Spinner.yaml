@@ -1,0 +1,62 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Sally Spinner
+#100 spins starts the soup hurryup (not during MB other modes)
+
+mode:
+  start_events: ball_starting
+  stop_events: player_turn_ending
+  code: Sally_Spinner.Sally_Spinner
+  priority: 500
+
+  
+sound_player:
+  sw_sally: quark_lose_petal
+  taste_the_soup_completed: scrumptious  
+
+  
+scoring:
+  sw_sally:
+    score: 100 
+
+    
+    
+widget_player:
+  sw_sally_start: 
+    w_stitches_count:
+      action: add
+      widget_settings:    
+        expire: 1.5s      
+      
+  spinner_stopped: 
+    w_stitches_count:
+      action: remove
+        
+widgets:  
+    w_stitches_count:
+      - type: text
+        text: 'STITCHES: (sally_spins)'
+        color: ff5555
+        style: tall_title
+        font_size: 22
+        y: middle+25
+        x: middle
+        z: -1200
+      - type: text
+        text: 'STITCHES: (sally_spins)'
+        color: 000000
+        style: tall_title
+        font_size: 22
+        y: middle+24
+        x: middle+1
+        z: -1200        
+
+    
+show_player:
+  sw_sally:
+    sally_flash:
+      loops: 0
+      speed: 18        
+
+

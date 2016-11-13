@@ -1,0 +1,67 @@
+#config_version=4
+mode:
+  start_events: start_soup_hurryup
+  stop_events: soup_hurry_stop
+  code: Soup_Hurry.Soup_Hurry
+  priority: 1000
+
+      
+sound_player:
+  say_ready_yet: that_soup_ready_yet
+  say_nothings_more: nothings_more_suspicious  
+
+
+  
+slide_player:
+  soup_hurry_up_started: slide_98
+  
+  taste_the_soup_completed: 
+    slide_99:
+      expire: 3s
+        
+  soup_hurry_hide_slide:
+    slide_98:
+      action: remove
+  
+  
+slides:
+  slide_98:
+  - type: text
+    style: tall_title
+    font_size: 24
+    text: HURRY! TASTE THE SOUP
+    color: ffff00
+    anchor_y: top
+    z: 2001
+    y: top
+  - type: text
+    style: tall_title
+    font_size: 28
+    text: (soup_hurry_current_value)
+    number_grouping: true
+    y: 75
+    z: 2001
+  - type: image
+    image: taste_the_soup
+    z: 2010
+    
+    
+  slide_99:
+  - type: text
+    style: tall_title
+    font_size: 30
+    text: SCRUMPTIOUS!
+    color: ffff00    
+    anchor_y: top
+    y: top
+    z: 2001  
+  - type: text
+    style: tall_title
+    font_size: 28
+    text: (soup_hurry_current_value)
+    number_grouping: true
+    y: 75    
+    z: 2001    
+  - type: image
+    image: taste_the_soup
+    z: 2010

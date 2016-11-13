@@ -1,0 +1,10 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Ultimate_Wizard
+
+mode:
+  start_events: player_turn_start
+  stop_events: player_turn_ending
+  code: Ultimate_Wizard.Ultimate_Wizard
+  priority: 500

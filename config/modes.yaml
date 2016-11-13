@@ -1,0 +1,61 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+modes:
+- Base
+- game
+- Popup_Post
+- Oogie_Diverter
+- OB_Bug_Bash
+- OB_Santa
+- OB_Sally
+- OB_Dice
+- OB_Jack
+- OB_Unravel
+- OB_Wizard
+- Door_Christmas
+- Door_Easter
+- Door_Halloween
+- Door_Independence
+- Door_StPatricks
+- Door_Thanksgiving
+- Door_Valentines
+- Door_Wizard
+- char_Doc
+- char_LSB
+- char_Mayor
+- char_Sally
+- char_Science
+- char_What
+- char_Where
+- char_Zero
+- char_Wizard
+- Gate_Keeper
+- Ultimate_Wizard
+- Ball_Save
+- Skill_Shot
+- Toys
+- Jack_Targets
+- Santa_Targets
+- Sally_Spinner
+- Combos
+- Soup_Hurry
+- Shot_Multiplier
+- Add_A_Ball
+- Mystery
+- Extra_Ball
+- OB_Gate
+- Doors
+- char_Qualify
+- tilt
+- EOB_Bonus
+- Arrow_LEDS
+#- high_score
+
+
+scriptlets: 
+ balltraps.Balltraps
+ zerodiverter.ZeroDiverter
+ oogiemagnet.OogieMagnet
+ mayordiverter.mayorDiverter
+ gicomm.Gicomm

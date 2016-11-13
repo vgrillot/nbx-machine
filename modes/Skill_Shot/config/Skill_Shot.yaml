@@ -1,0 +1,136 @@
+# config_version=4
+
+# Skill_Shot
+
+mode:
+  start_events: 
+    - ball_starting
+    - start_skillshot_mode
+  code: Skill_Shot.Skill_Shot
+  priority: 800
+
+
+sound_player:
+  skillshot_music_start:
+    loop_Fever2:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  skillshot_music_stop:
+    loop_Fever2:
+      action: stop
+      
+  mode_skillshot_stopping:
+    loop_Fever2:
+      action: stop
+      
+  skill_shot_completed: What_Was_That
+
+  
+  
+widget_player:
+  skillshot_start_display: 
+    skill_shot_try:
+      action: add
+
+  skillshot_start_timer:
+    skill_shot_timer:
+      action: add      
+      widget_settings:    
+        expire: 8s
+      
+  skill_shot_completed:
+    skill_shot_try:
+      action: remove      
+    skill_shot_timer:
+      action: remove          
+    skill_show_points:
+      widget_settings:    
+        expire: 3s
+        
+  skill_shot_ended:
+    skill_shot_try:
+      action: remove      
+    skill_shot_timer:
+      action: remove   
+      
+  ball_ending:
+    skill_shot_try:
+      action: remove      
+    skill_shot_timer:
+      action: remove   
+
+
+widgets:
+  skill_shot_try:
+      - type: text
+        style: tall_title
+        color: f000f0                
+        font_size: 28
+        text: TRY FOR SKILLSHOT
+        anchor_y: top
+        y: top        
+        z: -2500          
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: .5s
+            - property: opacity
+              value: 0
+              duration: .5s
+              repeat: yes          
+            
+  skill_shot_timer:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: (skill_shot_timeleft)
+        y: 8
+        z: -2500
+
+  skill_show_points:
+      - type: text
+        style: tall_title
+        font_size: 28
+        text: SKILLSHOT
+        color: f000f0                
+        anchor_y: top
+        y: top
+        z: -20
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: (skill_shot_value)
+        number_grouping: true
+        y: middle + 10
+        z: -2501
+        color: ff20ff
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: .25s
+            - property: opacity
+              value: 0
+              duration: .25s
+              repeat: 3
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: (skill_shot_value)
+        number_grouping: true
+        y: middle+9
+        x: middle+1
+        z: -2500
+        color: 000000
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 1
+              duration: .25s
+            - property: opacity
+              value: 0
+              duration: .25s
+              repeat: 3

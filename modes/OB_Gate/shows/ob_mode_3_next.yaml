@@ -1,0 +1,17 @@
+# show_version=4
+- time: 0
+  leds:
+    rgb_oogie_mode_3: ff0000
+    rgb_oogie_mode_2: ff00ff
+    rgb_oogie_mode_1: ff00ff
+- time: '+1'
+  leds:
+    rgb_oogie_mode_3: 550000
+    rgb_oogie_mode_2: ff00ff
+    rgb_oogie_mode_1: ff00ff
+- time: '+1'
+  leds:
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_2: ff00ff
+    rgb_oogie_mode_1: ff00ff
+- time: '+1'

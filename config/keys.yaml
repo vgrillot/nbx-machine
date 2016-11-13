@@ -1,0 +1,153 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+virtual_platform_start_active_switches: trough1_opt trough2_opt trough3_opt trough4_opt
+  trough5_opt trough6_opt
+
+keyboard:
+  shift-1:
+    event: major_0_singlestep_unlit_hit
+  shift-2:
+    event: major_1_singlestep_unlit_hit
+  shift-3:
+    event: major_2_singlestep_unlit_hit
+  shift-4:
+    event: major_3_singlestep_unlit_hit
+  shift-5:
+    event: major_4_singlestep_unlit_hit
+  shift-6:
+    event: major_5_singlestep_unlit_hit
+  shift-7:
+    event: major_6_singlestep_unlit_hit
+  shift-8:
+    event: major_7_singlestep_unlit_hit
+  shift-9:
+    event: major_8_singlestep_unlit_hit
+  shift-0:
+    event: major_9_singlestep_unlit_hit
+
+  shift-j:
+    switch: lrampstandl_sw
+  shift-a:
+    switch: lrampstandr_sw
+  shift-c:
+    switch: rrampstandl_sw
+  shift-k:
+    switch: rrampstandr_sw
+
+  shift-q:
+    switch: outlanel_sw
+  shift-w:
+    switch: returnlanel_sw
+  shift-e:
+    switch: returnlaner_sw
+  shift-r:
+    switch: outlaner_sw
+  shift-t:
+    switch: pacloop_sw
+
+  shift-s:
+    switch: spinner_sw
+
+  h:
+    switch: hintertreegate_sw
+    
+  shift-h:
+    switch: oogiedivertertrap_opt
+  ctrl-h:
+    switch: oogiecw_opt
+  alt-h:
+    switch: oogieccw_opt
+    
+  shift-z:
+    switch: zerokickback_sw
+    
+  shift-o:
+    switch: oogiebanktrap_opt
+
+  ctrl-t:
+    switch: tilt_sw
+
+  z:
+    switch: flipperlwl_sw
+  ';':
+    switch: flipperlwr_sw
+  /:
+    switch: flipperlwr_sw
+  .:
+    switch: flipperupr_sw
+  1:
+    switch: trough1_opt
+    toggle: true
+  2:
+    switch: trough2_opt
+    toggle: true
+  3:
+    switch: trough3_opt
+    toggle: true
+  4:
+    switch: trough4_opt
+    toggle: true
+  5:
+    switch: trough5_opt
+    toggle: true
+  6:
+    switch: trough6_opt
+    toggle: true
+  7:
+    switch: troughjam_opt
+    toggle: true
+  8:
+    switch: tublock1_opt
+    toggle: true
+  9:
+    switch: tublock2_opt
+    toggle: true
+  0:
+    switch: tublock3_opt
+    toggle: true
+  y:
+    switch: bumpertop_sw
+  u:
+    switch: bumperright_sw
+  i:
+    switch: bumperleft_sw
+  l:
+    switch: lock_sw
+  k:
+    switch: shock_sw
+  j:
+    switch: barrel_sw
+  p:
+    switch: plungerlane_sw
+    toggle: true
+  s:
+    switch: startbutton_sw
+  e:
+    switch: oogietarget1_sw
+  r:
+    switch: oogietarget2_sw
+  t:
+    switch: oogietarget3_sw
+  o:
+    switch: subwayoogie_sw
+  f:
+    switch: soupentrance_opt
+  v:
+    switch: soupvuk_opt
+  b:
+    switch: slingl_sw
+  n:
+    switch: slingr_sw
+  m:
+    switch: mystery_sw
+  x:
+    switch: sneakinloop_opt
+  c:
+    switch: subwaysneak_sw
+  d:
+    switch: doctor_sw
+  a:
+    switch: jacksaucer_sw
+  q:
+    switch: gravestone_sw

@@ -1,0 +1,371 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Door_Halloween
+
+mode:
+  start_events: door_mode_5_start
+  stop_events: door_mode_5_stop
+  code: Door_Halloween.Door_Halloween
+  priority: 950
+
+  
+sound_player:
+  holiday_halloween_music_start:
+    loop_halloween_part1:
+      action: play
+      loops: 0
+      volume: 0.5 
+      
+  holiday_halloween_music_loop_2:
+    loop_halloween_part2:
+      action: play    
+      loops: 0
+      volume: 0.5 
+      
+  holiday_halloween_music_loop_3:
+    loop_halloween_part3:
+      action: play    
+      loops: 0
+      volume: 0.5 
+
+  holiday_halloween_music_loop_4:
+    loop_halloween_part4:
+      action: play    
+      loops: 0
+      volume: 0.5 
+
+  holiday_halloween_music_loop_5:
+    loop_halloween_part5:
+      action: play    
+      loops: 0
+      volume: 0.5 
+      
+  holiday_halloween_music_extro:
+    loop_halloween_part6:
+      action: play    
+      loops: 0
+      volume: 0.5 
+      
+  holiday_halloween_music_stop:
+    loop_halloween_part1:
+      action: stop
+    loop_halloween_part2:
+      action: stop
+    loop_halloween_part3:
+      action: stop
+    loop_halloween_part4:
+      action: stop
+    loop_halloween_part5:
+      action: stop
+    loop_halloween_part6:
+      action: stop
+
+  holiday_halloween_music_stop_looping:
+    loop_halloween_part1:
+      action: stop_looping
+    loop_halloween_part2:
+      action: stop_looping
+    loop_halloween_part3:
+      action: stop_looping
+    loop_halloween_part4:
+      action: stop_looping
+    loop_halloween_part5:
+      action: stop_looping
+    loop_halloween_part6:
+      action: stop_looping
+      
+  mode_door_halloween_stopping:
+    loop_halloween_part1:
+      action: stop
+    loop_halloween_part2:
+      action: stop
+    loop_halloween_part3:
+      action: stop
+    loop_halloween_part4:
+      action: stop
+    loop_halloween_part5:
+      action: stop
+    loop_halloween_part6:
+      action: stop
+
+
+  door_halloween_lsb_completed: Halloweens_Finest
+  door_halloween_doctor_hit: trick_or_treat
+  door_halloween_doctor_hit_done: LSB_He_He_He
+  lock_rect_lsbp_halloween_unlit_hit: lock
+  shock_rect_lsbp_halloween_unlit_hit: shock
+  barrel_rect_lsbp_halloween_unlit_hit: barrel
+  lock_rect_lsbp_halloween_lit_hit: LSB_He_He_He
+  shock_rect_lsbp_halloween_lit_hit: LSB_He_He_He
+  barrel_rect_lsbp_halloween_lit_hit: LSB_He_He_He
+
+
+shot_groups:
+  lsb_standups:
+    profile: lsbp_halloween
+    reset_events:
+      lsb_standups_lsbp_halloween_lit_complete: 2s    
+
+
+widget_player:
+  show_halloween_msg_1: 
+    widget_halloween_complete_lsb:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_halloween_msg_2: 
+    widget_halloween_value:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_halloween_msg_3: 
+    widget_halloween_dont_bug:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe      
+
+  show_halloween_msg_1_n: 
+    widget_halloween_complete_lsb_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_halloween_msg_2_n: 
+    widget_halloween_value_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe        
+  show_halloween_msg_3_n: 
+    widget_halloween_dont_bug_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe      
+      
+  show_halloween_slide_wide:
+    widget_halloween_wide: 
+      slide: leftframe     
+      
+  show_halloween_slide_narrow:   
+    widget_halloween_narrow:  
+      slide: leftframe     
+
+  show_halloween_slide_full:
+    widget_halloween_full: 
+      widget_settings:    
+        expire: 5s
+      slide: leftframe      
+      
+  remove_halloween_slide_wide:
+    widget_halloween_wide:     
+      action: remove
+      slide: leftframe      
+      
+  remove_halloween_slide_narrow:
+    widget_halloween_narrow:  
+      action: remove     
+      slide: leftframe            
+
+  remove_halloween_slide_full:
+    widget_halloween_full:  
+      action: remove     
+      slide: leftframe            
+      
+  remove_halloween_messages:      
+    widget_halloween_complete_lsb:
+      action: remove             
+      slide: leftframe                  
+    widget_halloween_value:
+      action: remove              
+      slide: leftframe                     
+    widget_halloween_dont_bug:
+      action: remove              
+      slide: leftframe                     
+    widget_halloween_complete_lsb_n:
+      action: remove              
+      slide: leftframe                     
+    widget_halloween_value_n:
+      action: remove              
+      slide: leftframe                     
+    widget_halloween_dont_bug_n:
+      action: remove 
+      slide: leftframe                  
+
+      
+      
+widgets:
+  widget_halloween_complete_lsb:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: HIT LOCK, SHOCK, AND BARREL
+        y: 90
+        z: -110
+  widget_halloween_value:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: FOR (door_halloween_next_jackpot)
+        number_grouping: true
+        y: 90
+        z: -110
+  widget_halloween_dont_bug:
+      - type: text
+        style: tall_title
+        font_size: 18
+        text: BUT Don't hit the Doctor
+        y: 90
+        z: -110
+
+  widget_halloween_complete_lsb_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: HIT LOCK,
+        x: 52
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOCK, AND BARREL
+        x: 52
+        y: 90
+        z: -110
+  widget_halloween_value_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: FOR (door_halloween_next_jackpot)
+        number_grouping: true
+        x: 52        
+        y: 90
+        z: -110
+  widget_halloween_dont_bug_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: BUT Don't hit
+        x: 52        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: the Doctor
+        x: 52        
+        y: 90
+        z: -110
+        
+        
+  widget_halloween_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: HALLOWEEN
+        color: ff8800
+        anchor_y: top
+        y: top
+        x: 52
+        z: -101
+      - type: text
+        text: (door_halloween_LSB_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 339966
+        x: 52        
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_halloween_LSB_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 000000
+        x: 53
+        y: 70
+        z: -101        
+      - type: image
+        image: halloween_door_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0
+        z: -100        
+
+  widget_halloween_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: HALLOWEEN
+        color: ff8800
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: text
+        text: (door_halloween_LSB_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 339966
+        x: 105
+        y: 71
+        z: -102      
+      - type: text
+        text: (door_halloween_LSB_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 000000
+        x: 106
+        y: 70
+        z: -101        
+      - type: image
+        image: halloween_door
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+
+  widget_halloween_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: HALLOWEEN INTRO
+        color: ff8800
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -101
+      - type: text
+        text: 5 second vid
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 339966
+        x: 105
+        y: 71
+        z: -101        
+      - type: image
+        image: halloween_door
+        anchor_y: top
+        anchor_x: left
+        y: 128
+        x: 0        
+        z: -100        
+        
+    
+    
+show_player:
+  lsb_standups_lsbp_halloween_lit_complete:
+    lsb_halloween_fanfare:
+      speed: 8
+      loops: 3
+      priority: 1

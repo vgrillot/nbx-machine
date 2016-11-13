@@ -1,0 +1,121 @@
+# show_version=4
+- time: 0
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: e00000
+    rgb_santa_a: '000000'
+    rgb_santa_n: '000000'
+    rgb_santa_t: '000000'
+    rgb_santa_b: 400000 
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: '000000'
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: 400000
+    rgb_santa_a: e00000
+    rgb_santa_n: '000000'
+    rgb_santa_t: '000000'
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: '000000'
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: '000000'
+    rgb_santa_a: 400000
+    rgb_santa_n: e00000
+    rgb_santa_t: '000000'
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: '000000'
+    rgb_santa_s: '000000'
+    rgb_santa_a: '000000'
+    rgb_santa_n: 400000
+    rgb_santa_t: e00000
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: '000000'
+    rgb_santa_a: '000000'
+    rgb_santa_n: '000000'
+    rgb_santa_t: 400000
+    rgb_santa_b: e00000 
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: '000000'
+    rgb_santa_s: e00000
+    rgb_santa_a: '000000'
+    rgb_santa_n: '000000'
+    rgb_santa_t: '000000'
+    rgb_santa_b: 400000 
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: '000000'
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: 400000
+    rgb_santa_a: e00000
+    rgb_santa_n: '000000'
+    rgb_santa_t: '000000'
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: '000000'
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: '000000'
+    rgb_santa_a: 400000
+    rgb_santa_n: e00000
+    rgb_santa_t: '000000'
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: '000000'
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: '000000'
+    rgb_santa_a: '000000'
+    rgb_santa_n: 400000
+    rgb_santa_t: e00000
+    rgb_santa_b: '000000'
+
+- time: '+1'
+  leds:
+    rgb_lramp_ldiamond: ff6000
+    rgb_lramp_rdiamond: ff6000
+    rgb_rramp_ldiamond: ff6000
+    rgb_rramp_rdiamond: ff6000
+    rgb_santa_s: '000000'
+    rgb_santa_a: '000000'
+    rgb_santa_n: '000000'
+    rgb_santa_t: 400000
+    rgb_santa_b: e00000
+- time: '+1'

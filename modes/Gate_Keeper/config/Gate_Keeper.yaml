@@ -1,0 +1,298 @@
+# config_version=4
+# NBX (The Nightmare Before Christmas Pinball)
+
+#Gate_Keeper
+
+mode:
+  start_events: gate_keeper_MB_start
+  stop_events: gate_keeper_MB_stop
+  code: Gate_Keeper.Gate_Keeper
+  priority: 800
+
+  
+  
+sound_player:
+  gate_keeper_music_start:
+    loop_Snapper2:
+      action: play    
+      loops: -1
+      volume: 0.5 
+
+  gate_keeper_music_stop:
+    loop_Snapper2:
+      action: stop
+      
+  mode_Gate_Keeper_stopping:
+    loop_Snapper2:
+      action: stop
+
+  gate_keeper_gate_jackpot: jackpot
+
+    
+
+widget_player:
+  show_gatekeeper_msg_1: 
+    gatekeeper_shoot_gate:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_gatekeeper_msg_2: 
+    gatekeeper_shots_for_extra:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_gatekeeper_msg_3: 
+    gatekeeper_shoot_oogie:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+
+  show_gatekeeper_msg_1_n: 
+    gatekeeper_shoot_gate_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_gatekeeper_msg_2_n: 
+    gatekeeper_shots_for_extra_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+  show_gatekeeper_msg_3_n: 
+    gatekeeper_shoot_oogie_n:
+      widget_settings:    
+        expire: 1.95s
+      slide: leftframe
+      
+  show_gatekeeper_slide_wide:
+    widget_gatekeeper_wide: 
+      slide: leftframe     
+      
+  show_gatekeeper_slide_narrow:   
+    widget_gatekeeper_narrow:  
+      slide: leftframe     
+
+  show_gatekeeper_slide_intro:
+    widget_gatekeeper_full: 
+      widget_settings:    
+        expire: 6s
+      slide: leftframe      
+
+  remove_gatekeeper_slide_wide:
+    widget_gatekeeper_wide:     
+      action: remove
+      slide: leftframe     
+      
+  remove_gatekeeper_slide_narrow:
+    widget_gatekeeper_narrow:  
+      action: remove     
+      slide: leftframe     
+
+  remove_gatekeeper_slide_intro:
+    widget_gatekeeper_full:  
+      action: remove     
+      slide: leftframe     
+      
+  remove_gatekeeper_messages:      
+    gatekeeper_shoot_gate:
+      action: remove    
+      slide: leftframe           
+    gatekeeper_shots_for_extra:
+      action: remove    
+      slide: leftframe           
+    gatekeeper_shoot_oogie:
+      action: remove    
+      slide: leftframe           
+    gatekeeper_shoot_gate_n:
+      action: remove    
+      slide: leftframe           
+    gatekeeper_shots_for_extra_n:
+      action: remove    
+      slide: leftframe           
+    gatekeeper_shoot_oogie_n:
+      action: remove
+      slide: leftframe           
+      
+
+      
+
+widgets:
+  gatekeeper_shoot_gate:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SHOOT THE GATE FOR (GK_jackpot_value)
+        number_grouping: true
+        y: 90
+        z: -110
+  gatekeeper_shots_for_extra:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: (GK_hits_needed) MORE SHOTS NEEDED
+        y: 90
+        z: -110
+  gatekeeper_shoot_oogie:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: SHOOT OOGIE FOR EXTRA BALL
+        y: 90
+        z: -110
+
+  gatekeeper_shoot_gate_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT THE GATE 
+        x: 157
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: FOR (GK_jackpot_value)
+        number_grouping: true                
+        x: 157
+        y: 90
+        z: -110
+  
+  gatekeeper_shots_for_extra_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: (GK_hits_needed) 
+        x: 157        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: MORE SHOTS NEEDED
+        x: 157        
+        y: 90
+        z: -110
+        
+  gatekeeper_shoot_oogie_n:
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: SHOOT OOGIE 
+        x: 157        
+        y: 105
+        z: -110
+      - type: text
+        style: tall_title
+        font_size: 14
+        text: FOR EXTRA BALL
+        x: 157        
+        y: 90
+        z: -110
+
+
+        
+  widget_gatekeeper_narrow:
+      - type: text
+        style: tall_title
+        font_size: 16
+        text: GATE KEEPER
+        color: 80ff80
+        anchor_y: top
+        y: top
+        x: 157
+        z: -101
+      - type: text
+        text: (gatekeeper_total_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: ffff80
+        x: 157        
+        y: 71
+        z: -102      
+      - type: text
+        text: (gatekeeper_total_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 13
+        color: 000000
+        x: 158
+        y: 70
+        z: -101        
+      - type: image
+        image: oogie_gate_2
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 105
+        z: -100 
+
+        
+
+  widget_gatekeeper_wide:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: GATE KEEPER
+        color: ffff80
+        anchor_y: top
+        y: top
+        x: 105        
+        z: -101
+      - type: text
+        text: (gatekeeper_total_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: ffff80
+        x: 105
+        y: 71
+        z: -102      
+      - type: text
+        text: (gatekeeper_total_score)
+        number_grouping: true
+        min_digits: 2
+        style: tall_title
+        font_size: 26
+        color: 000000
+        x: 106
+        y: 70
+        z: -101        
+      - type: image
+        image: oogie_gate
+        anchor_y: top
+        anchor_x: left
+        y: top
+        x: 0        
+        z: -100        
+        
+
+  widget_gatekeeper_full:
+      - type: text
+        style: tall_title
+        font_size: 32
+        text: GATE KEEPER INTRO
+        color: ffff80
+        anchor_y: top
+        y: 128
+        x: 105        
+        z: -5101
+      - type: text
+        text: 5 second vid
+        style: tall_title
+        font_size: 26
+        color: white
+        x: 105
+        y: 71
+        z: -5101       
+      - type: video
+        video: oogie_dance
+        auto_play: true
+        end_behavior: loop        
+        z: -5200        
+        
+        
+
+  

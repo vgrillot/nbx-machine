@@ -1,0 +1,273 @@
+# show_version=4
+- time: 0
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: ff0000
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: ff0000
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: 008000
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: ff0000
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: 008000
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: ffff00
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: 008000
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: ffff00
+    rgb_oogie_moon3: '000000'
+
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: ffff00
+
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: 00ff00
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: 00ff00
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: 008000
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: 00ff00
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: 00ffff
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: 008000
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: 00ffff
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: 00ffff
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: 008000
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: f000f0
+    rgb_oogie_moon: 0000ff
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: 008000
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: f000f0
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: 0000ff
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: 008000
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: f000f0
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: 0000ff
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: f000f0
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: ff00ff
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: '000000'
+    rgb_bug_2: '000000'
+    rgb_bug_3: '000000'
+    rgb_oogie_mode_1: '000000'
+    rgb_oogie_mode_2: f000f0
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: ff00ff
+    rgb_oogie_moon3: '000000'
+
+- time: '+1'
+  leds:
+    rgb_bug_1: 008000
+    rgb_bug_2: 008000
+    rgb_bug_3: 008000
+    rgb_oogie_mode_1: f000f0
+    rgb_oogie_mode_2: '000000'
+    rgb_oogie_mode_3: '000000'
+    rgb_oogie_mode_4: '000000'
+    rgb_oogie_mode_5: '000000'
+    rgb_oogie_mode_6: '000000'
+    rgb_oogie_moon: '000000'
+    rgb_oogie_moon2: '000000'
+    rgb_oogie_moon3: ff00ff
+- time: '+1'

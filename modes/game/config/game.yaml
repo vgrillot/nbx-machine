@@ -1,0 +1,225 @@
+#config_version=4
+
+
+slide_player:
+  display_infoframe_ready:
+    overlay_slide:
+      target: infoframe
+    
+  display_charframe_ready:
+    overlay_slide2:
+      target: charframe
+      
+  display_leftframe_ready:
+    overlay_slide3:
+      target: leftframe
+
+  display_backdropframe_ready:
+    overlay_slide4:
+      target: backdropframe
+
+      
+widget_player:
+  mode_game_started: 
+    backdrop_frame: {}      
+    left_frame: {}  
+    char_frame: {}
+    info_frame: {}
+    ball_number:
+      slide: infoframe
+    player_number:
+      slide: infoframe          
+    current_player_score:
+      slide: infoframe  
+    player_2_score:
+      slide: infoframe
+    player_2_slot:
+      slide: infoframe
+    player_3_score:
+      slide: infoframe          
+    player_3_slot:
+      slide: infoframe          
+    player_4_score:
+      slide: infoframe          
+    player_4_slot:
+      slide: infoframe  
+      
+      
+# TODO this should appear when credits added and alternate with the Ball <> widget
+#    credits_remaining:
+#      slide: infoframe  
+
+  mode_attract_started: 
+    char_frame:
+      action: remove
+    info_frame:
+      action: remove    
+    backdrop_frame:    
+      action: remove    
+    left_frame:    
+      action: remove    
+    ball_number:
+      action: remove
+    player_number:
+      action: remove
+    current_player_score:
+      action: remove
+    widget_b_doc:
+      action: remove
+    widget_b_zero:
+      action: remove
+    widget_b_jack:
+      action: remove
+    widget_b_mayor:
+      action: remove
+    widget_b_sally:
+      action: remove
+    widget_c_doc:
+      action: remove
+    widget_c_zero:
+      action: remove
+    widget_c_jack:
+      action: remove
+    widget_c_mayor:
+      action: remove
+    widget_c_sally:
+      action: remove
+    widget_q_doc:
+      action: remove
+    widget_q_zero:
+      action: remove
+    widget_q_jack:
+      action: remove
+    widget_q_mayor:
+      action: remove
+    widget_q_sally:
+      action: remove
+    widget_r_jack2:
+      action: remove
+    widget_r_doc:
+      action: remove
+    widget_r_zero:
+      action: remove
+    widget_r_jack:
+      action: remove
+    widget_r_mayor:
+      action: remove
+    widget_r_sally:
+      action: remove      
+    widget_c_lsb:
+      action: remove      
+    widget_b_lsb:
+      action: remove      
+    widget_q_lsb:
+      action: remove      
+    widget_r_lsb:
+      action: remove      
+    widget_b_lock:
+      action: remove
+    widget_b_shock:
+      action: remove
+    widget_b_barrel:
+      action: remove
+    widget_q_lock:
+      action: remove
+    widget_q_shock:
+      action: remove
+    widget_q_barrel:
+      action: remove      
+      
+  
+
+widgets:  
+  info_frame:
+      - type: slide_frame
+        width: 210
+        height: 28
+        name: infoframe
+        y: 28
+        x: 0
+        anchor_y: top
+        anchor_x: left
+        z: -1000
+      - type: rectangle
+        anchor_x: left
+        anchor_y: top
+        width: 210
+        height: 28
+        color: 222222
+        opacity: 0.5
+        x: 0
+        y: 28
+        z: -1010
+
+  char_frame:
+      - type: slide_frame
+        width: 210
+        height: 28
+        name: charframe
+        y: 57
+        x: 0
+        anchor_y: top
+        anchor_x: left
+        z: -700
+
+  left_frame:
+      - type: slide_frame
+        width: 210
+        height: 128
+        name: leftframe
+        y: 128
+        x: 0
+        anchor_y: top
+        anchor_x: left
+        z: 500
+        
+  backdrop_frame:
+      - type: slide_frame
+        width: 210
+        height: 128
+        name: backdropframe
+        y: 128
+        x: 10
+        anchor_y: top
+        anchor_x: left
+        z: 10
+        
+
+slides:
+  overlay_slide:
+    background_color: 00000000
+    widgets:
+      - type: line
+        points: 1, 1,  1, 27
+        color: lightblue
+      - type: line
+        points: 1, 28,  209, 28
+        color: lightblue
+      - type: line
+        points: 210, 27,   210, 1
+        color: lightblue
+      - type: line
+        points: 1, 1, 209, 1
+        color: lightblue
+
+  overlay_slide2:
+    background_color: 00800000
+    widgets:
+      - type: line
+        points: 1, 1,  1, 2
+        color: 00000000
+
+  overlay_slide3:
+    background_color: 00000000
+    widgets:
+      - type: line
+        points: 105, 1,  105, 28
+        color: 00000000
+
+  overlay_slide4:
+    background_color: 00000000
+    widgets:
+      - type: line
+        points: 105, 1,  105, 28
+        color: 00000000
+        
